@@ -1,0 +1,54 @@
+# Python Bytecode and Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.env.*
+*.pem
+*.key
+*.token
+
+# Model Weights, Checkpoints & Large Data Files
+*.pt
+*.bin
+*.safetensors
+*.onnx
+models/
+checkpoints/
+results/
+runs/
+hf_cache/
+.cache/
+
+# Distribution & Packaging
+dist/
+build/
+*.egg-info/
+
+# Logs & Temporary Files
+*.log
+*.tmp
+*.bak
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
