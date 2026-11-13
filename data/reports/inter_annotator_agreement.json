@@ -1,0 +1,35 @@
+{
+  "total_evaluated_sentences": 150,
+  "exact_span_precision": 0.9969,
+  "exact_span_recall": 0.9969,
+  "exact_span_f1": 0.9969,
+  "cohens_kappa": 0.9978,
+  "total_ann1_entities": 318,
+  "total_ann2_entities": 318,
+  "matched_exact_entities": 317,
+  "boundary_disagreements": 0,
+  "class_disagreements": 1,
+  "missing_in_ann1": 0,
+  "missing_in_ann2": 0,
+  "disagreement_details": [
+    {
+      "record_id": "my-chn-032",
+      "sentence_text": "Ong Hui Min concluded the financial advisory engagement with Hospital Kuala Lumpur in George Town under docket DKT-531.",
+      "issue_type": "CLASS_DISAGREEMENT",
+      "annotator_1_span": {
+        "text": "Hospital Kuala Lumpur",
+        "label": "ORGANIZATION",
+        "start": 61,
+        "end": 82
+      },
+      "annotator_2_span": {
+        "text": "Hospital Kuala Lumpur",
+        "label": "LOCATION",
+        "start": 61,
+        "end": 82
+      },
+      "resolution": null,
+      "adjudication_notes": ""
+    }
+  ]
+}

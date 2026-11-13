@@ -1,0 +1,203 @@
+{
+  "total_records": 1000,
+  "valid_records": 1000,
+  "invalid_records": 0,
+  "error_count": 0,
+  "warning_count": 22,
+  "issues": [
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-malay-230",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-malay-232",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-malay-233",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-myaen-222",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-myaen-227",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-myaen-229",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-myaen-233",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-myaen-234",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-myaen-236",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-mang-130",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-mang-131",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-mang-139",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-mixcs-129",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-mixcs-131",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-mixcs-138",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-mixcs-139",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-mixcs-140",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-chn-088",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-chn-095",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-ind-091",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-ind-094",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    },
+    {
+      "severity": "WARNING",
+      "check": "HARD_NEGATIVE",
+      "record_id": "my-intl-048",
+      "message": "Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+      "details": {}
+    }
+  ],
+  "entity_counts": {
+    "ORGANIZATION": 577,
+    "PERSON": 823,
+    "LOCATION": 830
+  },
+  "tag_counts": {
+    "O": 16689,
+    "B-ORGANIZATION": 588,
+    "I-ORGANIZATION": 1277,
+    "B-PERSON": 823,
+    "I-PERSON": 1690,
+    "B-LOCATION": 830,
+    "I-LOCATION": 488
+  },
+  "sentence_counts_by_entity_num": {
+    "3": 440,
+    "2": 455,
+    "0": 105
+  },
+  "stratum_counts": {
+    "formal_malay": 240,
+    "malaysian_english": 240,
+    "manglish": 140,
+    "mixed_code_switch": 140,
+    "chinese_naming": 95,
+    "indian_naming": 95,
+    "international_baseline": 50
+  },
+  "source_counts": {
+    "SRC-005": 48,
+    "SRC-001": 47,
+    "SRC-007": 485,
+    "SRC-008": 290,
+    "SRC-006": 80,
+    "SRC-004": 50
+  },
+  "hard_negative_count": 105,
+  "is_clean": true,
+  "cross_split_leakage_count": 0,
+  "cross_split_leakage_issues": []
+}

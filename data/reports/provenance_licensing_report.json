@@ -1,0 +1,30 @@
+{
+  "total_records": 1000,
+  "verified_records": 1000,
+  "unverified_records": 0,
+  "restricted_records": 50,
+  "source_counts": {
+    "SRC-005": 48,
+    "SRC-001": 47,
+    "SRC-007": 485,
+    "SRC-008": 290,
+    "SRC-006": 80,
+    "SRC-004": 50
+  },
+  "data_type_counts": {
+    "public_government": 48,
+    "public_curated": 47,
+    "independently_authored": 485,
+    "synthetic": 290,
+    "public_corporate": 80,
+    "public_baseline": 50
+  },
+  "licence_counts": {
+    "Public Record / Open Government Data": 48,
+    "MIT License": 822,
+    "Public Regulatory Disclosure": 80,
+    "Reuters Open Research License": 50
+  },
+  "issues": [],
+  "is_compliant": true
+}

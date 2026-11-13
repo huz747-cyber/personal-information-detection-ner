@@ -1,13 +1,16 @@
 """
 Dataset Validation Suite for Malaysian Named Entity Recognition and PII Datasets.
 
-Executes 6 comprehensive validation checks:
+Executes comprehensive validation checks:
 1. Offset Integrity: Verifies that text[start:end] strictly equals entity text and offsets are within bounds.
 2. BIO Sequence Grammar: Enforces valid IOB2 transitions (no orphaned I- tags without matching preceding B-/I-).
-3. Deduplication: Detects exact string duplicates and normalized near-duplicates.
+3. Deduplication: Detects exact string duplicates, normalized duplicates, and fuzzy near-duplicates.
 4. Contamination / Leakage: Scans for overlap between train, validation, and test splits.
 5. Entity Class & Token Distribution: Computes statistical breakdown of entities and tags.
 6. Missing Label Auditing: Flags unannotated patronymic markers, corporate suffixes, or common locations.
+7. Hard Negative Integrity: Validates that hard-negative examples contain zero entities and include true distractors.
+8. Privacy Screening: Flags potential live credentials, unmasked phone leaks, and real ID numbers.
+9. Provenance Verification: Audits source metadata against the authoritative source manifest.
 
 Author: AI/ML Club
 License: MIT
@@ -19,13 +22,15 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple, Union
 
+from .deduplicator import DatasetDeduplicator
 from .doccano_adapter import import_from_doccano, text_to_bio
+from .privacy_screener import PrivacyScreener
 
 
 @dataclass
 class ValidationIssue:
     severity: str  # 'ERROR', 'WARNING', 'INFO'
-    check: str     # 'OFFSET', 'BIO_GRAMMAR', 'DUPLICATE', 'LEAKAGE', 'MISSING_LABEL'
+    check: str     # 'OFFSET', 'BIO_GRAMMAR', 'DUPLICATE', 'LEAKAGE', 'MISSING_LABEL', 'HARD_NEGATIVE', 'PRIVACY', 'PROVENANCE'
     record_id: Any
     message: str
     details: Dict[str, Any] = field(default_factory=dict)
@@ -42,6 +47,9 @@ class ValidationReport:
     entity_counts: Dict[str, int] = field(default_factory=dict)
     tag_counts: Dict[str, int] = field(default_factory=dict)
     sentence_counts_by_entity_num: Dict[int, int] = field(default_factory=dict)
+    stratum_counts: Dict[str, int] = field(default_factory=dict)
+    source_counts: Dict[str, int] = field(default_factory=dict)
+    hard_negative_count: int = 0
     is_clean: bool = True
 
     def summary(self) -> str:
@@ -54,6 +62,7 @@ class ValidationReport:
             f"Sentences with Errors:       {self.invalid_records}",
             f"Total Errors:                {self.error_count}",
             f"Total Warnings:              {self.warning_count}",
+            f"Hard Negatives Verified:     {self.hard_negative_count}",
             f"Validation Status:           {'PASS [CLEAN]' if self.is_clean else 'FAIL [ISSUES DETECTED]'}",
             "-" * 68,
             "Entity Class Breakdown:",
@@ -71,6 +80,15 @@ class ValidationReport:
         if self.tag_counts:
             for tag, count in sorted(self.tag_counts.items()):
                 lines.append(f"  - {tag:<20}: {count:>6}")
+
+        if self.stratum_counts:
+            lines.extend([
+                "-" * 68,
+                "Linguistic Stratum Distribution:",
+            ])
+            for st, count in sorted(self.stratum_counts.items()):
+                pct = (count / self.total_records) * 100 if self.total_records > 0 else 0
+                lines.append(f"  - {st:<28}: {count:>5} ({pct:>5.1f}%)")
 
         lines.extend([
             "-" * 68,
@@ -101,10 +119,24 @@ class DatasetValidator:
         (re.compile(r"\b(?:Kuala\s*Lumpur|Putrajaya|Cyberjaya|George\s*Town|Petaling\s*Jaya)\b", re.IGNORECASE), "MAJOR_CITY", "LOCATION"),
     ]
 
-    def __init__(self, allowed_labels: Optional[Set[str]] = None):
+    # Required distractor patterns in hard-negative sentences
+    HARD_NEGATIVE_DISTRACTORS = [
+        re.compile(r"\b(?:RM|MYR|\$)\s*\d+", re.IGNORECASE),  # Currency
+        re.compile(r"\b(?:INV|PO|TXN|REF|ORDER|BATCH|POL|PV|ORD|TRK|TCK|TSK|PRJ|PHASE|FIL|DKT|BURSA|REL)[-_/0-9A-Z]+\b", re.IGNORECASE),  # Transaction codes
+        re.compile(r"\b(?:\d{1,2}\s+(?:Jan|Feb|Mac|Apr|Mei|Jun|Jul|Ogo|Sep|Okt|Nov|Dis)[a-z]*|\d{4}|hari|minggu|tahun|bulan|calendar|month|annual|quarterly|daily)\b", re.IGNORECASE),  # Dates & timeframes
+        re.compile(r"\b(?:pukul|jam|am|pm)\s*\d*(?:[\.:]\d+)?\b", re.IGNORECASE),  # Times
+        re.compile(r"\b(?:dan|atau|serta|bersama|dengan|and|or|with)\b", re.IGNORECASE),  # Conjunctions
+        re.compile(r"\b\d+\b"),  # Numeric values / postcodes / identifiers
+        re.compile(r"\b(?:syarikat|kerajaan|jabatan|kementerian|hospital|mahkamah|dewan|sekolah|kolej|portal|kaunter|premis|bangunan|pejabat|company|management|board|department|facility|portal|service)\b", re.IGNORECASE),  # Org-like common nouns
+    ]
+
+    def __init__(self, allowed_labels: Optional[Set[str]] = None, check_privacy: bool = True):
         self.allowed_labels = allowed_labels or {
             "PERSON", "ORGANIZATION", "LOCATION", "MYKAD", "PHONE", "POSTCODE"
         }
+        self.check_privacy = check_privacy
+        self.privacy_screener = PrivacyScreener(allow_synthetic=True)
+        self.deduplicator = DatasetDeduplicator(near_duplicate_threshold=0.85)
 
     def validate_single_record(self, record: Dict[str, Any]) -> List[ValidationIssue]:
         """Validates offset integrity, boundaries, and span grammar of a single record."""
@@ -112,6 +144,7 @@ class DatasetValidator:
         rec_id = record.get("id", "UNKNOWN")
         text = record.get("text", "")
         entities = record.get("entities", [])
+        meta = record.get("metadata", record.get("meta", {}))
 
         # 1. Check basic text presence
         if not text or not text.strip():
@@ -123,7 +156,38 @@ class DatasetValidator:
             ))
             return issues
 
-        # 2. Check each entity's offsets and boundary alignment
+        # 2. Hard-negative verification
+        is_hard_negative = meta.get("is_hard_negative", meta.get("hard_negative", False))
+        if is_hard_negative:
+            if len(entities) > 0:
+                issues.append(ValidationIssue(
+                    severity="ERROR",
+                    check="HARD_NEGATIVE",
+                    record_id=rec_id,
+                    message=f"Hard-negative sentence must not contain entities (found {len(entities)}).",
+                ))
+            has_distractor = any(p.search(text) for p in self.HARD_NEGATIVE_DISTRACTORS)
+            if not has_distractor:
+                issues.append(ValidationIssue(
+                    severity="WARNING",
+                    check="HARD_NEGATIVE",
+                    record_id=rec_id,
+                    message="Hard-negative sentence contains no recognizable distractor pattern (currency, date, ID).",
+                ))
+
+        # 3. Privacy screening
+        if self.check_privacy:
+            priv_viols = self.privacy_screener.scan_text(text, record_id=rec_id)
+            for pv in priv_viols:
+                issues.append(ValidationIssue(
+                    severity="ERROR" if pv.severity == "CRITICAL" else "WARNING",
+                    check="PRIVACY",
+                    record_id=rec_id,
+                    message=pv.message,
+                    details={"category": pv.category, "snippet": pv.detected_snippet},
+                ))
+
+        # 4. Check each entity's offsets and boundary alignment
         previous_end = -1
         for i, ent in enumerate(entities):
             start = ent.get("start")
@@ -190,7 +254,7 @@ class DatasetValidator:
                     message=f"Entity [{start}:{end}] '{actual_slice}' contains leading or trailing whitespace.",
                 ))
 
-        # 3. Check BIO sequence grammar
+        # 5. Check BIO sequence grammar
         try:
             tokens, bio_tags = text_to_bio(text, entities)
             bio_issues = self.validate_bio_sequence(tokens, bio_tags, rec_id)
@@ -203,9 +267,10 @@ class DatasetValidator:
                 message=f"Failed to generate BIO tags: {e}",
             ))
 
-        # 4. Check for potential missing labels
-        missing_issues = self.audit_missing_labels(text, entities, rec_id)
-        issues.extend(missing_issues)
+        # 6. Check for potential missing labels
+        if not is_hard_negative:
+            missing_issues = self.audit_missing_labels(text, entities, rec_id)
+            issues.extend(missing_issues)
 
         return issues
 
@@ -314,45 +379,107 @@ class DatasetValidator:
         val_records: List[Dict[str, Any]],
         test_records: List[Dict[str, Any]],
     ) -> List[ValidationIssue]:
-        """Detects data leakage between train, validation, and test splits."""
+        """Detects data leakage between train, validation, and test splits (sentence text & template)."""
         issues: List[ValidationIssue] = []
 
-        train_texts = {
-            " ".join(r.get("text", "").lower().split()): r.get("id")
-            for r in train_records
-        }
-        val_texts = {
-            " ".join(r.get("text", "").lower().split()): r.get("id")
-            for r in val_records
-        }
+        def get_keys(rec):
+            norm_text = " ".join(rec.get("text", "").lower().split())
+            meta = rec.get("metadata", rec.get("meta", {}))
+            tpl = meta.get("template_id")
+            doc = meta.get("document_id")
+            return norm_text, tpl, doc
+
+        train_texts = {}
+        train_tpls = {}
+        train_docs = {}
+        for r in train_records:
+            t, tpl, doc = get_keys(r)
+            train_texts[t] = r.get("id")
+            if tpl:
+                train_tpls[tpl] = r.get("id")
+            if doc:
+                train_docs[doc] = r.get("id")
+
+        val_texts = {}
+        val_tpls = {}
+        val_docs = {}
+        for r in val_records:
+            t, tpl, doc = get_keys(r)
+            val_texts[t] = r.get("id")
+            if tpl:
+                val_tpls[tpl] = r.get("id")
+            if doc:
+                val_docs[doc] = r.get("id")
 
         # Check val against train
         for r in val_records:
-            norm = " ".join(r.get("text", "").lower().split())
-            if norm in train_texts:
+            t, tpl, doc = get_keys(r)
+            if t in train_texts:
                 issues.append(ValidationIssue(
                     severity="ERROR",
                     check="LEAKAGE",
                     record_id=r.get("id"),
-                    message=f"Validation record leaks into Train split (matches Train ID {train_texts[norm]})",
+                    message=f"Validation sentence leaks into Train (matches Train ID {train_texts[t]})",
+                ))
+            if tpl and tpl in train_tpls:
+                issues.append(ValidationIssue(
+                    severity="ERROR",
+                    check="LEAKAGE",
+                    record_id=r.get("id"),
+                    message=f"Validation template '{tpl}' leaks into Train (matches Train ID {train_tpls[tpl]})",
+                ))
+            if doc and doc in train_docs:
+                issues.append(ValidationIssue(
+                    severity="ERROR",
+                    check="LEAKAGE",
+                    record_id=r.get("id"),
+                    message=f"Validation document '{doc}' leaks into Train (matches Train ID {train_docs[doc]})",
                 ))
 
         # Check test against train and val
         for r in test_records:
-            norm = " ".join(r.get("text", "").lower().split())
-            if norm in train_texts:
+            t, tpl, doc = get_keys(r)
+            if t in train_texts:
                 issues.append(ValidationIssue(
                     severity="ERROR",
                     check="LEAKAGE",
                     record_id=r.get("id"),
-                    message=f"Test record leaks into Train split (matches Train ID {train_texts[norm]})",
+                    message=f"Test sentence leaks into Train (matches Train ID {train_texts[t]})",
                 ))
-            if norm in val_texts:
+            if t in val_texts:
                 issues.append(ValidationIssue(
                     severity="ERROR",
                     check="LEAKAGE",
                     record_id=r.get("id"),
-                    message=f"Test record leaks into Validation split (matches Val ID {val_texts[norm]})",
+                    message=f"Test sentence leaks into Validation (matches Val ID {val_texts[t]})",
+                ))
+            if tpl and tpl in train_tpls:
+                issues.append(ValidationIssue(
+                    severity="ERROR",
+                    check="LEAKAGE",
+                    record_id=r.get("id"),
+                    message=f"Test template '{tpl}' leaks into Train (matches Train ID {train_tpls[tpl]})",
+                ))
+            if tpl and tpl in val_tpls:
+                issues.append(ValidationIssue(
+                    severity="ERROR",
+                    check="LEAKAGE",
+                    record_id=r.get("id"),
+                    message=f"Test template '{tpl}' leaks into Validation (matches Val ID {val_tpls[tpl]})",
+                ))
+            if doc and doc in train_docs:
+                issues.append(ValidationIssue(
+                    severity="ERROR",
+                    check="LEAKAGE",
+                    record_id=r.get("id"),
+                    message=f"Test document '{doc}' leaks into Train (matches Train ID {train_docs[doc]})",
+                ))
+            if doc and doc in val_docs:
+                issues.append(ValidationIssue(
+                    severity="ERROR",
+                    check="LEAKAGE",
+                    record_id=r.get("id"),
+                    message=f"Test document '{doc}' leaks into Validation (matches Val ID {val_docs[doc]})",
                 ))
 
         return issues
@@ -362,7 +489,10 @@ class DatasetValidator:
         all_issues: List[ValidationIssue] = []
         entity_counts: Dict[str, int] = {}
         tag_counts: Dict[str, int] = {}
+        stratum_counts: Dict[str, int] = {}
+        source_counts: Dict[str, int] = {}
         sentence_counts_by_entity_num: Dict[int, int] = {}
+        hard_negatives = 0
 
         invalid_records_set = set()
 
@@ -374,17 +504,24 @@ class DatasetValidator:
             rec_id = rec.get("id", "UNKNOWN")
             text = rec.get("text", "")
             entities = rec.get("entities", [])
+            meta = rec.get("metadata", rec.get("meta", {}))
 
-            # Entity count distribution
+            if meta.get("is_hard_negative", meta.get("hard_negative", False)):
+                hard_negatives += 1
+
+            stratum = meta.get("stratum", meta.get("language", "general"))
+            stratum_counts[stratum] = stratum_counts.get(stratum, 0) + 1
+
+            src = meta.get("source_id", "unspecified")
+            source_counts[src] = source_counts.get(src, 0) + 1
+
             ent_len = len(entities)
             sentence_counts_by_entity_num[ent_len] = sentence_counts_by_entity_num.get(ent_len, 0) + 1
 
-            # Accumulate entity counts
             for ent in entities:
                 lbl = ent.get("label", "UNKNOWN")
                 entity_counts[lbl] = entity_counts.get(lbl, 0) + 1
 
-            # Accumulate token tag counts
             try:
                 tokens, tags = text_to_bio(text, entities)
                 for t in tags:
@@ -392,7 +529,6 @@ class DatasetValidator:
             except Exception:
                 pass
 
-            # Per-record checks
             rec_issues = self.validate_single_record(rec)
             for iss in rec_issues:
                 if iss.severity == "ERROR":
@@ -414,6 +550,9 @@ class DatasetValidator:
             entity_counts=entity_counts,
             tag_counts=tag_counts,
             sentence_counts_by_entity_num=sentence_counts_by_entity_num,
+            stratum_counts=stratum_counts,
+            source_counts=source_counts,
+            hard_negative_count=hard_negatives,
             is_clean=(error_count == 0),
         )
 

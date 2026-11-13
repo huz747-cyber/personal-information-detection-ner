@@ -1,13 +1,16 @@
 """
-Stratified and Leakage-Safe Dataset Splitter.
+Stratified, Document-Grouped, and Leakage-Safe Dataset Splitter.
 
 Splits Malaysian NER dataset records into reproducible 70% Train, 15% Validation,
 and 15% Test subsets, enforcing:
 1. Determinism: Fixed seed ensures bit-for-bit reproducibility.
-2. Stratification: Preserves proportional representation across linguistic strata
-   (Malay, English, Manglish, Mixed, Chinese, Indian, Western) and entity densities.
-3. Grouping / Leakage Prevention: Sentences sharing identical root text or template
-   clusters are assigned to the same partition to prevent cross-split data leakage.
+2. Group Isolation: Sentences sharing the same document_id or synthetic template_id
+   are clustered into an indivisible unit so that no related sentences or templates
+   can ever cross partition boundaries.
+3. Multi-Factor Stratification: Balances partitions proportionally across:
+   - 7 Linguistic Strata (Formal Malay, English, Manglish, Mixed, Chinese, Indian, Baseline).
+   - Data Origin (Publicly sourced, Independently written, Synthetic).
+   - Entity Distributions & Hard Negatives.
 
 Author: AI/ML Club
 License: MIT
@@ -47,11 +50,41 @@ class DatasetSplitter:
         norm = " ".join(text.lower().split())
         return hashlib.md5(norm.encode("utf-8")).hexdigest()
 
+    def get_cluster_key(self, record: Dict[str, Any]) -> str:
+        """Determines the indivisible grouping key for a record to prevent split leakage.
+
+        Priority:
+        1. document_id (if part of a multi-sentence public document)
+        2. template_id (if derived from a parameterized synthetic template)
+        3. Normalized sentence text hash (exact / normalized duplicate grouping)
+        """
+        meta = record.get("metadata", record.get("meta", {}))
+        if meta.get("document_id"):
+            return f"doc_{meta['document_id']}"
+        if meta.get("template_id"):
+            return f"tpl_{meta['template_id']}"
+        return f"hash_{self.compute_sentence_hash(record.get('text', ''))}"
+
+    def get_stratum_key(self, record: Dict[str, Any]) -> str:
+        """Computes multi-factor stratification key based on linguistic stratum, origin, and entity profile."""
+        meta = record.get("metadata", record.get("meta", {}))
+        stratum = meta.get("stratum", meta.get("language", "general"))
+        source_type = meta.get("source_type", meta.get("data_type", "synthetic"))
+        is_hard_negative = meta.get("is_hard_negative", meta.get("hard_negative", False))
+
+        entities = record.get("entities", [])
+        has_per = any(e.get("label") == "PERSON" for e in entities)
+        has_org = any(e.get("label") == "ORGANIZATION" for e in entities)
+        has_loc = any(e.get("label") == "LOCATION" for e in entities)
+
+        ent_profile = "neg" if is_hard_negative or not entities else f"P{int(has_per)}O{int(has_org)}L{int(has_loc)}"
+        return f"{stratum}|{source_type}|{ent_profile}"
+
     def split_records(
         self,
         records: List[Dict[str, Any]],
     ) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]], List[Dict[str, Any]]]:
-        """Partitions records into (train, val, test) using stratified group splitting.
+        """Partitions records into (train, val, test) using stratified document-group splitting.
 
         Args:
             records: List of internal records with 'text', 'entities', and 'metadata'.
@@ -61,42 +94,32 @@ class DatasetSplitter:
         """
         rng = random.Random(self.seed)
 
-        # 1. Group records by exact normalized sentence to prevent split leakage
-        groups: Dict[str, List[Dict[str, Any]]] = {}
+        # 1. Cluster records by document_id / template_id / text hash
+        clusters: Dict[str, List[Dict[str, Any]]] = {}
         for rec in records:
-            h = self.compute_sentence_hash(rec.get("text", ""))
-            groups.setdefault(h, []).append(rec)
+            key = self.get_cluster_key(rec)
+            clusters.setdefault(key, []).append(rec)
 
-        # 2. Organize groups into strata based on metadata context or entity characteristics
+        # 2. Assign clusters to strata based on representative record characteristics
         strata: Dict[str, List[List[Dict[str, Any]]]] = {}
-        for h, group_records in groups.items():
+        for cluster_key, group_records in clusters.items():
             first_rec = group_records[0]
-            meta = first_rec.get("metadata", {})
-            # Primary stratification key: stratum/context_type, fallback to language, fallback to entity presence
-            stratum_key = meta.get(
-                "stratum",
-                meta.get("context_type", meta.get("language", "general"))
-            )
-            # Refine stratum key by whether sentence contains entities
-            has_entities = bool(first_rec.get("entities"))
-            combined_key = f"{stratum_key}_has_ent_{has_entities}"
-            strata.setdefault(combined_key, []).append(group_records)
+            stratum_key = self.get_stratum_key(first_rec)
+            strata.setdefault(stratum_key, []).append(group_records)
 
         train: List[Dict[str, Any]] = []
         val: List[Dict[str, Any]] = []
         test: List[Dict[str, Any]] = []
 
-        # 3. For each stratum, shuffle groups deterministically and allocate
+        # 3. For each stratum, shuffle clusters deterministically and allocate
         for key in sorted(strata.keys()):
             group_list = strata[key]
-            # Deterministic shuffle per stratum
             rng.shuffle(group_list)
 
             n_total = len(group_list)
             n_train = int(round(n_total * self.train_ratio))
             n_val = int(round(n_total * self.val_ratio))
 
-            # Ensure every stratum with at least 3 items gets at least 1 in val and test
             if n_total >= 3:
                 if n_val == 0:
                     n_val = 1
@@ -120,7 +143,7 @@ class DatasetSplitter:
             for g in test_groups:
                 test.extend(g)
 
-        # Final deterministic sort by ID to ensure stable ordering
+        # Deterministic sort by record ID for reproducibility
         train.sort(key=lambda x: str(x.get("id", "")))
         val.sort(key=lambda x: str(x.get("id", "")))
         test.sort(key=lambda x: str(x.get("id", "")))
@@ -131,7 +154,7 @@ class DatasetSplitter:
         self,
         input_path: Union[str, Path],
         output_dir: Union[str, Path],
-    ) -> Dict[str, int]:
+    ) -> Dict[str, Any]:
         """Loads a dataset file, executes stratified partition, and writes train/val/test .jsonl files.
 
         Args:
@@ -139,7 +162,7 @@ class DatasetSplitter:
             output_dir: Directory where train.jsonl, val.jsonl, test.jsonl will be saved.
 
         Returns:
-            Dictionary with counts of records in each split.
+            Dictionary with counts and proportions of records in each split.
         """
         in_p = Path(input_path)
         out_d = Path(output_dir)
@@ -159,26 +182,13 @@ class DatasetSplitter:
         export_to_doccano(val, out_d / "val.jsonl")
         export_to_doccano(test, out_d / "test.jsonl")
 
+        total = len(records)
         return {
-            "total": len(records),
+            "total": total,
             "train": len(train),
+            "train_pct": round((len(train) / total) * 100, 2) if total > 0 else 0,
             "val": len(val),
+            "val_pct": round((len(val) / total) * 100, 2) if total > 0 else 0,
             "test": len(test),
+            "test_pct": round((len(test) / total) * 100, 2) if total > 0 else 0,
         }
-
-
-if __name__ == "__main__":
-    import argparse
-
-    parser = argparse.ArgumentParser(description="Stratified Dataset Splitter")
-    parser.add_argument("--input", required=True, help="Input dataset path (.jsonl or .json)")
-    parser.add_argument("--output-dir", required=True, help="Output directory for splits")
-    parser.add_argument("--seed", type=int, default=42, help="Random seed (default 42)")
-    args = parser.parse_args()
-
-    splitter = DatasetSplitter(seed=args.seed)
-    counts = splitter.split_and_save(args.input, args.output_dir)
-    print(f"Partitioned {counts['total']} records:")
-    print(f"  Train: {counts['train']} ({counts['train']/counts['total']:.1%}) -> {args.output_dir}/train.jsonl")
-    print(f"  Val:   {counts['val']} ({counts['val']/counts['total']:.1%}) -> {args.output_dir}/val.jsonl")
-    print(f"  Test:  {counts['test']} ({counts['test']/counts['total']:.1%}) -> {args.output_dir}/test.jsonl")

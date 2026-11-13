@@ -1,0 +1,4678 @@
+{
+  "total_records": 1000,
+  "unique_records": 481,
+  "duplicate_clusters_count": 519,
+  "clusters": [
+    {
+      "primary_id": "my-malay-001",
+      "duplicate_ids": [
+        "my-malay-031"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.886,
+      "representative_text": "Menteri Kementerian Pertanian dan Keterjaminan Makanan, Ahmad Faiz bin Zulkifli telah membentangkan perancangan peruntukan pembangunan infrastruktur di Putrajaya pada 3 Julai 2024 sempena program siri 31."
+    },
+    {
+      "primary_id": "my-malay-003",
+      "duplicate_ids": [
+        "my-malay-033"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.863,
+      "representative_text": "Ketua Setiausaha Kementerian Kerja Raya dan Zulkifli bin Ismail menghadiri taklimat pengurusan strategik di Kuantan pada 5 September 2024 bagi sesi 33."
+    },
+    {
+      "primary_id": "my-malay-004",
+      "duplicate_ids": [
+        "my-malay-034"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.853,
+      "representative_text": "Menteri Kementerian Pengangkutan Malaysia, Azman bin Hashim mengumumkan projek rintis fertigasi moden bagi pesawah di Ipoh pada 6 Oktober 2024 sempena program siri 34."
+    },
+    {
+      "primary_id": "my-malay-005",
+      "duplicate_ids": [
+        "my-malay-035"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.856,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Pelaburan, Perdagangan dan Industri telah mengadakan lawatan audit ke Kuching pada 7 November 2024 bagi fasa 35."
+    },
+    {
+      "primary_id": "my-malay-006",
+      "duplicate_ids": [
+        "my-malay-036"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.859,
+      "representative_text": "Ketua Setiausaha Kementerian Komunikasi dan Nik Nazmi bin Nik Ahmad menghadiri taklimat pengurusan strategik di Kota Kinabalu pada 8 Disember 2024 bagi sesi 36."
+    },
+    {
+      "primary_id": "my-malay-007",
+      "duplicate_ids": [
+        "my-malay-037"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.879,
+      "representative_text": "Menteri Kementerian Perpaduan Negara, Mohamad Sabu bin Mahmood mengadakan sesi libat urus bersama pemimpin komuniti setempat di Shah Alam pada 9 Januari 2024 sempena program siri 37."
+    },
+    {
+      "primary_id": "my-malay-009",
+      "duplicate_ids": [
+        "my-malay-039"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.85,
+      "representative_text": "Ketua Setiausaha Kementerian Belia dan Sukan dan Saifuddin bin Nasution menghadiri taklimat pengurusan strategik di Seremban pada 11 Mac 2024 bagi sesi 39."
+    },
+    {
+      "primary_id": "my-malay-010",
+      "duplicate_ids": [
+        "my-malay-040"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.87,
+      "representative_text": "Menteri Kementerian Sumber Asli dan Kelestarian Alam, Rafizi bin Ramli merumuskan usul persidangan perpaduan antara kaum di Johor Bahru pada 12 April 2024 sempena program siri 40."
+    },
+    {
+      "primary_id": "my-malay-011",
+      "duplicate_ids": [
+        "my-malay-041"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.858,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Pertanian dan Keterjaminan Makanan telah mengadakan lawatan audit ke Alor Setar pada 13 Mei 2024 bagi fasa 41."
+    },
+    {
+      "primary_id": "my-malay-012",
+      "duplicate_ids": [
+        "my-malay-042"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.885,
+      "representative_text": "Ketua Setiausaha Kementerian Sumber Manusia dan Mohd Ridzuan bin Abdullah menghadiri taklimat pengurusan strategik di Kota Bharu pada 14 Jun 2024 bagi sesi 42."
+    },
+    {
+      "primary_id": "my-malay-013",
+      "duplicate_ids": [
+        "my-malay-043"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.883,
+      "representative_text": "Menteri Kementerian Kerja Raya, Zulkifli bin Ismail merasmikan pelancaran pusat khidmat bersepadu warga emas di Kuala Terengganu pada 15 Julai 2024 sempena program siri 43."
+    },
+    {
+      "primary_id": "my-malay-015",
+      "duplicate_ids": [
+        "my-malay-045"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.865,
+      "representative_text": "Ketua Setiausaha Kementerian Pelaburan, Perdagangan dan Industri dan Khairul Anuar bin Ramli menghadiri taklimat pengurusan strategik di Melaka pada 17 September 2024 bagi sesi 45."
+    },
+    {
+      "primary_id": "my-malay-016",
+      "duplicate_ids": [
+        "my-malay-046"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.851,
+      "representative_text": "Menteri Kementerian Komunikasi, Nik Nazmi bin Nik Ahmad menyampaikan watikah pelantikan anggota majlis penasihat di Putrajaya pada 18 Oktober 2024 sempena program siri 46."
+    },
+    {
+      "primary_id": "my-malay-017",
+      "duplicate_ids": [
+        "my-malay-047"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.851,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Perpaduan Negara telah mengadakan lawatan audit ke Kuala Lumpur pada 19 November 2024 bagi fasa 47."
+    },
+    {
+      "primary_id": "my-malay-018",
+      "duplicate_ids": [
+        "my-malay-048"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.856,
+      "representative_text": "Ketua Setiausaha Kementerian Kemajuan Desa dan Wilayah dan Fadillah bin Yusof menghadiri taklimat pengurusan strategik di Kuantan pada 20 Disember 2024 bagi sesi 48."
+    },
+    {
+      "primary_id": "my-malay-019",
+      "duplicate_ids": [
+        "my-malay-049"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.863,
+      "representative_text": "Menteri Kementerian Belia dan Sukan, Saifuddin bin Nasution menghadiri majlis dialog awam mengenai pengurusan sisa pepejal di Ipoh pada 21 Januari 2024 sempena program siri 49."
+    },
+    {
+      "primary_id": "my-malay-020",
+      "duplicate_ids": [
+        "my-malay-050"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.856,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Sumber Asli dan Kelestarian Alam telah mengadakan lawatan audit ke Kuching pada 22 Februari 2024 bagi fasa 50."
+    },
+    {
+      "primary_id": "my-malay-021",
+      "duplicate_ids": [
+        "my-malay-051"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.875,
+      "representative_text": "Ketua Setiausaha Kementerian Pertanian dan Keterjaminan Makanan dan Ahmad Faiz bin Zulkifli menghadiri taklimat pengurusan strategik di Kota Kinabalu pada 23 Mac 2024 bagi sesi 51."
+    },
+    {
+      "primary_id": "my-malay-022",
+      "duplicate_ids": [
+        "my-malay-052"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.876,
+      "representative_text": "Menteri Kementerian Sumber Manusia, Mohd Ridzuan bin Abdullah mempengerusikan mesyuarat khas penyelarasan dasar keselamatan di Shah Alam pada 24 April 2024 sempena program siri 52."
+    },
+    {
+      "primary_id": "my-malay-024",
+      "duplicate_ids": [
+        "my-malay-054"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.871,
+      "representative_text": "Ketua Setiausaha Kementerian Pengangkutan Malaysia dan Azman bin Hashim menghadiri taklimat pengurusan strategik di Seremban pada 26 Jun 2024 bagi sesi 54."
+    },
+    {
+      "primary_id": "my-malay-025",
+      "duplicate_ids": [
+        "my-malay-055"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.902,
+      "representative_text": "Menteri Kementerian Pelaburan, Perdagangan dan Industri, Khairul Anuar bin Ramli meninjau kemajuan kerja-kerja pembaikan tebatan banjir di Johor Bahru pada 27 Julai 2024 sempena program siri 55."
+    },
+    {
+      "primary_id": "my-malay-027",
+      "duplicate_ids": [
+        "my-malay-057"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.862,
+      "representative_text": "Ketua Setiausaha Kementerian Perpaduan Negara dan Mohamad Sabu bin Mahmood menghadiri taklimat pengurusan strategik di Kota Bharu pada 1 September 2024 bagi sesi 57."
+    },
+    {
+      "primary_id": "my-malay-028",
+      "duplicate_ids": [
+        "my-malay-058"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.875,
+      "representative_text": "Menteri Kementerian Kemajuan Desa dan Wilayah, Fadillah bin Yusof melancarkan inisiatif pendigitalan perkhidmatan kaunter di Kuala Terengganu pada 2 Oktober 2024 sempena program siri 58."
+    },
+    {
+      "primary_id": "my-malay-030",
+      "duplicate_ids": [
+        "my-malay-060"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.874,
+      "representative_text": "Ketua Setiausaha Kementerian Sumber Asli dan Kelestarian Alam dan Rafizi bin Ramli menghadiri taklimat pengurusan strategik di Melaka pada 4 Disember 2024 bagi sesi 60."
+    },
+    {
+      "primary_id": "my-malay-001",
+      "duplicate_ids": [
+        "my-malay-061"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "Menteri Kementerian Pertanian dan Keterjaminan Makanan, Ahmad Faiz bin Zulkifli telah membentangkan perancangan peruntukan pembangunan infrastruktur di Putrajaya pada 5 Januari 2024 sempena program siri 61."
+    },
+    {
+      "primary_id": "my-malay-002",
+      "duplicate_ids": [
+        "my-malay-062"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.946,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Sumber Manusia telah mengadakan lawatan audit ke Kuala Lumpur pada 6 Februari 2024 bagi fasa 62."
+    },
+    {
+      "primary_id": "my-malay-003",
+      "duplicate_ids": [
+        "my-malay-063"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.935,
+      "representative_text": "Ketua Setiausaha Kementerian Kerja Raya dan Zulkifli bin Ismail menghadiri taklimat pengurusan strategik di Kuantan pada 7 Mac 2024 bagi sesi 63."
+    },
+    {
+      "primary_id": "my-malay-004",
+      "duplicate_ids": [
+        "my-malay-064"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.939,
+      "representative_text": "Menteri Kementerian Pengangkutan Malaysia, Azman bin Hashim mengumumkan projek rintis fertigasi moden bagi pesawah di Ipoh pada 8 April 2024 sempena program siri 64."
+    },
+    {
+      "primary_id": "my-malay-005",
+      "duplicate_ids": [
+        "my-malay-065"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.938,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Pelaburan, Perdagangan dan Industri telah mengadakan lawatan audit ke Kuching pada 9 Mei 2024 bagi fasa 65."
+    },
+    {
+      "primary_id": "my-malay-006",
+      "duplicate_ids": [
+        "my-malay-066"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.943,
+      "representative_text": "Ketua Setiausaha Kementerian Komunikasi dan Nik Nazmi bin Nik Ahmad menghadiri taklimat pengurusan strategik di Kota Kinabalu pada 10 Jun 2024 bagi sesi 66."
+    },
+    {
+      "primary_id": "my-malay-007",
+      "duplicate_ids": [
+        "my-malay-067"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.938,
+      "representative_text": "Menteri Kementerian Perpaduan Negara, Mohamad Sabu bin Mahmood mengadakan sesi libat urus bersama pemimpin komuniti setempat di Shah Alam pada 11 Julai 2024 sempena program siri 67."
+    },
+    {
+      "primary_id": "my-malay-008",
+      "duplicate_ids": [
+        "my-malay-068"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.927,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Kemajuan Desa dan Wilayah telah mengadakan lawatan audit ke Kangar pada 12 Ogos 2024 bagi fasa 68."
+    },
+    {
+      "primary_id": "my-malay-009",
+      "duplicate_ids": [
+        "my-malay-069"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.93,
+      "representative_text": "Ketua Setiausaha Kementerian Belia dan Sukan dan Saifuddin bin Nasution menghadiri taklimat pengurusan strategik di Seremban pada 13 September 2024 bagi sesi 69."
+    },
+    {
+      "primary_id": "my-malay-010",
+      "duplicate_ids": [
+        "my-malay-070"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.942,
+      "representative_text": "Menteri Kementerian Sumber Asli dan Kelestarian Alam, Rafizi bin Ramli merumuskan usul persidangan perpaduan antara kaum di Johor Bahru pada 14 Oktober 2024 sempena program siri 70."
+    },
+    {
+      "primary_id": "my-malay-011",
+      "duplicate_ids": [
+        "my-malay-071"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.942,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Pertanian dan Keterjaminan Makanan telah mengadakan lawatan audit ke Alor Setar pada 15 November 2024 bagi fasa 71."
+    },
+    {
+      "primary_id": "my-malay-012",
+      "duplicate_ids": [
+        "my-malay-072"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.941,
+      "representative_text": "Ketua Setiausaha Kementerian Sumber Manusia dan Mohd Ridzuan bin Abdullah menghadiri taklimat pengurusan strategik di Kota Bharu pada 16 Disember 2024 bagi sesi 72."
+    },
+    {
+      "primary_id": "my-malay-013",
+      "duplicate_ids": [
+        "my-malay-073"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.943,
+      "representative_text": "Menteri Kementerian Kerja Raya, Zulkifli bin Ismail merasmikan pelancaran pusat khidmat bersepadu warga emas di Kuala Terengganu pada 17 Januari 2024 sempena program siri 73."
+    },
+    {
+      "primary_id": "my-malay-014",
+      "duplicate_ids": [
+        "my-malay-074"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.939,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Pengangkutan Malaysia telah mengadakan lawatan audit ke George Town pada 18 Februari 2024 bagi fasa 74."
+    },
+    {
+      "primary_id": "my-malay-015",
+      "duplicate_ids": [
+        "my-malay-075"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.942,
+      "representative_text": "Ketua Setiausaha Kementerian Pelaburan, Perdagangan dan Industri dan Khairul Anuar bin Ramli menghadiri taklimat pengurusan strategik di Melaka pada 19 Mac 2024 bagi sesi 75."
+    },
+    {
+      "primary_id": "my-malay-016",
+      "duplicate_ids": [
+        "my-malay-076"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.932,
+      "representative_text": "Menteri Kementerian Komunikasi, Nik Nazmi bin Nik Ahmad menyampaikan watikah pelantikan anggota majlis penasihat di Putrajaya pada 20 April 2024 sempena program siri 76."
+    },
+    {
+      "primary_id": "my-malay-017",
+      "duplicate_ids": [
+        "my-malay-077"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.921,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Perpaduan Negara telah mengadakan lawatan audit ke Kuala Lumpur pada 21 Mei 2024 bagi fasa 77."
+    },
+    {
+      "primary_id": "my-malay-018",
+      "duplicate_ids": [
+        "my-malay-078"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.925,
+      "representative_text": "Ketua Setiausaha Kementerian Kemajuan Desa dan Wilayah dan Fadillah bin Yusof menghadiri taklimat pengurusan strategik di Kuantan pada 22 Jun 2024 bagi sesi 78."
+    },
+    {
+      "primary_id": "my-malay-019",
+      "duplicate_ids": [
+        "my-malay-079"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.925,
+      "representative_text": "Menteri Kementerian Belia dan Sukan, Saifuddin bin Nasution menghadiri majlis dialog awam mengenai pengurusan sisa pepejal di Ipoh pada 23 Julai 2024 sempena program siri 79."
+    },
+    {
+      "primary_id": "my-malay-020",
+      "duplicate_ids": [
+        "my-malay-080"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.954,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Sumber Asli dan Kelestarian Alam telah mengadakan lawatan audit ke Kuching pada 24 Ogos 2024 bagi fasa 80."
+    },
+    {
+      "primary_id": "my-malay-021",
+      "duplicate_ids": [
+        "my-malay-081"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "Ketua Setiausaha Kementerian Pertanian dan Keterjaminan Makanan dan Ahmad Faiz bin Zulkifli menghadiri taklimat pengurusan strategik di Kota Kinabalu pada 25 September 2024 bagi sesi 81."
+    },
+    {
+      "primary_id": "my-malay-022",
+      "duplicate_ids": [
+        "my-malay-082"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.942,
+      "representative_text": "Menteri Kementerian Sumber Manusia, Mohd Ridzuan bin Abdullah mempengerusikan mesyuarat khas penyelarasan dasar keselamatan di Shah Alam pada 26 Oktober 2024 sempena program siri 82."
+    },
+    {
+      "primary_id": "my-malay-023",
+      "duplicate_ids": [
+        "my-malay-083"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.933,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Kerja Raya telah mengadakan lawatan audit ke Kangar pada 27 November 2024 bagi fasa 83."
+    },
+    {
+      "primary_id": "my-malay-024",
+      "duplicate_ids": [
+        "my-malay-084"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.944,
+      "representative_text": "Ketua Setiausaha Kementerian Pengangkutan Malaysia dan Azman bin Hashim menghadiri taklimat pengurusan strategik di Seremban pada 28 Disember 2024 bagi sesi 84."
+    },
+    {
+      "primary_id": "my-malay-025",
+      "duplicate_ids": [
+        "my-malay-085"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.943,
+      "representative_text": "Menteri Kementerian Pelaburan, Perdagangan dan Industri, Khairul Anuar bin Ramli meninjau kemajuan kerja-kerja pembaikan tebatan banjir di Johor Bahru pada 1 Januari 2024 sempena program siri 85."
+    },
+    {
+      "primary_id": "my-malay-026",
+      "duplicate_ids": [
+        "my-malay-086"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.941,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Komunikasi telah mengadakan lawatan audit ke Alor Setar pada 2 Februari 2024 bagi fasa 86."
+    },
+    {
+      "primary_id": "my-malay-027",
+      "duplicate_ids": [
+        "my-malay-087"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.933,
+      "representative_text": "Ketua Setiausaha Kementerian Perpaduan Negara dan Mohamad Sabu bin Mahmood menghadiri taklimat pengurusan strategik di Kota Bharu pada 3 Mac 2024 bagi sesi 87."
+    },
+    {
+      "primary_id": "my-malay-028",
+      "duplicate_ids": [
+        "my-malay-088"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.938,
+      "representative_text": "Menteri Kementerian Kemajuan Desa dan Wilayah, Fadillah bin Yusof melancarkan inisiatif pendigitalan perkhidmatan kaunter di Kuala Terengganu pada 4 April 2024 sempena program siri 88."
+    },
+    {
+      "primary_id": "my-malay-029",
+      "duplicate_ids": [
+        "my-malay-089"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.919,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Belia dan Sukan telah mengadakan lawatan audit ke George Town pada 5 Mei 2024 bagi fasa 89."
+    },
+    {
+      "primary_id": "my-malay-030",
+      "duplicate_ids": [
+        "my-malay-090"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.932,
+      "representative_text": "Ketua Setiausaha Kementerian Sumber Asli dan Kelestarian Alam dan Rafizi bin Ramli menghadiri taklimat pengurusan strategik di Melaka pada 6 Jun 2024 bagi sesi 90."
+    },
+    {
+      "primary_id": "my-malay-001",
+      "duplicate_ids": [
+        "my-malay-091"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.886,
+      "representative_text": "Menteri Kementerian Pertanian dan Keterjaminan Makanan, Ahmad Faiz bin Zulkifli telah membentangkan perancangan peruntukan pembangunan infrastruktur di Putrajaya pada 7 Julai 2024 sempena program siri 91."
+    },
+    {
+      "primary_id": "my-malay-032",
+      "duplicate_ids": [
+        "my-malay-092"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.922,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Sumber Manusia telah mengadakan lawatan audit ke Kuala Lumpur pada 8 Ogos 2024 bagi fasa 92."
+    },
+    {
+      "primary_id": "my-malay-003",
+      "duplicate_ids": [
+        "my-malay-093"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.85,
+      "representative_text": "Ketua Setiausaha Kementerian Kerja Raya dan Zulkifli bin Ismail menghadiri taklimat pengurusan strategik di Kuantan pada 9 September 2024 bagi sesi 93."
+    },
+    {
+      "primary_id": "my-malay-005",
+      "duplicate_ids": [
+        "my-malay-095"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.85,
+      "representative_text": "Satu delegasi teknikal daripada Kementerian Pelaburan, Perdagangan dan Industri telah mengadakan lawatan audit ke Kuching pada 11 November 2024 bagi fasa 95."
+    },
+    {
+      "primary_id": "my-malay-096",
+      "duplicate_ids": [
+        "my-malay-136"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.855,
+      "representative_text": "Pengarah Nurul Izzah binti Rosli bersama perwakilan Majlis Bandaraya Petaling Jaya menandatangani memorandum persefahaman berkaitan latihan vokasional di Teluk Intan pada Mei 2023 di bawah inisiatif 41."
+    },
+    {
+      "primary_id": "my-malay-097",
+      "duplicate_ids": [
+        "my-malay-137"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.851,
+      "representative_text": "Pengarah Mohd Shahril bin Kamaruddin bersama perwakilan Hospital Selayang menyampaikan syarahan perdana mengenai cabaran kelestarian alam di Kluang pada Jun 2024 di bawah inisiatif 42."
+    },
+    {
+      "primary_id": "my-malay-098",
+      "duplicate_ids": [
+        "my-malay-138"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.862,
+      "representative_text": "Pengarah Faizah binti Zainal bersama perwakilan Universiti Sains Malaysia menghadiri sesi penilaian kualiti perkhidmatan klinikal di Segamat pada Julai 2023 di bawah inisiatif 43."
+    },
+    {
+      "primary_id": "my-malay-100",
+      "duplicate_ids": [
+        "my-malay-140"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.85,
+      "representative_text": "Pengarah Zainab binti Mahmud bersama perwakilan Jabatan Perhutanan Semenanjung Malaysia meninjau kemudahan makmal penyelidikan termaju bertempat di Taiping pada September 2023 di bawah inisiatif 45."
+    },
+    {
+      "primary_id": "my-malay-097",
+      "duplicate_ids": [
+        "my-malay-157"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.891,
+      "representative_text": "Pengarah Mohd Shahril bin Kamaruddin bersama perwakilan Hospital Sungai Buloh menyampaikan syarahan perdana mengenai cabaran kelestarian alam di Rawang pada Februari 2024 di bawah inisiatif 62."
+    },
+    {
+      "primary_id": "my-malay-098",
+      "duplicate_ids": [
+        "my-malay-158"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.916,
+      "representative_text": "Pengarah Faizah binti Zainal bersama perwakilan Universiti Putra Malaysia menghadiri sesi penilaian kualiti perkhidmatan klinikal di Batu Pahat pada Mac 2023 di bawah inisiatif 63."
+    },
+    {
+      "primary_id": "my-malay-101",
+      "duplicate_ids": [
+        "my-malay-161"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.884,
+      "representative_text": "Pengarah Hafiz bin Jamaluddin bersama perwakilan Hospital Selayang menandatangani memorandum persefahaman berkaitan latihan vokasional di Kluang pada Jun 2024 di bawah inisiatif 66."
+    },
+    {
+      "primary_id": "my-malay-102",
+      "duplicate_ids": [
+        "my-malay-162"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.91,
+      "representative_text": "Pengarah Faridah binti Othman bersama perwakilan Universiti Sains Malaysia menyampaikan syarahan perdana mengenai cabaran kelestarian alam di Segamat pada Julai 2023 di bawah inisiatif 67."
+    },
+    {
+      "primary_id": "my-malay-105",
+      "duplicate_ids": [
+        "my-malay-165"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.855,
+      "representative_text": "Pengarah Kamarul bin Baharin bersama perwakilan Hospital Sungai Buloh meninjau kemudahan makmal penyelidikan termaju bertempat di Muar pada Oktober 2024 di bawah inisiatif 70."
+    },
+    {
+      "primary_id": "my-malay-106",
+      "duplicate_ids": [
+        "my-malay-166"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.904,
+      "representative_text": "Pengarah Nurul Izzah binti Rosli bersama perwakilan Universiti Putra Malaysia menandatangani memorandum persefahaman berkaitan latihan vokasional di Kulim pada November 2023 di bawah inisiatif 71."
+    },
+    {
+      "primary_id": "my-malay-109",
+      "duplicate_ids": [
+        "my-malay-169"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.864,
+      "representative_text": "Pengarah Ahmad Fikri bin Mansor bersama perwakilan Hospital Selayang mempengerusikan mesyuarat perancangan tata kelola kewangan di Rawang pada Februari 2024 di bawah inisiatif 74."
+    },
+    {
+      "primary_id": "my-malay-110",
+      "duplicate_ids": [
+        "my-malay-170"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.901,
+      "representative_text": "Pengarah Zainab binti Mahmud bersama perwakilan Universiti Sains Malaysia meninjau kemudahan makmal penyelidikan termaju bertempat di Batu Pahat pada Mac 2023 di bawah inisiatif 75."
+    },
+    {
+      "primary_id": "my-malay-171",
+      "duplicate_ids": [
+        "my-malay-180"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.881,
+      "representative_text": "Ahmad Shauki bin Zakaria telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Johor di Johor mengikut warta bil 109."
+    },
+    {
+      "primary_id": "my-malay-171",
+      "duplicate_ids": [
+        "my-malay-181"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.859,
+      "representative_text": "Ahmad Shauki bin Hamzah telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Melaka di Melaka mengikut warta bil 110."
+    },
+    {
+      "primary_id": "my-malay-172",
+      "duplicate_ids": [
+        "my-malay-182"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.866,
+      "representative_text": "Ahmad Shauki bin Affendi telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Perlis di Perlis mengikut warta bil 111."
+    },
+    {
+      "primary_id": "my-malay-173",
+      "duplicate_ids": [
+        "my-malay-183"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.881,
+      "representative_text": "Ahmad Shauki bin Kadir telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Terengganu di Terengganu mengikut warta bil 112."
+    },
+    {
+      "primary_id": "my-malay-174",
+      "duplicate_ids": [
+        "my-malay-184"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.883,
+      "representative_text": "Ahmad Shauki bin Musa telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Kelantan di Kelantan mengikut warta bil 113."
+    },
+    {
+      "primary_id": "my-malay-175",
+      "duplicate_ids": [
+        "my-malay-185"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.881,
+      "representative_text": "Ahmad Shauki bin Salim telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Sarawak di Sarawak mengikut warta bil 114."
+    },
+    {
+      "primary_id": "my-malay-176",
+      "duplicate_ids": [
+        "my-malay-186"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.885,
+      "representative_text": "Ahmad Shauki bin Daud telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Sabah di Sabah mengikut warta bil 115."
+    },
+    {
+      "primary_id": "my-malay-177",
+      "duplicate_ids": [
+        "my-malay-187"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.886,
+      "representative_text": "Ahmad Shauki bin Nordin telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Pahang di Pahang mengikut warta bil 116."
+    },
+    {
+      "primary_id": "my-malay-178",
+      "duplicate_ids": [
+        "my-malay-188"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.885,
+      "representative_text": "Ahmad Shauki bin Hassan telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Kedah di Kedah mengikut warta bil 117."
+    },
+    {
+      "primary_id": "my-malay-171",
+      "duplicate_ids": [
+        "my-malay-189"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.887,
+      "representative_text": "Ahmad Shauki bin Zakaria telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Perak di Perak mengikut warta bil 118."
+    },
+    {
+      "primary_id": "my-malay-172",
+      "duplicate_ids": [
+        "my-malay-190"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.859,
+      "representative_text": "Ahmad Shauki bin Hamzah telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Johor di Johor mengikut warta bil 119."
+    },
+    {
+      "primary_id": "my-malay-171",
+      "duplicate_ids": [
+        "my-malay-191"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.859,
+      "representative_text": "Ahmad Shauki bin Affendi telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Melaka di Melaka mengikut warta bil 120."
+    },
+    {
+      "primary_id": "my-malay-172",
+      "duplicate_ids": [
+        "my-malay-192"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.872,
+      "representative_text": "Ahmad Shauki bin Kadir telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Perlis di Perlis mengikut warta bil 121."
+    },
+    {
+      "primary_id": "my-malay-173",
+      "duplicate_ids": [
+        "my-malay-193"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.881,
+      "representative_text": "Ahmad Shauki bin Musa telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Terengganu di Terengganu mengikut warta bil 122."
+    },
+    {
+      "primary_id": "my-malay-174",
+      "duplicate_ids": [
+        "my-malay-194"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.869,
+      "representative_text": "Ahmad Shauki bin Salim telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Kelantan di Kelantan mengikut warta bil 123."
+    },
+    {
+      "primary_id": "my-malay-175",
+      "duplicate_ids": [
+        "my-malay-195"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.888,
+      "representative_text": "Ahmad Shauki bin Daud telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Sarawak di Sarawak mengikut warta bil 124."
+    },
+    {
+      "primary_id": "my-malay-176",
+      "duplicate_ids": [
+        "my-malay-196"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.878,
+      "representative_text": "Ahmad Shauki bin Nordin telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Sabah di Sabah mengikut warta bil 125."
+    },
+    {
+      "primary_id": "my-malay-177",
+      "duplicate_ids": [
+        "my-malay-197"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.88,
+      "representative_text": "Ahmad Shauki bin Hassan telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Pahang di Pahang mengikut warta bil 126."
+    },
+    {
+      "primary_id": "my-malay-171",
+      "duplicate_ids": [
+        "my-malay-198"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.887,
+      "representative_text": "Ahmad Shauki bin Zakaria telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Kedah di Kedah mengikut warta bil 127."
+    },
+    {
+      "primary_id": "my-malay-172",
+      "duplicate_ids": [
+        "my-malay-199"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.893,
+      "representative_text": "Ahmad Shauki bin Hamzah telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Perak di Perak mengikut warta bil 128."
+    },
+    {
+      "primary_id": "my-malay-171",
+      "duplicate_ids": [
+        "my-malay-201"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.866,
+      "representative_text": "Ahmad Shauki bin Kadir telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Melaka di Melaka mengikut warta bil 130."
+    },
+    {
+      "primary_id": "my-malay-172",
+      "duplicate_ids": [
+        "my-malay-202"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.872,
+      "representative_text": "Ahmad Shauki bin Musa telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Perlis di Perlis mengikut warta bil 131."
+    },
+    {
+      "primary_id": "my-malay-173",
+      "duplicate_ids": [
+        "my-malay-203"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.875,
+      "representative_text": "Ahmad Shauki bin Salim telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Terengganu di Terengganu mengikut warta bil 132."
+    },
+    {
+      "primary_id": "my-malay-174",
+      "duplicate_ids": [
+        "my-malay-204"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.883,
+      "representative_text": "Ahmad Shauki bin Daud telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Kelantan di Kelantan mengikut warta bil 133."
+    },
+    {
+      "primary_id": "my-malay-175",
+      "duplicate_ids": [
+        "my-malay-205"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.881,
+      "representative_text": "Ahmad Shauki bin Nordin telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Sarawak di Sarawak mengikut warta bil 134."
+    },
+    {
+      "primary_id": "my-malay-176",
+      "duplicate_ids": [
+        "my-malay-206"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.871,
+      "representative_text": "Ahmad Shauki bin Hassan telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Sabah di Sabah mengikut warta bil 135."
+    },
+    {
+      "primary_id": "my-malay-171",
+      "duplicate_ids": [
+        "my-malay-207"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.868,
+      "representative_text": "Ahmad Shauki bin Zakaria telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Pahang di Pahang mengikut warta bil 136."
+    },
+    {
+      "primary_id": "my-malay-172",
+      "duplicate_ids": [
+        "my-malay-208"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.879,
+      "representative_text": "Ahmad Shauki bin Hamzah telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Kedah di Kedah mengikut warta bil 137."
+    },
+    {
+      "primary_id": "my-malay-173",
+      "duplicate_ids": [
+        "my-malay-209"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.866,
+      "representative_text": "Ahmad Shauki bin Affendi telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Perak di Perak mengikut warta bil 138."
+    },
+    {
+      "primary_id": "my-malay-174",
+      "duplicate_ids": [
+        "my-malay-210"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.878,
+      "representative_text": "Ahmad Shauki bin Kadir telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Johor di Johor mengikut warta bil 139."
+    },
+    {
+      "primary_id": "my-malay-171",
+      "duplicate_ids": [
+        "my-malay-211"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.88,
+      "representative_text": "Ahmad Shauki bin Musa telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Melaka di Melaka mengikut warta bil 140."
+    },
+    {
+      "primary_id": "my-malay-172",
+      "duplicate_ids": [
+        "my-malay-212"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.866,
+      "representative_text": "Ahmad Shauki bin Salim telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Perlis di Perlis mengikut warta bil 141."
+    },
+    {
+      "primary_id": "my-malay-173",
+      "duplicate_ids": [
+        "my-malay-213"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.888,
+      "representative_text": "Ahmad Shauki bin Daud telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Terengganu di Terengganu mengikut warta bil 142."
+    },
+    {
+      "primary_id": "my-malay-174",
+      "duplicate_ids": [
+        "my-malay-214"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.876,
+      "representative_text": "Ahmad Shauki bin Nordin telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Kelantan di Kelantan mengikut warta bil 143."
+    },
+    {
+      "primary_id": "my-malay-175",
+      "duplicate_ids": [
+        "my-malay-215"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.875,
+      "representative_text": "Ahmad Shauki bin Hassan telah menyerahkan dokumen pelantikan anggota lembaga Perbadanan Kemajuan Pertanian Negeri Sarawak di Sarawak mengikut warta bil 144."
+    },
+    {
+      "primary_id": "my-myaen-002",
+      "duplicate_ids": [
+        "my-myaen-012"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.935,
+      "representative_text": "Sime Darby Berhad announced the strategic appointment of its new independent director in Petaling Jaya during the corporate briefing for Q4 2024 under release code REL-112."
+    },
+    {
+      "primary_id": "my-myaen-004",
+      "duplicate_ids": [
+        "my-myaen-014"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.933,
+      "representative_text": "Maxis Berhad declared a single-tier interim dividend payable next month in Kuala Lumpur during the corporate briefing for Q2 2024 under release code REL-114."
+    },
+    {
+      "primary_id": "my-myaen-006",
+      "duplicate_ids": [
+        "my-myaen-016"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.937,
+      "representative_text": "IJM Corporation Berhad convened its Annual General Meeting to review the audited financial accounts in Petaling Jaya during the corporate briefing for Q4 2024 under release code REL-116."
+    },
+    {
+      "primary_id": "my-myaen-008",
+      "duplicate_ids": [
+        "my-myaen-018"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.934,
+      "representative_text": "YTL Corporation Berhad finalized the acquisition of industrial warehouse land parcels in Kuala Lumpur during the corporate briefing for Q2 2024 under release code REL-118."
+    },
+    {
+      "primary_id": "my-myaen-010",
+      "duplicate_ids": [
+        "my-myaen-020"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.944,
+      "representative_text": "Petronas Chemicals Group Berhad tabled its quarterly financial statements before institutional investors in Kuala Lumpur during the corporate briefing for Q4 2024 under release code REL-120."
+    },
+    {
+      "primary_id": "my-myaen-001",
+      "duplicate_ids": [
+        "my-myaen-021"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.852,
+      "representative_text": "The Board of Directors of Tenaga Nasional Berhad announced that Sarah Connor convened its Annual General Meeting to review the audited financial accounts in Kuala Lumpur for Q1 2024 under filing reference BURSA-121."
+    },
+    {
+      "primary_id": "my-myaen-002",
+      "duplicate_ids": [
+        "my-myaen-022"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Sime Darby Berhad announced the strategic appointment of its new independent director in Petaling Jaya during the corporate briefing for Q2 2024 under release code REL-122."
+    },
+    {
+      "primary_id": "my-myaen-004",
+      "duplicate_ids": [
+        "my-myaen-024"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "Maxis Berhad declared a single-tier interim dividend payable next month in Kuala Lumpur during the corporate briefing for Q4 2024 under release code REL-124."
+    },
+    {
+      "primary_id": "my-myaen-006",
+      "duplicate_ids": [
+        "my-myaen-026"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "IJM Corporation Berhad convened its Annual General Meeting to review the audited financial accounts in Petaling Jaya during the corporate briefing for Q2 2024 under release code REL-126."
+    },
+    {
+      "primary_id": "my-myaen-008",
+      "duplicate_ids": [
+        "my-myaen-028"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "YTL Corporation Berhad finalized the acquisition of industrial warehouse land parcels in Kuala Lumpur during the corporate briefing for Q4 2024 under release code REL-128."
+    },
+    {
+      "primary_id": "my-myaen-010",
+      "duplicate_ids": [
+        "my-myaen-030"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "Petronas Chemicals Group Berhad tabled its quarterly financial statements before institutional investors in Kuala Lumpur during the corporate briefing for Q2 2024 under release code REL-130."
+    },
+    {
+      "primary_id": "my-myaen-002",
+      "duplicate_ids": [
+        "my-myaen-032"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.935,
+      "representative_text": "Sime Darby Berhad announced the strategic appointment of its new independent director in Petaling Jaya during the corporate briefing for Q4 2024 under release code REL-132."
+    },
+    {
+      "primary_id": "my-myaen-004",
+      "duplicate_ids": [
+        "my-myaen-034"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.933,
+      "representative_text": "Maxis Berhad declared a single-tier interim dividend payable next month in Kuala Lumpur during the corporate briefing for Q2 2024 under release code REL-134."
+    },
+    {
+      "primary_id": "my-myaen-006",
+      "duplicate_ids": [
+        "my-myaen-036"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.937,
+      "representative_text": "IJM Corporation Berhad convened its Annual General Meeting to review the audited financial accounts in Petaling Jaya during the corporate briefing for Q4 2024 under release code REL-136."
+    },
+    {
+      "primary_id": "my-myaen-008",
+      "duplicate_ids": [
+        "my-myaen-038"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.934,
+      "representative_text": "YTL Corporation Berhad finalized the acquisition of industrial warehouse land parcels in Kuala Lumpur during the corporate briefing for Q2 2024 under release code REL-138."
+    },
+    {
+      "primary_id": "my-myaen-010",
+      "duplicate_ids": [
+        "my-myaen-040"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.944,
+      "representative_text": "Petronas Chemicals Group Berhad tabled its quarterly financial statements before institutional investors in Kuala Lumpur during the corporate briefing for Q4 2024 under release code REL-140."
+    },
+    {
+      "primary_id": "my-myaen-001",
+      "duplicate_ids": [
+        "my-myaen-041"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.979,
+      "representative_text": "The Board of Directors of Tenaga Nasional Berhad announced that Johan bin Ariffin convened its Annual General Meeting to review the audited financial accounts in Kuala Lumpur for Q1 2024 under filing reference BURSA-141."
+    },
+    {
+      "primary_id": "my-myaen-002",
+      "duplicate_ids": [
+        "my-myaen-042"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Sime Darby Berhad announced the strategic appointment of its new independent director in Petaling Jaya during the corporate briefing for Q2 2024 under release code REL-142."
+    },
+    {
+      "primary_id": "my-myaen-003",
+      "duplicate_ids": [
+        "my-myaen-043"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.978,
+      "representative_text": "The Board of Directors of CelcomDigi Berhad announced that Elena Rostova finalized the acquisition of industrial warehouse land parcels in Subang Jaya for Q3 2024 under filing reference BURSA-143."
+    },
+    {
+      "primary_id": "my-myaen-004",
+      "duplicate_ids": [
+        "my-myaen-044"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "Maxis Berhad declared a single-tier interim dividend payable next month in Kuala Lumpur during the corporate briefing for Q4 2024 under release code REL-144."
+    },
+    {
+      "primary_id": "my-myaen-005",
+      "duplicate_ids": [
+        "my-myaen-045"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.978,
+      "representative_text": "The Board of Directors of Gamuda Berhad announced that Sarah Connor tabled its quarterly financial statements before institutional investors in Petaling Jaya for Q1 2024 under filing reference BURSA-145."
+    },
+    {
+      "primary_id": "my-myaen-006",
+      "duplicate_ids": [
+        "my-myaen-046"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "IJM Corporation Berhad convened its Annual General Meeting to review the audited financial accounts in Petaling Jaya during the corporate briefing for Q2 2024 under release code REL-146."
+    },
+    {
+      "primary_id": "my-myaen-007",
+      "duplicate_ids": [
+        "my-myaen-047"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.975,
+      "representative_text": "The Board of Directors of Sunway Berhad announced that Lim Kian Onn announced the strategic appointment of its new independent director in Bandar Sunway for Q3 2024 under filing reference BURSA-147."
+    },
+    {
+      "primary_id": "my-myaen-008",
+      "duplicate_ids": [
+        "my-myaen-048"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "YTL Corporation Berhad finalized the acquisition of industrial warehouse land parcels in Kuala Lumpur during the corporate briefing for Q4 2024 under release code REL-148."
+    },
+    {
+      "primary_id": "my-myaen-009",
+      "duplicate_ids": [
+        "my-myaen-049"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "The Board of Directors of MISC Berhad announced that Johan bin Ariffin declared a single-tier interim dividend payable next month in Kuala Lumpur for Q1 2024 under filing reference BURSA-149."
+    },
+    {
+      "primary_id": "my-myaen-010",
+      "duplicate_ids": [
+        "my-myaen-050"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "Petronas Chemicals Group Berhad tabled its quarterly financial statements before institutional investors in Kuala Lumpur during the corporate briefing for Q2 2024 under release code REL-150."
+    },
+    {
+      "primary_id": "my-myaen-011",
+      "duplicate_ids": [
+        "my-myaen-051"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.979,
+      "representative_text": "The Board of Directors of Tenaga Nasional Berhad announced that Elena Rostova convened its Annual General Meeting to review the audited financial accounts in Kuala Lumpur for Q3 2024 under filing reference BURSA-151."
+    },
+    {
+      "primary_id": "my-myaen-002",
+      "duplicate_ids": [
+        "my-myaen-052"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.935,
+      "representative_text": "Sime Darby Berhad announced the strategic appointment of its new independent director in Petaling Jaya during the corporate briefing for Q4 2024 under release code REL-152."
+    },
+    {
+      "primary_id": "my-myaen-013",
+      "duplicate_ids": [
+        "my-myaen-053"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "The Board of Directors of CelcomDigi Berhad announced that Sarah Connor finalized the acquisition of industrial warehouse land parcels in Subang Jaya for Q1 2024 under filing reference BURSA-153."
+    },
+    {
+      "primary_id": "my-myaen-004",
+      "duplicate_ids": [
+        "my-myaen-054"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.933,
+      "representative_text": "Maxis Berhad declared a single-tier interim dividend payable next month in Kuala Lumpur during the corporate briefing for Q2 2024 under release code REL-154."
+    },
+    {
+      "primary_id": "my-myaen-015",
+      "duplicate_ids": [
+        "my-myaen-055"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.978,
+      "representative_text": "The Board of Directors of Gamuda Berhad announced that Lim Kian Onn tabled its quarterly financial statements before institutional investors in Petaling Jaya for Q3 2024 under filing reference BURSA-155."
+    },
+    {
+      "primary_id": "my-myaen-006",
+      "duplicate_ids": [
+        "my-myaen-056"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.937,
+      "representative_text": "IJM Corporation Berhad convened its Annual General Meeting to review the audited financial accounts in Petaling Jaya during the corporate briefing for Q4 2024 under release code REL-156."
+    },
+    {
+      "primary_id": "my-myaen-017",
+      "duplicate_ids": [
+        "my-myaen-057"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.975,
+      "representative_text": "The Board of Directors of Sunway Berhad announced that Johan bin Ariffin announced the strategic appointment of its new independent director in Bandar Sunway for Q1 2024 under filing reference BURSA-157."
+    },
+    {
+      "primary_id": "my-myaen-008",
+      "duplicate_ids": [
+        "my-myaen-058"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.934,
+      "representative_text": "YTL Corporation Berhad finalized the acquisition of industrial warehouse land parcels in Kuala Lumpur during the corporate briefing for Q2 2024 under release code REL-158."
+    },
+    {
+      "primary_id": "my-myaen-019",
+      "duplicate_ids": [
+        "my-myaen-059"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "The Board of Directors of MISC Berhad announced that Elena Rostova declared a single-tier interim dividend payable next month in Kuala Lumpur for Q3 2024 under filing reference BURSA-159."
+    },
+    {
+      "primary_id": "my-myaen-010",
+      "duplicate_ids": [
+        "my-myaen-060"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.944,
+      "representative_text": "Petronas Chemicals Group Berhad tabled its quarterly financial statements before institutional investors in Kuala Lumpur during the corporate briefing for Q4 2024 under release code REL-160."
+    },
+    {
+      "primary_id": "my-myaen-001",
+      "duplicate_ids": [
+        "my-myaen-061"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.852,
+      "representative_text": "The Board of Directors of Tenaga Nasional Berhad announced that Sarah Connor convened its Annual General Meeting to review the audited financial accounts in Kuala Lumpur for Q1 2024 under filing reference BURSA-161."
+    },
+    {
+      "primary_id": "my-myaen-002",
+      "duplicate_ids": [
+        "my-myaen-062"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Sime Darby Berhad announced the strategic appointment of its new independent director in Petaling Jaya during the corporate briefing for Q2 2024 under release code REL-162."
+    },
+    {
+      "primary_id": "my-myaen-023",
+      "duplicate_ids": [
+        "my-myaen-063"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.978,
+      "representative_text": "The Board of Directors of CelcomDigi Berhad announced that Lim Kian Onn finalized the acquisition of industrial warehouse land parcels in Subang Jaya for Q3 2024 under filing reference BURSA-163."
+    },
+    {
+      "primary_id": "my-myaen-004",
+      "duplicate_ids": [
+        "my-myaen-064"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "Maxis Berhad declared a single-tier interim dividend payable next month in Kuala Lumpur during the corporate briefing for Q4 2024 under release code REL-164."
+    },
+    {
+      "primary_id": "my-myaen-025",
+      "duplicate_ids": [
+        "my-myaen-065"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.978,
+      "representative_text": "The Board of Directors of Gamuda Berhad announced that Johan bin Ariffin tabled its quarterly financial statements before institutional investors in Petaling Jaya for Q1 2024 under filing reference BURSA-165."
+    },
+    {
+      "primary_id": "my-myaen-006",
+      "duplicate_ids": [
+        "my-myaen-066"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "IJM Corporation Berhad convened its Annual General Meeting to review the audited financial accounts in Petaling Jaya during the corporate briefing for Q2 2024 under release code REL-166."
+    },
+    {
+      "primary_id": "my-myaen-027",
+      "duplicate_ids": [
+        "my-myaen-067"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.975,
+      "representative_text": "The Board of Directors of Sunway Berhad announced that Elena Rostova announced the strategic appointment of its new independent director in Bandar Sunway for Q3 2024 under filing reference BURSA-167."
+    },
+    {
+      "primary_id": "my-myaen-008",
+      "duplicate_ids": [
+        "my-myaen-068"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "YTL Corporation Berhad finalized the acquisition of industrial warehouse land parcels in Kuala Lumpur during the corporate briefing for Q4 2024 under release code REL-168."
+    },
+    {
+      "primary_id": "my-myaen-029",
+      "duplicate_ids": [
+        "my-myaen-069"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "The Board of Directors of MISC Berhad announced that Sarah Connor declared a single-tier interim dividend payable next month in Kuala Lumpur for Q1 2024 under filing reference BURSA-169."
+    },
+    {
+      "primary_id": "my-myaen-010",
+      "duplicate_ids": [
+        "my-myaen-070"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "Petronas Chemicals Group Berhad tabled its quarterly financial statements before institutional investors in Kuala Lumpur during the corporate briefing for Q2 2024 under release code REL-170."
+    },
+    {
+      "primary_id": "my-myaen-031",
+      "duplicate_ids": [
+        "my-myaen-071"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.979,
+      "representative_text": "The Board of Directors of Tenaga Nasional Berhad announced that Lim Kian Onn convened its Annual General Meeting to review the audited financial accounts in Kuala Lumpur for Q3 2024 under filing reference BURSA-171."
+    },
+    {
+      "primary_id": "my-myaen-002",
+      "duplicate_ids": [
+        "my-myaen-072"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.935,
+      "representative_text": "Sime Darby Berhad announced the strategic appointment of its new independent director in Petaling Jaya during the corporate briefing for Q4 2024 under release code REL-172."
+    },
+    {
+      "primary_id": "my-myaen-033",
+      "duplicate_ids": [
+        "my-myaen-073"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.978,
+      "representative_text": "The Board of Directors of CelcomDigi Berhad announced that Johan bin Ariffin finalized the acquisition of industrial warehouse land parcels in Subang Jaya for Q1 2024 under filing reference BURSA-173."
+    },
+    {
+      "primary_id": "my-myaen-004",
+      "duplicate_ids": [
+        "my-myaen-074"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.933,
+      "representative_text": "Maxis Berhad declared a single-tier interim dividend payable next month in Kuala Lumpur during the corporate briefing for Q2 2024 under release code REL-174."
+    },
+    {
+      "primary_id": "my-myaen-035",
+      "duplicate_ids": [
+        "my-myaen-075"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.978,
+      "representative_text": "The Board of Directors of Gamuda Berhad announced that Elena Rostova tabled its quarterly financial statements before institutional investors in Petaling Jaya for Q3 2024 under filing reference BURSA-175."
+    },
+    {
+      "primary_id": "my-myaen-006",
+      "duplicate_ids": [
+        "my-myaen-076"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.937,
+      "representative_text": "IJM Corporation Berhad convened its Annual General Meeting to review the audited financial accounts in Petaling Jaya during the corporate briefing for Q4 2024 under release code REL-176."
+    },
+    {
+      "primary_id": "my-myaen-037",
+      "duplicate_ids": [
+        "my-myaen-077"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.975,
+      "representative_text": "The Board of Directors of Sunway Berhad announced that Sarah Connor announced the strategic appointment of its new independent director in Bandar Sunway for Q1 2024 under filing reference BURSA-177."
+    },
+    {
+      "primary_id": "my-myaen-008",
+      "duplicate_ids": [
+        "my-myaen-078"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.934,
+      "representative_text": "YTL Corporation Berhad finalized the acquisition of industrial warehouse land parcels in Kuala Lumpur during the corporate briefing for Q2 2024 under release code REL-178."
+    },
+    {
+      "primary_id": "my-myaen-039",
+      "duplicate_ids": [
+        "my-myaen-079"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "The Board of Directors of MISC Berhad announced that Lim Kian Onn declared a single-tier interim dividend payable next month in Kuala Lumpur for Q3 2024 under filing reference BURSA-179."
+    },
+    {
+      "primary_id": "my-myaen-010",
+      "duplicate_ids": [
+        "my-myaen-080"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.944,
+      "representative_text": "Petronas Chemicals Group Berhad tabled its quarterly financial statements before institutional investors in Kuala Lumpur during the corporate briefing for Q4 2024 under release code REL-180."
+    },
+    {
+      "primary_id": "my-myaen-171",
+      "duplicate_ids": [
+        "my-myaen-176"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.987,
+      "representative_text": "Investment partner Lee Siew Ling structured the syndicated green financing facility with Maybank Islamic Berhad in Bangsar South for Series-A funding under agreement FA-106."
+    },
+    {
+      "primary_id": "my-myaen-172",
+      "duplicate_ids": [
+        "my-myaen-177"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.987,
+      "representative_text": "Investment partner Priya d/o Mohan structured the syndicated green financing facility with CIMB Bank Berhad in Mont Kiara for Series-B funding under agreement FA-107."
+    },
+    {
+      "primary_id": "my-myaen-173",
+      "duplicate_ids": [
+        "my-myaen-178"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.987,
+      "representative_text": "Investment partner Ravi a/l Chandran structured the syndicated green financing facility with RHB Bank Berhad in Damansara for Series-C funding under agreement FA-108."
+    },
+    {
+      "primary_id": "my-myaen-174",
+      "duplicate_ids": [
+        "my-myaen-179"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.987,
+      "representative_text": "Investment partner Michelle Lim structured the syndicated green financing facility with Public Bank Berhad in Cyberjaya for Series-D funding under agreement FA-109."
+    },
+    {
+      "primary_id": "my-myaen-175",
+      "duplicate_ids": [
+        "my-myaen-180"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Faiz Zulkifli structured the syndicated green financing facility with Hong Leong Bank Berhad in George Town for Series-E funding under agreement FA-110."
+    },
+    {
+      "primary_id": "my-myaen-171",
+      "duplicate_ids": [
+        "my-myaen-181"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Lee Siew Ling structured the syndicated green financing facility with Maybank Islamic Berhad in Bangsar South for Series-A funding under agreement FA-111."
+    },
+    {
+      "primary_id": "my-myaen-172",
+      "duplicate_ids": [
+        "my-myaen-182"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Priya d/o Mohan structured the syndicated green financing facility with CIMB Bank Berhad in Mont Kiara for Series-B funding under agreement FA-112."
+    },
+    {
+      "primary_id": "my-myaen-173",
+      "duplicate_ids": [
+        "my-myaen-183"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Ravi a/l Chandran structured the syndicated green financing facility with RHB Bank Berhad in Damansara for Series-C funding under agreement FA-113."
+    },
+    {
+      "primary_id": "my-myaen-174",
+      "duplicate_ids": [
+        "my-myaen-184"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "Investment partner Michelle Lim structured the syndicated green financing facility with Public Bank Berhad in Cyberjaya for Series-D funding under agreement FA-114."
+    },
+    {
+      "primary_id": "my-myaen-175",
+      "duplicate_ids": [
+        "my-myaen-185"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Faiz Zulkifli structured the syndicated green financing facility with Hong Leong Bank Berhad in George Town for Series-E funding under agreement FA-115."
+    },
+    {
+      "primary_id": "my-myaen-171",
+      "duplicate_ids": [
+        "my-myaen-186"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Lee Siew Ling structured the syndicated green financing facility with Maybank Islamic Berhad in Bangsar South for Series-A funding under agreement FA-116."
+    },
+    {
+      "primary_id": "my-myaen-172",
+      "duplicate_ids": [
+        "my-myaen-187"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Priya d/o Mohan structured the syndicated green financing facility with CIMB Bank Berhad in Mont Kiara for Series-B funding under agreement FA-117."
+    },
+    {
+      "primary_id": "my-myaen-173",
+      "duplicate_ids": [
+        "my-myaen-188"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Ravi a/l Chandran structured the syndicated green financing facility with RHB Bank Berhad in Damansara for Series-C funding under agreement FA-118."
+    },
+    {
+      "primary_id": "my-myaen-174",
+      "duplicate_ids": [
+        "my-myaen-189"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "Investment partner Michelle Lim structured the syndicated green financing facility with Public Bank Berhad in Cyberjaya for Series-D funding under agreement FA-119."
+    },
+    {
+      "primary_id": "my-myaen-175",
+      "duplicate_ids": [
+        "my-myaen-190"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Faiz Zulkifli structured the syndicated green financing facility with Hong Leong Bank Berhad in George Town for Series-E funding under agreement FA-120."
+    },
+    {
+      "primary_id": "my-myaen-171",
+      "duplicate_ids": [
+        "my-myaen-191"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Lee Siew Ling structured the syndicated green financing facility with Maybank Islamic Berhad in Bangsar South for Series-A funding under agreement FA-121."
+    },
+    {
+      "primary_id": "my-myaen-172",
+      "duplicate_ids": [
+        "my-myaen-192"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Priya d/o Mohan structured the syndicated green financing facility with CIMB Bank Berhad in Mont Kiara for Series-B funding under agreement FA-122."
+    },
+    {
+      "primary_id": "my-myaen-173",
+      "duplicate_ids": [
+        "my-myaen-193"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Ravi a/l Chandran structured the syndicated green financing facility with RHB Bank Berhad in Damansara for Series-C funding under agreement FA-123."
+    },
+    {
+      "primary_id": "my-myaen-174",
+      "duplicate_ids": [
+        "my-myaen-194"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "Investment partner Michelle Lim structured the syndicated green financing facility with Public Bank Berhad in Cyberjaya for Series-D funding under agreement FA-124."
+    },
+    {
+      "primary_id": "my-myaen-175",
+      "duplicate_ids": [
+        "my-myaen-195"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Faiz Zulkifli structured the syndicated green financing facility with Hong Leong Bank Berhad in George Town for Series-E funding under agreement FA-125."
+    },
+    {
+      "primary_id": "my-myaen-171",
+      "duplicate_ids": [
+        "my-myaen-196"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Lee Siew Ling structured the syndicated green financing facility with Maybank Islamic Berhad in Bangsar South for Series-A funding under agreement FA-126."
+    },
+    {
+      "primary_id": "my-myaen-172",
+      "duplicate_ids": [
+        "my-myaen-197"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Priya d/o Mohan structured the syndicated green financing facility with CIMB Bank Berhad in Mont Kiara for Series-B funding under agreement FA-127."
+    },
+    {
+      "primary_id": "my-myaen-173",
+      "duplicate_ids": [
+        "my-myaen-198"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Ravi a/l Chandran structured the syndicated green financing facility with RHB Bank Berhad in Damansara for Series-C funding under agreement FA-128."
+    },
+    {
+      "primary_id": "my-myaen-174",
+      "duplicate_ids": [
+        "my-myaen-199"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "Investment partner Michelle Lim structured the syndicated green financing facility with Public Bank Berhad in Cyberjaya for Series-D funding under agreement FA-129."
+    },
+    {
+      "primary_id": "my-myaen-175",
+      "duplicate_ids": [
+        "my-myaen-200"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Faiz Zulkifli structured the syndicated green financing facility with Hong Leong Bank Berhad in George Town for Series-E funding under agreement FA-130."
+    },
+    {
+      "primary_id": "my-myaen-171",
+      "duplicate_ids": [
+        "my-myaen-201"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Lee Siew Ling structured the syndicated green financing facility with Maybank Islamic Berhad in Bangsar South for Series-A funding under agreement FA-131."
+    },
+    {
+      "primary_id": "my-myaen-172",
+      "duplicate_ids": [
+        "my-myaen-202"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Priya d/o Mohan structured the syndicated green financing facility with CIMB Bank Berhad in Mont Kiara for Series-B funding under agreement FA-132."
+    },
+    {
+      "primary_id": "my-myaen-173",
+      "duplicate_ids": [
+        "my-myaen-203"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Ravi a/l Chandran structured the syndicated green financing facility with RHB Bank Berhad in Damansara for Series-C funding under agreement FA-133."
+    },
+    {
+      "primary_id": "my-myaen-174",
+      "duplicate_ids": [
+        "my-myaen-204"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "Investment partner Michelle Lim structured the syndicated green financing facility with Public Bank Berhad in Cyberjaya for Series-D funding under agreement FA-134."
+    },
+    {
+      "primary_id": "my-myaen-175",
+      "duplicate_ids": [
+        "my-myaen-205"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Faiz Zulkifli structured the syndicated green financing facility with Hong Leong Bank Berhad in George Town for Series-E funding under agreement FA-135."
+    },
+    {
+      "primary_id": "my-myaen-171",
+      "duplicate_ids": [
+        "my-myaen-206"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Lee Siew Ling structured the syndicated green financing facility with Maybank Islamic Berhad in Bangsar South for Series-A funding under agreement FA-136."
+    },
+    {
+      "primary_id": "my-myaen-172",
+      "duplicate_ids": [
+        "my-myaen-207"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Priya d/o Mohan structured the syndicated green financing facility with CIMB Bank Berhad in Mont Kiara for Series-B funding under agreement FA-137."
+    },
+    {
+      "primary_id": "my-myaen-173",
+      "duplicate_ids": [
+        "my-myaen-208"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Ravi a/l Chandran structured the syndicated green financing facility with RHB Bank Berhad in Damansara for Series-C funding under agreement FA-138."
+    },
+    {
+      "primary_id": "my-myaen-174",
+      "duplicate_ids": [
+        "my-myaen-209"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "Investment partner Michelle Lim structured the syndicated green financing facility with Public Bank Berhad in Cyberjaya for Series-D funding under agreement FA-139."
+    },
+    {
+      "primary_id": "my-myaen-175",
+      "duplicate_ids": [
+        "my-myaen-210"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Faiz Zulkifli structured the syndicated green financing facility with Hong Leong Bank Berhad in George Town for Series-E funding under agreement FA-140."
+    },
+    {
+      "primary_id": "my-myaen-171",
+      "duplicate_ids": [
+        "my-myaen-211"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Lee Siew Ling structured the syndicated green financing facility with Maybank Islamic Berhad in Bangsar South for Series-A funding under agreement FA-141."
+    },
+    {
+      "primary_id": "my-myaen-172",
+      "duplicate_ids": [
+        "my-myaen-212"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Priya d/o Mohan structured the syndicated green financing facility with CIMB Bank Berhad in Mont Kiara for Series-B funding under agreement FA-142."
+    },
+    {
+      "primary_id": "my-myaen-173",
+      "duplicate_ids": [
+        "my-myaen-213"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Ravi a/l Chandran structured the syndicated green financing facility with RHB Bank Berhad in Damansara for Series-C funding under agreement FA-143."
+    },
+    {
+      "primary_id": "my-myaen-174",
+      "duplicate_ids": [
+        "my-myaen-214"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.973,
+      "representative_text": "Investment partner Michelle Lim structured the syndicated green financing facility with Public Bank Berhad in Cyberjaya for Series-D funding under agreement FA-144."
+    },
+    {
+      "primary_id": "my-myaen-175",
+      "duplicate_ids": [
+        "my-myaen-215"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Investment partner Faiz Zulkifli structured the syndicated green financing facility with Hong Leong Bank Berhad in George Town for Series-E funding under agreement FA-145."
+    },
+    {
+      "primary_id": "my-mang-001",
+      "duplicate_ids": [
+        "my-mang-031"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.872,
+      "representative_text": "Ahmad Faiz bin Zulkifli said can meet up at Mid Valley around 1.45 PM lah for case 31."
+    },
+    {
+      "primary_id": "my-mang-002",
+      "duplicate_ids": [
+        "my-mang-032"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.897,
+      "representative_text": "Don't worry leh, Ravi a/l Chandran already submitted the proposal to Maybank around 3.52 PM under batch 32."
+    },
+    {
+      "primary_id": "my-mang-003",
+      "duplicate_ids": [
+        "my-mang-033"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.92,
+      "representative_text": "Priya d/o Mohan already reached the office in Subang Jaya around 5.04 PM meh for case 33."
+    },
+    {
+      "primary_id": "my-mang-004",
+      "duplicate_ids": [
+        "my-mang-034"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.92,
+      "representative_text": "Don't worry lor, Dinesh s/o Anand already submitted the proposal to Universiti Malaya around 1.11 PM under batch 34."
+    },
+    {
+      "primary_id": "my-mang-005",
+      "duplicate_ids": [
+        "my-mang-035"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.89,
+      "representative_text": "Tan Wei Jun went to submit documents at Sunway Pyramid around 3.18 PM ma for case 35."
+    },
+    {
+      "primary_id": "my-mang-006",
+      "duplicate_ids": [
+        "my-mang-036"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.921,
+      "representative_text": "Don't worry one, Siti Hajar binti Osman already submitted the proposal to Maxis Berhad around 5.25 PM under batch 36."
+    },
+    {
+      "primary_id": "my-mang-007",
+      "duplicate_ids": [
+        "my-mang-037"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.89,
+      "representative_text": "Lee Siew Ling wanted to tapau lunch near Shah Alam around 1.32 PM lah for case 37."
+    },
+    {
+      "primary_id": "my-mang-008",
+      "duplicate_ids": [
+        "my-mang-038"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.916,
+      "representative_text": "Don't worry leh, Suresh a/l Murugan already submitted the proposal to CIMB Bank around 3.39 PM under batch 38."
+    },
+    {
+      "primary_id": "my-mang-009",
+      "duplicate_ids": [
+        "my-mang-039"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.871,
+      "representative_text": "Michelle Lim got stuck in massive traffic near Ipoh around 5.46 PM meh for case 39."
+    },
+    {
+      "primary_id": "my-mang-010",
+      "duplicate_ids": [
+        "my-mang-040"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.88,
+      "representative_text": "Don't worry lor, Jason Wong already submitted the proposal to Petronas around 1.53 PM under batch 40."
+    },
+    {
+      "primary_id": "my-mang-011",
+      "duplicate_ids": [
+        "my-mang-041"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.882,
+      "representative_text": "Ahmad Faiz bin Zulkifli said can meet up at Mid Valley around 3.05 PM ma for case 41."
+    },
+    {
+      "primary_id": "my-mang-012",
+      "duplicate_ids": [
+        "my-mang-042"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.925,
+      "representative_text": "Don't worry one, Ravi a/l Chandran already submitted the proposal to Maybank around 5.12 PM under batch 42."
+    },
+    {
+      "primary_id": "my-mang-013",
+      "duplicate_ids": [
+        "my-mang-043"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.888,
+      "representative_text": "Priya d/o Mohan already reached the office in Subang Jaya around 1.19 PM lah for case 43."
+    },
+    {
+      "primary_id": "my-mang-014",
+      "duplicate_ids": [
+        "my-mang-044"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.912,
+      "representative_text": "Don't worry leh, Dinesh s/o Anand already submitted the proposal to Universiti Malaya around 3.26 PM under batch 44."
+    },
+    {
+      "primary_id": "my-mang-015",
+      "duplicate_ids": [
+        "my-mang-045"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.881,
+      "representative_text": "Tan Wei Jun went to submit documents at Sunway Pyramid around 5.33 PM meh for case 45."
+    },
+    {
+      "primary_id": "my-mang-016",
+      "duplicate_ids": [
+        "my-mang-046"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.913,
+      "representative_text": "Don't worry lor, Siti Hajar binti Osman already submitted the proposal to Maxis Berhad around 1.40 PM under batch 46."
+    },
+    {
+      "primary_id": "my-mang-017",
+      "duplicate_ids": [
+        "my-mang-047"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.867,
+      "representative_text": "Lee Siew Ling wanted to tapau lunch near Shah Alam around 3.47 PM ma for case 47."
+    },
+    {
+      "primary_id": "my-mang-018",
+      "duplicate_ids": [
+        "my-mang-048"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.89,
+      "representative_text": "Don't worry one, Suresh a/l Murugan already submitted the proposal to CIMB Bank around 5.54 PM under batch 48."
+    },
+    {
+      "primary_id": "my-mang-019",
+      "duplicate_ids": [
+        "my-mang-049"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.882,
+      "representative_text": "Michelle Lim got stuck in massive traffic near Ipoh around 1.06 PM lah for case 49."
+    },
+    {
+      "primary_id": "my-mang-020",
+      "duplicate_ids": [
+        "my-mang-050"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.899,
+      "representative_text": "Don't worry leh, Jason Wong already submitted the proposal to Petronas around 3.13 PM under batch 50."
+    },
+    {
+      "primary_id": "my-mang-021",
+      "duplicate_ids": [
+        "my-mang-051"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.882,
+      "representative_text": "Ahmad Faiz bin Zulkifli said can meet up at Mid Valley around 5.20 PM meh for case 51."
+    },
+    {
+      "primary_id": "my-mang-022",
+      "duplicate_ids": [
+        "my-mang-052"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.907,
+      "representative_text": "Don't worry lor, Ravi a/l Chandran already submitted the proposal to Maybank around 1.27 PM under batch 52."
+    },
+    {
+      "primary_id": "my-mang-023",
+      "duplicate_ids": [
+        "my-mang-053"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.886,
+      "representative_text": "Priya d/o Mohan already reached the office in Subang Jaya around 3.34 PM ma for case 53."
+    },
+    {
+      "primary_id": "my-mang-024",
+      "duplicate_ids": [
+        "my-mang-054"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.912,
+      "representative_text": "Don't worry one, Dinesh s/o Anand already submitted the proposal to Universiti Malaya around 5.41 PM under batch 54."
+    },
+    {
+      "primary_id": "my-mang-025",
+      "duplicate_ids": [
+        "my-mang-055"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.859,
+      "representative_text": "Tan Wei Jun went to submit documents at Sunway Pyramid around 1.48 PM lah for case 55."
+    },
+    {
+      "primary_id": "my-mang-026",
+      "duplicate_ids": [
+        "my-mang-056"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.913,
+      "representative_text": "Don't worry leh, Siti Hajar binti Osman already submitted the proposal to Maxis Berhad around 3.00 PM under batch 56."
+    },
+    {
+      "primary_id": "my-mang-027",
+      "duplicate_ids": [
+        "my-mang-057"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.881,
+      "representative_text": "Lee Siew Ling wanted to tapau lunch near Shah Alam around 5.07 PM meh for case 57."
+    },
+    {
+      "primary_id": "my-mang-028",
+      "duplicate_ids": [
+        "my-mang-058"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.907,
+      "representative_text": "Don't worry lor, Suresh a/l Murugan already submitted the proposal to CIMB Bank around 1.14 PM under batch 58."
+    },
+    {
+      "primary_id": "my-mang-029",
+      "duplicate_ids": [
+        "my-mang-059"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.88,
+      "representative_text": "Michelle Lim got stuck in massive traffic near Ipoh around 3.21 PM ma for case 59."
+    },
+    {
+      "primary_id": "my-mang-030",
+      "duplicate_ids": [
+        "my-mang-060"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.899,
+      "representative_text": "Don't worry one, Jason Wong already submitted the proposal to Petronas around 5.28 PM under batch 60."
+    },
+    {
+      "primary_id": "my-mang-001",
+      "duplicate_ids": [
+        "my-mang-061"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.872,
+      "representative_text": "Ahmad Faiz bin Zulkifli said can meet up at Mid Valley around 1.35 PM lah for case 61."
+    },
+    {
+      "primary_id": "my-mang-002",
+      "duplicate_ids": [
+        "my-mang-062"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.897,
+      "representative_text": "Don't worry leh, Ravi a/l Chandran already submitted the proposal to Maybank around 3.42 PM under batch 62."
+    },
+    {
+      "primary_id": "my-mang-003",
+      "duplicate_ids": [
+        "my-mang-063"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.876,
+      "representative_text": "Priya d/o Mohan already reached the office in Subang Jaya around 5.49 PM meh for case 63."
+    },
+    {
+      "primary_id": "my-mang-004",
+      "duplicate_ids": [
+        "my-mang-064"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.92,
+      "representative_text": "Don't worry lor, Dinesh s/o Anand already submitted the proposal to Universiti Malaya around 1.01 PM under batch 64."
+    },
+    {
+      "primary_id": "my-mang-005",
+      "duplicate_ids": [
+        "my-mang-065"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.89,
+      "representative_text": "Tan Wei Jun went to submit documents at Sunway Pyramid around 3.08 PM ma for case 65."
+    },
+    {
+      "primary_id": "my-mang-066",
+      "duplicate_ids": [
+        "my-mang-071"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.901,
+      "representative_text": "Aiyo, Faiz Zulkifli stuck in jam near 1 Utama because of heavy rain on route 6 one!"
+    },
+    {
+      "primary_id": "my-mang-067",
+      "duplicate_ids": [
+        "my-mang-072"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.892,
+      "representative_text": "Aiyo, Priya Mohan stuck in jam near Pavilion Kuala Lumpur because of accident on route 7 lah!"
+    },
+    {
+      "primary_id": "my-mang-068",
+      "duplicate_ids": [
+        "my-mang-073"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.873,
+      "representative_text": "Aiyo, Kevin Ng stuck in jam near George Town because of roadblock on route 8 leh!"
+    },
+    {
+      "primary_id": "my-mang-069",
+      "duplicate_ids": [
+        "my-mang-074"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.889,
+      "representative_text": "Aiyo, Harpreet Singh stuck in jam near Johor Bahru because of morning peak on route 9 meh!"
+    },
+    {
+      "primary_id": "my-mang-070",
+      "duplicate_ids": [
+        "my-mang-075"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.891,
+      "representative_text": "Aiyo, Nurul Huda stuck in jam near Petaling Jaya because of construction work on route 10 lor!"
+    },
+    {
+      "primary_id": "my-mang-066",
+      "duplicate_ids": [
+        "my-mang-076"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.914,
+      "representative_text": "Aiyo, Faiz Zulkifli stuck in jam near 1 Utama because of heavy rain on route 11 ma!"
+    },
+    {
+      "primary_id": "my-mang-067",
+      "duplicate_ids": [
+        "my-mang-077"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.892,
+      "representative_text": "Aiyo, Priya Mohan stuck in jam near Pavilion Kuala Lumpur because of accident on route 12 one!"
+    },
+    {
+      "primary_id": "my-mang-068",
+      "duplicate_ids": [
+        "my-mang-078"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.863,
+      "representative_text": "Aiyo, Kevin Ng stuck in jam near George Town because of roadblock on route 13 lah!"
+    },
+    {
+      "primary_id": "my-mang-069",
+      "duplicate_ids": [
+        "my-mang-079"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.9,
+      "representative_text": "Aiyo, Harpreet Singh stuck in jam near Johor Bahru because of morning peak on route 14 leh!"
+    },
+    {
+      "primary_id": "my-mang-070",
+      "duplicate_ids": [
+        "my-mang-080"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.912,
+      "representative_text": "Aiyo, Nurul Huda stuck in jam near Petaling Jaya because of construction work on route 15 meh!"
+    },
+    {
+      "primary_id": "my-mang-066",
+      "duplicate_ids": [
+        "my-mang-081"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.902,
+      "representative_text": "Aiyo, Faiz Zulkifli stuck in jam near 1 Utama because of heavy rain on route 16 lor!"
+    },
+    {
+      "primary_id": "my-mang-067",
+      "duplicate_ids": [
+        "my-mang-082"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.892,
+      "representative_text": "Aiyo, Priya Mohan stuck in jam near Pavilion Kuala Lumpur because of accident on route 17 ma!"
+    },
+    {
+      "primary_id": "my-mang-068",
+      "duplicate_ids": [
+        "my-mang-083"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.873,
+      "representative_text": "Aiyo, Kevin Ng stuck in jam near George Town because of roadblock on route 18 one!"
+    },
+    {
+      "primary_id": "my-mang-069",
+      "duplicate_ids": [
+        "my-mang-084"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.879,
+      "representative_text": "Aiyo, Harpreet Singh stuck in jam near Johor Bahru because of morning peak on route 19 lah!"
+    },
+    {
+      "primary_id": "my-mang-070",
+      "duplicate_ids": [
+        "my-mang-085"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.891,
+      "representative_text": "Aiyo, Nurul Huda stuck in jam near Petaling Jaya because of construction work on route 20 leh!"
+    },
+    {
+      "primary_id": "my-mang-066",
+      "duplicate_ids": [
+        "my-mang-086"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.88,
+      "representative_text": "Aiyo, Faiz Zulkifli stuck in jam near 1 Utama because of heavy rain on route 21 meh!"
+    },
+    {
+      "primary_id": "my-mang-067",
+      "duplicate_ids": [
+        "my-mang-087"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.924,
+      "representative_text": "Aiyo, Priya Mohan stuck in jam near Pavilion Kuala Lumpur because of accident on route 22 lor!"
+    },
+    {
+      "primary_id": "my-mang-068",
+      "duplicate_ids": [
+        "my-mang-088"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.897,
+      "representative_text": "Aiyo, Kevin Ng stuck in jam near George Town because of roadblock on route 23 ma!"
+    },
+    {
+      "primary_id": "my-mang-069",
+      "duplicate_ids": [
+        "my-mang-089"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.889,
+      "representative_text": "Aiyo, Harpreet Singh stuck in jam near Johor Bahru because of morning peak on route 24 one!"
+    },
+    {
+      "primary_id": "my-mang-070",
+      "duplicate_ids": [
+        "my-mang-090"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.891,
+      "representative_text": "Aiyo, Nurul Huda stuck in jam near Petaling Jaya because of construction work on route 25 lah!"
+    },
+    {
+      "primary_id": "my-mang-066",
+      "duplicate_ids": [
+        "my-mang-091"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.88,
+      "representative_text": "Aiyo, Faiz Zulkifli stuck in jam near 1 Utama because of heavy rain on route 26 leh!"
+    },
+    {
+      "primary_id": "my-mang-067",
+      "duplicate_ids": [
+        "my-mang-092"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.903,
+      "representative_text": "Aiyo, Priya Mohan stuck in jam near Pavilion Kuala Lumpur because of accident on route 27 meh!"
+    },
+    {
+      "primary_id": "my-mang-068",
+      "duplicate_ids": [
+        "my-mang-093"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.863,
+      "representative_text": "Aiyo, Kevin Ng stuck in jam near George Town because of roadblock on route 28 lor!"
+    },
+    {
+      "primary_id": "my-mang-069",
+      "duplicate_ids": [
+        "my-mang-094"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.889,
+      "representative_text": "Aiyo, Harpreet Singh stuck in jam near Johor Bahru because of morning peak on route 29 ma!"
+    },
+    {
+      "primary_id": "my-mang-070",
+      "duplicate_ids": [
+        "my-mang-095"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.901,
+      "representative_text": "Aiyo, Nurul Huda stuck in jam near Petaling Jaya because of construction work on route 30 one!"
+    },
+    {
+      "primary_id": "my-mang-066",
+      "duplicate_ids": [
+        "my-mang-096"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.95,
+      "representative_text": "Aiyo, Faiz Zulkifli stuck in jam near 1 Utama because of heavy rain on route 31 lah!"
+    },
+    {
+      "primary_id": "my-mang-067",
+      "duplicate_ids": [
+        "my-mang-097"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "Aiyo, Priya Mohan stuck in jam near Pavilion Kuala Lumpur because of accident on route 32 leh!"
+    },
+    {
+      "primary_id": "my-mang-068",
+      "duplicate_ids": [
+        "my-mang-098"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.961,
+      "representative_text": "Aiyo, Kevin Ng stuck in jam near George Town because of roadblock on route 33 meh!"
+    },
+    {
+      "primary_id": "my-mang-069",
+      "duplicate_ids": [
+        "my-mang-099"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.943,
+      "representative_text": "Aiyo, Harpreet Singh stuck in jam near Johor Bahru because of morning peak on route 34 lor!"
+    },
+    {
+      "primary_id": "my-mang-070",
+      "duplicate_ids": [
+        "my-mang-100"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.944,
+      "representative_text": "Aiyo, Nurul Huda stuck in jam near Petaling Jaya because of construction work on route 35 ma!"
+    },
+    {
+      "primary_id": "my-mang-066",
+      "duplicate_ids": [
+        "my-mang-101"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.89,
+      "representative_text": "Aiyo, Faiz Zulkifli stuck in jam near 1 Utama because of heavy rain on route 36 one!"
+    },
+    {
+      "primary_id": "my-mang-067",
+      "duplicate_ids": [
+        "my-mang-102"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.883,
+      "representative_text": "Aiyo, Priya Mohan stuck in jam near Pavilion Kuala Lumpur because of accident on route 37 lah!"
+    },
+    {
+      "primary_id": "my-mang-068",
+      "duplicate_ids": [
+        "my-mang-103"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.886,
+      "representative_text": "Aiyo, Kevin Ng stuck in jam near George Town because of roadblock on route 38 leh!"
+    },
+    {
+      "primary_id": "my-mang-069",
+      "duplicate_ids": [
+        "my-mang-104"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.879,
+      "representative_text": "Aiyo, Harpreet Singh stuck in jam near Johor Bahru because of morning peak on route 39 meh!"
+    },
+    {
+      "primary_id": "my-mang-070",
+      "duplicate_ids": [
+        "my-mang-105"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.891,
+      "representative_text": "Aiyo, Nurul Huda stuck in jam near Petaling Jaya because of construction work on route 40 lor!"
+    },
+    {
+      "primary_id": "my-mang-066",
+      "duplicate_ids": [
+        "my-mang-106"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.89,
+      "representative_text": "Aiyo, Faiz Zulkifli stuck in jam near 1 Utama because of heavy rain on route 41 ma!"
+    },
+    {
+      "primary_id": "my-mang-067",
+      "duplicate_ids": [
+        "my-mang-107"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.892,
+      "representative_text": "Aiyo, Priya Mohan stuck in jam near Pavilion Kuala Lumpur because of accident on route 42 one!"
+    },
+    {
+      "primary_id": "my-mang-068",
+      "duplicate_ids": [
+        "my-mang-108"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.863,
+      "representative_text": "Aiyo, Kevin Ng stuck in jam near George Town because of roadblock on route 43 lah!"
+    },
+    {
+      "primary_id": "my-mang-069",
+      "duplicate_ids": [
+        "my-mang-109"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.921,
+      "representative_text": "Aiyo, Harpreet Singh stuck in jam near Johor Bahru because of morning peak on route 44 leh!"
+    },
+    {
+      "primary_id": "my-mang-070",
+      "duplicate_ids": [
+        "my-mang-110"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.912,
+      "representative_text": "Aiyo, Nurul Huda stuck in jam near Petaling Jaya because of construction work on route 45 meh!"
+    },
+    {
+      "primary_id": "my-mang-066",
+      "duplicate_ids": [
+        "my-mang-111"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.88,
+      "representative_text": "Aiyo, Faiz Zulkifli stuck in jam near 1 Utama because of heavy rain on route 46 lor!"
+    },
+    {
+      "primary_id": "my-mang-067",
+      "duplicate_ids": [
+        "my-mang-112"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.892,
+      "representative_text": "Aiyo, Priya Mohan stuck in jam near Pavilion Kuala Lumpur because of accident on route 47 ma!"
+    },
+    {
+      "primary_id": "my-mang-068",
+      "duplicate_ids": [
+        "my-mang-113"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.873,
+      "representative_text": "Aiyo, Kevin Ng stuck in jam near George Town because of roadblock on route 48 one!"
+    },
+    {
+      "primary_id": "my-mang-069",
+      "duplicate_ids": [
+        "my-mang-114"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.9,
+      "representative_text": "Aiyo, Harpreet Singh stuck in jam near Johor Bahru because of morning peak on route 49 lah!"
+    },
+    {
+      "primary_id": "my-mang-070",
+      "duplicate_ids": [
+        "my-mang-115"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.912,
+      "representative_text": "Aiyo, Nurul Huda stuck in jam near Petaling Jaya because of construction work on route 50 leh!"
+    },
+    {
+      "primary_id": "my-mang-066",
+      "duplicate_ids": [
+        "my-mang-116"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.88,
+      "representative_text": "Aiyo, Faiz Zulkifli stuck in jam near 1 Utama because of heavy rain on route 51 meh!"
+    },
+    {
+      "primary_id": "my-mang-067",
+      "duplicate_ids": [
+        "my-mang-117"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.903,
+      "representative_text": "Aiyo, Priya Mohan stuck in jam near Pavilion Kuala Lumpur because of accident on route 52 lor!"
+    },
+    {
+      "primary_id": "my-mang-068",
+      "duplicate_ids": [
+        "my-mang-118"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.897,
+      "representative_text": "Aiyo, Kevin Ng stuck in jam near George Town because of roadblock on route 53 ma!"
+    },
+    {
+      "primary_id": "my-mang-069",
+      "duplicate_ids": [
+        "my-mang-119"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.889,
+      "representative_text": "Aiyo, Harpreet Singh stuck in jam near Johor Bahru because of morning peak on route 54 one!"
+    },
+    {
+      "primary_id": "my-mang-070",
+      "duplicate_ids": [
+        "my-mang-120"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.912,
+      "representative_text": "Aiyo, Nurul Huda stuck in jam near Petaling Jaya because of construction work on route 55 lah!"
+    },
+    {
+      "primary_id": "my-mang-066",
+      "duplicate_ids": [
+        "my-mang-121"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.88,
+      "representative_text": "Aiyo, Faiz Zulkifli stuck in jam near 1 Utama because of heavy rain on route 56 leh!"
+    },
+    {
+      "primary_id": "my-mang-067",
+      "duplicate_ids": [
+        "my-mang-122"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.883,
+      "representative_text": "Aiyo, Priya Mohan stuck in jam near Pavilion Kuala Lumpur because of accident on route 57 meh!"
+    },
+    {
+      "primary_id": "my-mang-068",
+      "duplicate_ids": [
+        "my-mang-123"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.863,
+      "representative_text": "Aiyo, Kevin Ng stuck in jam near George Town because of roadblock on route 58 lor!"
+    },
+    {
+      "primary_id": "my-mang-069",
+      "duplicate_ids": [
+        "my-mang-124"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.889,
+      "representative_text": "Aiyo, Harpreet Singh stuck in jam near Johor Bahru because of morning peak on route 59 ma!"
+    },
+    {
+      "primary_id": "my-mang-070",
+      "duplicate_ids": [
+        "my-mang-125"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.901,
+      "representative_text": "Aiyo, Nurul Huda stuck in jam near Petaling Jaya because of construction work on route 60 one!"
+    },
+    {
+      "primary_id": "my-mixcs-001",
+      "duplicate_ids": [
+        "my-mixcs-011"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.965,
+      "representative_text": "Project lead Tan Wei Jun dah email final report to Petronas Gas Berhad which is currently urgent under ticket TCK-310."
+    },
+    {
+      "primary_id": "my-mixcs-002",
+      "duplicate_ids": [
+        "my-mixcs-012"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.96,
+      "representative_text": "Encik Nurul Huda bt. Razali said that client meeting kat Cyberjaya has been scheduled under task TSK-311."
+    },
+    {
+      "primary_id": "my-mixcs-003",
+      "duplicate_ids": [
+        "my-mixcs-013"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.968,
+      "representative_text": "Project lead Suresh a/l Murugan mintak to verify budget proposal for CIMB Bank which is currently postponed under ticket TCK-312."
+    },
+    {
+      "primary_id": "my-mixcs-004",
+      "duplicate_ids": [
+        "my-mixcs-014"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.963,
+      "representative_text": "Encik Siti Hajar binti Osman dah confirm booking venue dekat Putrajaya has been pending approval under task TSK-313."
+    },
+    {
+      "primary_id": "my-mixcs-005",
+      "duplicate_ids": [
+        "my-mixcs-015"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.968,
+      "representative_text": "Project lead Ahmad Faiz bin Zulkifli bagitahu I yang presentation kat Maybank which is currently finalized under ticket TCK-314."
+    },
+    {
+      "primary_id": "my-mixcs-006",
+      "duplicate_ids": [
+        "my-mixcs-016"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.953,
+      "representative_text": "Encik Jason Wong dah email final report to Shah Alam has been urgent under task TSK-315."
+    },
+    {
+      "primary_id": "my-mixcs-007",
+      "duplicate_ids": [
+        "my-mixcs-017"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.967,
+      "representative_text": "Project lead Priya d/o Mohan said that client meeting kat Universiti Malaya which is currently scheduled under ticket TCK-316."
+    },
+    {
+      "primary_id": "my-mixcs-008",
+      "duplicate_ids": [
+        "my-mixcs-018"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.962,
+      "representative_text": "Encik Dinesh s/o Anand mintak to verify budget proposal for Subang Jaya has been postponed under task TSK-317."
+    },
+    {
+      "primary_id": "my-mixcs-009",
+      "duplicate_ids": [
+        "my-mixcs-019"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.969,
+      "representative_text": "Project lead Michelle Lim dah confirm booking venue dekat Tenaga Nasional Berhad which is currently pending approval under ticket TCK-318."
+    },
+    {
+      "primary_id": "my-mixcs-010",
+      "duplicate_ids": [
+        "my-mixcs-020"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.959,
+      "representative_text": "Encik Khairul bin Anwar bagitahu I yang presentation kat KLCC has been finalized under task TSK-319."
+    },
+    {
+      "primary_id": "my-mixcs-001",
+      "duplicate_ids": [
+        "my-mixcs-021"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.965,
+      "representative_text": "Project lead Tan Wei Jun dah email final report to Petronas Gas Berhad which is currently urgent under ticket TCK-320."
+    },
+    {
+      "primary_id": "my-mixcs-002",
+      "duplicate_ids": [
+        "my-mixcs-022"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.96,
+      "representative_text": "Encik Nurul Huda bt. Razali said that client meeting kat Cyberjaya has been scheduled under task TSK-321."
+    },
+    {
+      "primary_id": "my-mixcs-003",
+      "duplicate_ids": [
+        "my-mixcs-023"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.968,
+      "representative_text": "Project lead Suresh a/l Murugan mintak to verify budget proposal for CIMB Bank which is currently postponed under ticket TCK-322."
+    },
+    {
+      "primary_id": "my-mixcs-004",
+      "duplicate_ids": [
+        "my-mixcs-024"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.963,
+      "representative_text": "Encik Siti Hajar binti Osman dah confirm booking venue dekat Putrajaya has been pending approval under task TSK-323."
+    },
+    {
+      "primary_id": "my-mixcs-005",
+      "duplicate_ids": [
+        "my-mixcs-025"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.968,
+      "representative_text": "Project lead Ahmad Faiz bin Zulkifli bagitahu I yang presentation kat Maybank which is currently finalized under ticket TCK-324."
+    },
+    {
+      "primary_id": "my-mixcs-006",
+      "duplicate_ids": [
+        "my-mixcs-026"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.953,
+      "representative_text": "Encik Jason Wong dah email final report to Shah Alam has been urgent under task TSK-325."
+    },
+    {
+      "primary_id": "my-mixcs-007",
+      "duplicate_ids": [
+        "my-mixcs-027"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.967,
+      "representative_text": "Project lead Priya d/o Mohan said that client meeting kat Universiti Malaya which is currently scheduled under ticket TCK-326."
+    },
+    {
+      "primary_id": "my-mixcs-008",
+      "duplicate_ids": [
+        "my-mixcs-028"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.962,
+      "representative_text": "Encik Dinesh s/o Anand mintak to verify budget proposal for Subang Jaya has been postponed under task TSK-327."
+    },
+    {
+      "primary_id": "my-mixcs-009",
+      "duplicate_ids": [
+        "my-mixcs-029"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.969,
+      "representative_text": "Project lead Michelle Lim dah confirm booking venue dekat Tenaga Nasional Berhad which is currently pending approval under ticket TCK-328."
+    },
+    {
+      "primary_id": "my-mixcs-010",
+      "duplicate_ids": [
+        "my-mixcs-030"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.959,
+      "representative_text": "Encik Khairul bin Anwar bagitahu I yang presentation kat KLCC has been finalized under task TSK-329."
+    },
+    {
+      "primary_id": "my-mixcs-001",
+      "duplicate_ids": [
+        "my-mixcs-031"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.965,
+      "representative_text": "Project lead Tan Wei Jun dah email final report to Petronas Gas Berhad which is currently urgent under ticket TCK-330."
+    },
+    {
+      "primary_id": "my-mixcs-002",
+      "duplicate_ids": [
+        "my-mixcs-032"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.96,
+      "representative_text": "Encik Nurul Huda bt. Razali said that client meeting kat Cyberjaya has been scheduled under task TSK-331."
+    },
+    {
+      "primary_id": "my-mixcs-003",
+      "duplicate_ids": [
+        "my-mixcs-033"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.968,
+      "representative_text": "Project lead Suresh a/l Murugan mintak to verify budget proposal for CIMB Bank which is currently postponed under ticket TCK-332."
+    },
+    {
+      "primary_id": "my-mixcs-004",
+      "duplicate_ids": [
+        "my-mixcs-034"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.963,
+      "representative_text": "Encik Siti Hajar binti Osman dah confirm booking venue dekat Putrajaya has been pending approval under task TSK-333."
+    },
+    {
+      "primary_id": "my-mixcs-005",
+      "duplicate_ids": [
+        "my-mixcs-035"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.968,
+      "representative_text": "Project lead Ahmad Faiz bin Zulkifli bagitahu I yang presentation kat Maybank which is currently finalized under ticket TCK-334."
+    },
+    {
+      "primary_id": "my-mixcs-006",
+      "duplicate_ids": [
+        "my-mixcs-036"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.953,
+      "representative_text": "Encik Jason Wong dah email final report to Shah Alam has been urgent under task TSK-335."
+    },
+    {
+      "primary_id": "my-mixcs-007",
+      "duplicate_ids": [
+        "my-mixcs-037"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.967,
+      "representative_text": "Project lead Priya d/o Mohan said that client meeting kat Universiti Malaya which is currently scheduled under ticket TCK-336."
+    },
+    {
+      "primary_id": "my-mixcs-008",
+      "duplicate_ids": [
+        "my-mixcs-038"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.962,
+      "representative_text": "Encik Dinesh s/o Anand mintak to verify budget proposal for Subang Jaya has been postponed under task TSK-337."
+    },
+    {
+      "primary_id": "my-mixcs-009",
+      "duplicate_ids": [
+        "my-mixcs-039"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.969,
+      "representative_text": "Project lead Michelle Lim dah confirm booking venue dekat Tenaga Nasional Berhad which is currently pending approval under ticket TCK-338."
+    },
+    {
+      "primary_id": "my-mixcs-010",
+      "duplicate_ids": [
+        "my-mixcs-040"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.959,
+      "representative_text": "Encik Khairul bin Anwar bagitahu I yang presentation kat KLCC has been finalized under task TSK-339."
+    },
+    {
+      "primary_id": "my-mixcs-001",
+      "duplicate_ids": [
+        "my-mixcs-041"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.965,
+      "representative_text": "Project lead Tan Wei Jun dah email final report to Petronas Gas Berhad which is currently urgent under ticket TCK-340."
+    },
+    {
+      "primary_id": "my-mixcs-002",
+      "duplicate_ids": [
+        "my-mixcs-042"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.96,
+      "representative_text": "Encik Nurul Huda bt. Razali said that client meeting kat Cyberjaya has been scheduled under task TSK-341."
+    },
+    {
+      "primary_id": "my-mixcs-003",
+      "duplicate_ids": [
+        "my-mixcs-043"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.968,
+      "representative_text": "Project lead Suresh a/l Murugan mintak to verify budget proposal for CIMB Bank which is currently postponed under ticket TCK-342."
+    },
+    {
+      "primary_id": "my-mixcs-004",
+      "duplicate_ids": [
+        "my-mixcs-044"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.963,
+      "representative_text": "Encik Siti Hajar binti Osman dah confirm booking venue dekat Putrajaya has been pending approval under task TSK-343."
+    },
+    {
+      "primary_id": "my-mixcs-005",
+      "duplicate_ids": [
+        "my-mixcs-045"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.968,
+      "representative_text": "Project lead Ahmad Faiz bin Zulkifli bagitahu I yang presentation kat Maybank which is currently finalized under ticket TCK-344."
+    },
+    {
+      "primary_id": "my-mixcs-006",
+      "duplicate_ids": [
+        "my-mixcs-046"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.953,
+      "representative_text": "Encik Jason Wong dah email final report to Shah Alam has been urgent under task TSK-345."
+    },
+    {
+      "primary_id": "my-mixcs-007",
+      "duplicate_ids": [
+        "my-mixcs-047"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.967,
+      "representative_text": "Project lead Priya d/o Mohan said that client meeting kat Universiti Malaya which is currently scheduled under ticket TCK-346."
+    },
+    {
+      "primary_id": "my-mixcs-008",
+      "duplicate_ids": [
+        "my-mixcs-048"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.962,
+      "representative_text": "Encik Dinesh s/o Anand mintak to verify budget proposal for Subang Jaya has been postponed under task TSK-347."
+    },
+    {
+      "primary_id": "my-mixcs-009",
+      "duplicate_ids": [
+        "my-mixcs-049"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.969,
+      "representative_text": "Project lead Michelle Lim dah confirm booking venue dekat Tenaga Nasional Berhad which is currently pending approval under ticket TCK-348."
+    },
+    {
+      "primary_id": "my-mixcs-010",
+      "duplicate_ids": [
+        "my-mixcs-050"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.959,
+      "representative_text": "Encik Khairul bin Anwar bagitahu I yang presentation kat KLCC has been finalized under task TSK-349."
+    },
+    {
+      "primary_id": "my-mixcs-001",
+      "duplicate_ids": [
+        "my-mixcs-051"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.965,
+      "representative_text": "Project lead Tan Wei Jun dah email final report to Petronas Gas Berhad which is currently urgent under ticket TCK-350."
+    },
+    {
+      "primary_id": "my-mixcs-002",
+      "duplicate_ids": [
+        "my-mixcs-052"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.96,
+      "representative_text": "Encik Nurul Huda bt. Razali said that client meeting kat Cyberjaya has been scheduled under task TSK-351."
+    },
+    {
+      "primary_id": "my-mixcs-003",
+      "duplicate_ids": [
+        "my-mixcs-053"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.968,
+      "representative_text": "Project lead Suresh a/l Murugan mintak to verify budget proposal for CIMB Bank which is currently postponed under ticket TCK-352."
+    },
+    {
+      "primary_id": "my-mixcs-004",
+      "duplicate_ids": [
+        "my-mixcs-054"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.963,
+      "representative_text": "Encik Siti Hajar binti Osman dah confirm booking venue dekat Putrajaya has been pending approval under task TSK-353."
+    },
+    {
+      "primary_id": "my-mixcs-005",
+      "duplicate_ids": [
+        "my-mixcs-055"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.968,
+      "representative_text": "Project lead Ahmad Faiz bin Zulkifli bagitahu I yang presentation kat Maybank which is currently finalized under ticket TCK-354."
+    },
+    {
+      "primary_id": "my-mixcs-006",
+      "duplicate_ids": [
+        "my-mixcs-056"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.953,
+      "representative_text": "Encik Jason Wong dah email final report to Shah Alam has been urgent under task TSK-355."
+    },
+    {
+      "primary_id": "my-mixcs-007",
+      "duplicate_ids": [
+        "my-mixcs-057"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.967,
+      "representative_text": "Project lead Priya d/o Mohan said that client meeting kat Universiti Malaya which is currently scheduled under ticket TCK-356."
+    },
+    {
+      "primary_id": "my-mixcs-008",
+      "duplicate_ids": [
+        "my-mixcs-058"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.962,
+      "representative_text": "Encik Dinesh s/o Anand mintak to verify budget proposal for Subang Jaya has been postponed under task TSK-357."
+    },
+    {
+      "primary_id": "my-mixcs-009",
+      "duplicate_ids": [
+        "my-mixcs-059"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.969,
+      "representative_text": "Project lead Michelle Lim dah confirm booking venue dekat Tenaga Nasional Berhad which is currently pending approval under ticket TCK-358."
+    },
+    {
+      "primary_id": "my-mixcs-010",
+      "duplicate_ids": [
+        "my-mixcs-060"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.959,
+      "representative_text": "Encik Khairul bin Anwar bagitahu I yang presentation kat KLCC has been finalized under task TSK-359."
+    },
+    {
+      "primary_id": "my-mixcs-001",
+      "duplicate_ids": [
+        "my-mixcs-061"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.965,
+      "representative_text": "Project lead Tan Wei Jun dah email final report to Petronas Gas Berhad which is currently urgent under ticket TCK-360."
+    },
+    {
+      "primary_id": "my-mixcs-002",
+      "duplicate_ids": [
+        "my-mixcs-062"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.96,
+      "representative_text": "Encik Nurul Huda bt. Razali said that client meeting kat Cyberjaya has been scheduled under task TSK-361."
+    },
+    {
+      "primary_id": "my-mixcs-003",
+      "duplicate_ids": [
+        "my-mixcs-063"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.968,
+      "representative_text": "Project lead Suresh a/l Murugan mintak to verify budget proposal for CIMB Bank which is currently postponed under ticket TCK-362."
+    },
+    {
+      "primary_id": "my-mixcs-004",
+      "duplicate_ids": [
+        "my-mixcs-064"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.963,
+      "representative_text": "Encik Siti Hajar binti Osman dah confirm booking venue dekat Putrajaya has been pending approval under task TSK-363."
+    },
+    {
+      "primary_id": "my-mixcs-005",
+      "duplicate_ids": [
+        "my-mixcs-065"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.968,
+      "representative_text": "Project lead Ahmad Faiz bin Zulkifli bagitahu I yang presentation kat Maybank which is currently finalized under ticket TCK-364."
+    },
+    {
+      "primary_id": "my-mixcs-066",
+      "duplicate_ids": [
+        "my-mixcs-076"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.949,
+      "representative_text": "I think Ravi a/l Chandran should follow up that Zoom call dekat Damansara Utama under reference REF-410 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-067",
+      "duplicate_ids": [
+        "my-mixcs-077"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "I think Faiz Zulkifli should follow up that Teams meeting dekat Cyberjaya under reference REF-411 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-068",
+      "duplicate_ids": [
+        "my-mixcs-078"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "I think Lee Siew Ling should follow up that site audit dekat Bukit Bintang under reference REF-412 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-069",
+      "duplicate_ids": [
+        "my-mixcs-079"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.946,
+      "representative_text": "I think David Tan should follow up that client briefing dekat Putrajaya under reference REF-413 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-070",
+      "duplicate_ids": [
+        "my-mixcs-080"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.953,
+      "representative_text": "I think Kavitha a/p Subramaniam should follow up that contract signing dekat Petaling Jaya under reference REF-414 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-071",
+      "duplicate_ids": [
+        "my-mixcs-081"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "I think Ravi a/l Chandran should follow up that Zoom call dekat Shah Alam under reference REF-415 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-072",
+      "duplicate_ids": [
+        "my-mixcs-082"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.949,
+      "representative_text": "I think Faiz Zulkifli should follow up that Teams meeting dekat Bangsar South under reference REF-416 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-073",
+      "duplicate_ids": [
+        "my-mixcs-083"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "I think Lee Siew Ling should follow up that site audit dekat Subang Jaya under reference REF-417 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-074",
+      "duplicate_ids": [
+        "my-mixcs-084"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.946,
+      "representative_text": "I think David Tan should follow up that client briefing dekat Mont Kiara under reference REF-418 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-075",
+      "duplicate_ids": [
+        "my-mixcs-085"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.95,
+      "representative_text": "I think Kavitha a/p Subramaniam should follow up that contract signing dekat KLCC under reference REF-419 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-066",
+      "duplicate_ids": [
+        "my-mixcs-086"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.949,
+      "representative_text": "I think Ravi a/l Chandran should follow up that Zoom call dekat Damansara Utama under reference REF-420 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-067",
+      "duplicate_ids": [
+        "my-mixcs-087"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "I think Faiz Zulkifli should follow up that Teams meeting dekat Cyberjaya under reference REF-421 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-068",
+      "duplicate_ids": [
+        "my-mixcs-088"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "I think Lee Siew Ling should follow up that site audit dekat Bukit Bintang under reference REF-422 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-069",
+      "duplicate_ids": [
+        "my-mixcs-089"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.946,
+      "representative_text": "I think David Tan should follow up that client briefing dekat Putrajaya under reference REF-423 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-070",
+      "duplicate_ids": [
+        "my-mixcs-090"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.953,
+      "representative_text": "I think Kavitha a/p Subramaniam should follow up that contract signing dekat Petaling Jaya under reference REF-424 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-071",
+      "duplicate_ids": [
+        "my-mixcs-091"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "I think Ravi a/l Chandran should follow up that Zoom call dekat Shah Alam under reference REF-425 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-072",
+      "duplicate_ids": [
+        "my-mixcs-092"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.949,
+      "representative_text": "I think Faiz Zulkifli should follow up that Teams meeting dekat Bangsar South under reference REF-426 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-073",
+      "duplicate_ids": [
+        "my-mixcs-093"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "I think Lee Siew Ling should follow up that site audit dekat Subang Jaya under reference REF-427 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-074",
+      "duplicate_ids": [
+        "my-mixcs-094"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.946,
+      "representative_text": "I think David Tan should follow up that client briefing dekat Mont Kiara under reference REF-428 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-075",
+      "duplicate_ids": [
+        "my-mixcs-095"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.95,
+      "representative_text": "I think Kavitha a/p Subramaniam should follow up that contract signing dekat KLCC under reference REF-429 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-066",
+      "duplicate_ids": [
+        "my-mixcs-096"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.949,
+      "representative_text": "I think Ravi a/l Chandran should follow up that Zoom call dekat Damansara Utama under reference REF-430 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-067",
+      "duplicate_ids": [
+        "my-mixcs-097"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "I think Faiz Zulkifli should follow up that Teams meeting dekat Cyberjaya under reference REF-431 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-068",
+      "duplicate_ids": [
+        "my-mixcs-098"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "I think Lee Siew Ling should follow up that site audit dekat Bukit Bintang under reference REF-432 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-069",
+      "duplicate_ids": [
+        "my-mixcs-099"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.946,
+      "representative_text": "I think David Tan should follow up that client briefing dekat Putrajaya under reference REF-433 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-070",
+      "duplicate_ids": [
+        "my-mixcs-100"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.953,
+      "representative_text": "I think Kavitha a/p Subramaniam should follow up that contract signing dekat Petaling Jaya under reference REF-434 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-071",
+      "duplicate_ids": [
+        "my-mixcs-101"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "I think Ravi a/l Chandran should follow up that Zoom call dekat Shah Alam under reference REF-435 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-072",
+      "duplicate_ids": [
+        "my-mixcs-102"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.949,
+      "representative_text": "I think Faiz Zulkifli should follow up that Teams meeting dekat Bangsar South under reference REF-436 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-073",
+      "duplicate_ids": [
+        "my-mixcs-103"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "I think Lee Siew Ling should follow up that site audit dekat Subang Jaya under reference REF-437 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-074",
+      "duplicate_ids": [
+        "my-mixcs-104"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.946,
+      "representative_text": "I think David Tan should follow up that client briefing dekat Mont Kiara under reference REF-438 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-075",
+      "duplicate_ids": [
+        "my-mixcs-105"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.95,
+      "representative_text": "I think Kavitha a/p Subramaniam should follow up that contract signing dekat KLCC under reference REF-439 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-066",
+      "duplicate_ids": [
+        "my-mixcs-106"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.949,
+      "representative_text": "I think Ravi a/l Chandran should follow up that Zoom call dekat Damansara Utama under reference REF-440 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-067",
+      "duplicate_ids": [
+        "my-mixcs-107"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "I think Faiz Zulkifli should follow up that Teams meeting dekat Cyberjaya under reference REF-441 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-068",
+      "duplicate_ids": [
+        "my-mixcs-108"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "I think Lee Siew Ling should follow up that site audit dekat Bukit Bintang under reference REF-442 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-069",
+      "duplicate_ids": [
+        "my-mixcs-109"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.946,
+      "representative_text": "I think David Tan should follow up that client briefing dekat Putrajaya under reference REF-443 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-070",
+      "duplicate_ids": [
+        "my-mixcs-110"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.953,
+      "representative_text": "I think Kavitha a/p Subramaniam should follow up that contract signing dekat Petaling Jaya under reference REF-444 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-071",
+      "duplicate_ids": [
+        "my-mixcs-111"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "I think Ravi a/l Chandran should follow up that Zoom call dekat Shah Alam under reference REF-445 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-072",
+      "duplicate_ids": [
+        "my-mixcs-112"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.949,
+      "representative_text": "I think Faiz Zulkifli should follow up that Teams meeting dekat Bangsar South under reference REF-446 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-073",
+      "duplicate_ids": [
+        "my-mixcs-113"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "I think Lee Siew Ling should follow up that site audit dekat Subang Jaya under reference REF-447 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-074",
+      "duplicate_ids": [
+        "my-mixcs-114"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.946,
+      "representative_text": "I think David Tan should follow up that client briefing dekat Mont Kiara under reference REF-448 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-075",
+      "duplicate_ids": [
+        "my-mixcs-115"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.95,
+      "representative_text": "I think Kavitha a/p Subramaniam should follow up that contract signing dekat KLCC under reference REF-449 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-066",
+      "duplicate_ids": [
+        "my-mixcs-116"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.949,
+      "representative_text": "I think Ravi a/l Chandran should follow up that Zoom call dekat Damansara Utama under reference REF-450 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-067",
+      "duplicate_ids": [
+        "my-mixcs-117"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "I think Faiz Zulkifli should follow up that Teams meeting dekat Cyberjaya under reference REF-451 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-068",
+      "duplicate_ids": [
+        "my-mixcs-118"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "I think Lee Siew Ling should follow up that site audit dekat Bukit Bintang under reference REF-452 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-069",
+      "duplicate_ids": [
+        "my-mixcs-119"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.946,
+      "representative_text": "I think David Tan should follow up that client briefing dekat Putrajaya under reference REF-453 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-070",
+      "duplicate_ids": [
+        "my-mixcs-120"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.953,
+      "representative_text": "I think Kavitha a/p Subramaniam should follow up that contract signing dekat Petaling Jaya under reference REF-454 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-071",
+      "duplicate_ids": [
+        "my-mixcs-121"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "I think Ravi a/l Chandran should follow up that Zoom call dekat Shah Alam under reference REF-455 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-072",
+      "duplicate_ids": [
+        "my-mixcs-122"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.949,
+      "representative_text": "I think Faiz Zulkifli should follow up that Teams meeting dekat Bangsar South under reference REF-456 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-073",
+      "duplicate_ids": [
+        "my-mixcs-123"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "I think Lee Siew Ling should follow up that site audit dekat Subang Jaya under reference REF-457 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-074",
+      "duplicate_ids": [
+        "my-mixcs-124"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.946,
+      "representative_text": "I think David Tan should follow up that client briefing dekat Mont Kiara under reference REF-458 before deadline ends."
+    },
+    {
+      "primary_id": "my-mixcs-075",
+      "duplicate_ids": [
+        "my-mixcs-125"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.95,
+      "representative_text": "I think Kavitha a/p Subramaniam should follow up that contract signing dekat KLCC under reference REF-459 before deadline ends."
+    },
+    {
+      "primary_id": "my-chn-002",
+      "duplicate_ids": [
+        "my-chn-012"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.916,
+      "representative_text": "Yap Hui Min concluded the financial advisory engagement with Hospital Kuala Lumpur in George Town under docket DKT-511."
+    },
+    {
+      "primary_id": "my-chn-003",
+      "duplicate_ids": [
+        "my-chn-013"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.872,
+      "representative_text": "Managing Partner Chia Ah Fook presented the annual commercial review in Petaling Jaya in 2023 for portfolio 512."
+    },
+    {
+      "primary_id": "my-chn-004",
+      "duplicate_ids": [
+        "my-chn-014"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.913,
+      "representative_text": "Tan Siew Ling concluded the financial advisory engagement with Sunway Berhad in Johor Bahru under docket DKT-513."
+    },
+    {
+      "primary_id": "my-chn-005",
+      "duplicate_ids": [
+        "my-chn-015"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.885,
+      "representative_text": "Executive Director Lim Boon Keng presented the annual commercial review in Ipoh in 2023 for portfolio 514."
+    },
+    {
+      "primary_id": "my-chn-006",
+      "duplicate_ids": [
+        "my-chn-016"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.924,
+      "representative_text": "Lee Wei Keat concluded the financial advisory engagement with Hong Leong Bank in Klang under docket DKT-515."
+    },
+    {
+      "primary_id": "my-chn-007",
+      "duplicate_ids": [
+        "my-chn-017"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.865,
+      "representative_text": "Senior Consultant Wong Chee Meng presented the annual commercial review in Melaka in 2023 for portfolio 516."
+    },
+    {
+      "primary_id": "my-chn-008",
+      "duplicate_ids": [
+        "my-chn-018"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.92,
+      "representative_text": "Ng Kah Seng concluded the financial advisory engagement with Public Bank Berhad in Kuantan under docket DKT-517."
+    },
+    {
+      "primary_id": "my-chn-009",
+      "duplicate_ids": [
+        "my-chn-019"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.86,
+      "representative_text": "Chief Architect Ong Zhi Wei presented the annual commercial review in Alor Setar in 2023 for portfolio 518."
+    },
+    {
+      "primary_id": "my-chn-010",
+      "duplicate_ids": [
+        "my-chn-020"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.91,
+      "representative_text": "Goh Mei Ling concluded the financial advisory engagement with Genting Berhad in Batu Pahat under docket DKT-519."
+    },
+    {
+      "primary_id": "my-chn-001",
+      "duplicate_ids": [
+        "my-chn-021"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.862,
+      "representative_text": "Dr. Teoh Wei Jun presented the annual commercial review in Cyberjaya in 2023 for portfolio 520."
+    },
+    {
+      "primary_id": "my-chn-002",
+      "duplicate_ids": [
+        "my-chn-022"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.908,
+      "representative_text": "Chan Hui Min concluded the financial advisory engagement with Hospital Kuala Lumpur in George Town under docket DKT-521."
+    },
+    {
+      "primary_id": "my-chn-003",
+      "duplicate_ids": [
+        "my-chn-023"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.897,
+      "representative_text": "Managing Partner Low Ah Fook presented the annual commercial review in Petaling Jaya in 2023 for portfolio 522."
+    },
+    {
+      "primary_id": "my-chn-004",
+      "duplicate_ids": [
+        "my-chn-024"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.939,
+      "representative_text": "Chong Siew Ling concluded the financial advisory engagement with Sunway Berhad in Johor Bahru under docket DKT-523."
+    },
+    {
+      "primary_id": "my-chn-005",
+      "duplicate_ids": [
+        "my-chn-025"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.885,
+      "representative_text": "Executive Director Yap Boon Keng presented the annual commercial review in Ipoh in 2023 for portfolio 524."
+    },
+    {
+      "primary_id": "my-chn-006",
+      "duplicate_ids": [
+        "my-chn-026"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.915,
+      "representative_text": "Chia Wei Keat concluded the financial advisory engagement with Hong Leong Bank in Klang under docket DKT-525."
+    },
+    {
+      "primary_id": "my-chn-007",
+      "duplicate_ids": [
+        "my-chn-027"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.874,
+      "representative_text": "Senior Consultant Tan Chee Meng presented the annual commercial review in Melaka in 2023 for portfolio 526."
+    },
+    {
+      "primary_id": "my-chn-008",
+      "duplicate_ids": [
+        "my-chn-028"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.904,
+      "representative_text": "Lim Kah Seng concluded the financial advisory engagement with Public Bank Berhad in Kuantan under docket DKT-527."
+    },
+    {
+      "primary_id": "my-chn-009",
+      "duplicate_ids": [
+        "my-chn-029"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.86,
+      "representative_text": "Chief Architect Lee Zhi Wei presented the annual commercial review in Alor Setar in 2023 for portfolio 528."
+    },
+    {
+      "primary_id": "my-chn-010",
+      "duplicate_ids": [
+        "my-chn-030"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.91,
+      "representative_text": "Wong Mei Ling concluded the financial advisory engagement with Genting Berhad in Batu Pahat under docket DKT-529."
+    },
+    {
+      "primary_id": "my-chn-001",
+      "duplicate_ids": [
+        "my-chn-031"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.86,
+      "representative_text": "Dr. Ng Wei Jun presented the annual commercial review in Cyberjaya in 2023 for portfolio 530."
+    },
+    {
+      "primary_id": "my-chn-002",
+      "duplicate_ids": [
+        "my-chn-032"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.916,
+      "representative_text": "Ong Hui Min concluded the financial advisory engagement with Hospital Kuala Lumpur in George Town under docket DKT-531."
+    },
+    {
+      "primary_id": "my-chn-003",
+      "duplicate_ids": [
+        "my-chn-033"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.88,
+      "representative_text": "Managing Partner Goh Ah Fook presented the annual commercial review in Petaling Jaya in 2023 for portfolio 532."
+    },
+    {
+      "primary_id": "my-chn-004",
+      "duplicate_ids": [
+        "my-chn-034"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.913,
+      "representative_text": "Teoh Siew Ling concluded the financial advisory engagement with Sunway Berhad in Johor Bahru under docket DKT-533."
+    },
+    {
+      "primary_id": "my-chn-005",
+      "duplicate_ids": [
+        "my-chn-035"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.876,
+      "representative_text": "Executive Director Chan Boon Keng presented the annual commercial review in Ipoh in 2023 for portfolio 534."
+    },
+    {
+      "primary_id": "my-chn-006",
+      "duplicate_ids": [
+        "my-chn-036"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.924,
+      "representative_text": "Low Wei Keat concluded the financial advisory engagement with Hong Leong Bank in Klang under docket DKT-535."
+    },
+    {
+      "primary_id": "my-chn-007",
+      "duplicate_ids": [
+        "my-chn-037"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.865,
+      "representative_text": "Senior Consultant Chong Chee Meng presented the annual commercial review in Melaka in 2023 for portfolio 536."
+    },
+    {
+      "primary_id": "my-chn-008",
+      "duplicate_ids": [
+        "my-chn-038"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.904,
+      "representative_text": "Yap Kah Seng concluded the financial advisory engagement with Public Bank Berhad in Kuantan under docket DKT-537."
+    },
+    {
+      "primary_id": "my-chn-009",
+      "duplicate_ids": [
+        "my-chn-039"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.895,
+      "representative_text": "Chief Architect Chia Zhi Wei presented the annual commercial review in Alor Setar in 2023 for portfolio 538."
+    },
+    {
+      "primary_id": "my-chn-010",
+      "duplicate_ids": [
+        "my-chn-040"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.91,
+      "representative_text": "Tan Mei Ling concluded the financial advisory engagement with Genting Berhad in Batu Pahat under docket DKT-539."
+    },
+    {
+      "primary_id": "my-chn-001",
+      "duplicate_ids": [
+        "my-chn-041"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.851,
+      "representative_text": "Dr. Lim Wei Jun presented the annual commercial review in Cyberjaya in 2023 for portfolio 540."
+    },
+    {
+      "primary_id": "my-chn-002",
+      "duplicate_ids": [
+        "my-chn-042"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.916,
+      "representative_text": "Lee Hui Min concluded the financial advisory engagement with Hospital Kuala Lumpur in George Town under docket DKT-541."
+    },
+    {
+      "primary_id": "my-chn-003",
+      "duplicate_ids": [
+        "my-chn-043"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.88,
+      "representative_text": "Managing Partner Wong Ah Fook presented the annual commercial review in Petaling Jaya in 2023 for portfolio 542."
+    },
+    {
+      "primary_id": "my-chn-004",
+      "duplicate_ids": [
+        "my-chn-044"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.946,
+      "representative_text": "Ng Siew Ling concluded the financial advisory engagement with Sunway Berhad in Johor Bahru under docket DKT-543."
+    },
+    {
+      "primary_id": "my-chn-005",
+      "duplicate_ids": [
+        "my-chn-045"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.912,
+      "representative_text": "Executive Director Ong Boon Keng presented the annual commercial review in Ipoh in 2023 for portfolio 544."
+    },
+    {
+      "primary_id": "my-chn-046",
+      "duplicate_ids": [
+        "my-chn-056"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.881,
+      "representative_text": "Project engineer David Tan Boon Keng finalized the construction schedule for PHASE-11 in Petaling Jaya."
+    },
+    {
+      "primary_id": "my-chn-047",
+      "duplicate_ids": [
+        "my-chn-057"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.863,
+      "representative_text": "Project engineer David Lim Wei Keat finalized the construction schedule for PHASE-12 in Johor Bahru."
+    },
+    {
+      "primary_id": "my-chn-048",
+      "duplicate_ids": [
+        "my-chn-058"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.871,
+      "representative_text": "Project engineer David Lee Chee Meng finalized the construction schedule for PHASE-13 in Ipoh."
+    },
+    {
+      "primary_id": "my-chn-050",
+      "duplicate_ids": [
+        "my-chn-060"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.856,
+      "representative_text": "Project engineer David Ng Zhi Wei finalized the construction schedule for PHASE-15 in Melaka."
+    },
+    {
+      "primary_id": "my-chn-051",
+      "duplicate_ids": [
+        "my-chn-061"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.85,
+      "representative_text": "Project engineer David Ong Mei Ling finalized the construction schedule for PHASE-16 in Kuantan."
+    },
+    {
+      "primary_id": "my-chn-052",
+      "duplicate_ids": [
+        "my-chn-062"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.851,
+      "representative_text": "Project engineer David Goh Wei Jun finalized the construction schedule for PHASE-17 in Alor Setar."
+    },
+    {
+      "primary_id": "my-chn-046",
+      "duplicate_ids": [
+        "my-chn-066"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.882,
+      "representative_text": "Project engineer David Chong Boon Keng finalized the construction schedule for PHASE-21 in Petaling Jaya."
+    },
+    {
+      "primary_id": "my-chn-047",
+      "duplicate_ids": [
+        "my-chn-067"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.881,
+      "representative_text": "Project engineer David Yap Wei Keat finalized the construction schedule for PHASE-22 in Johor Bahru."
+    },
+    {
+      "primary_id": "my-chn-048",
+      "duplicate_ids": [
+        "my-chn-068"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.853,
+      "representative_text": "Project engineer David Chia Chee Meng finalized the construction schedule for PHASE-23 in Ipoh."
+    },
+    {
+      "primary_id": "my-chn-049",
+      "duplicate_ids": [
+        "my-chn-069"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.863,
+      "representative_text": "Project engineer David Tan Kah Seng finalized the construction schedule for PHASE-24 in Klang."
+    },
+    {
+      "primary_id": "my-chn-053",
+      "duplicate_ids": [
+        "my-chn-073"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.88,
+      "representative_text": "Project engineer David Ng Hui Min finalized the construction schedule for PHASE-28 in Batu Pahat."
+    },
+    {
+      "primary_id": "my-chn-054",
+      "duplicate_ids": [
+        "my-chn-074"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.85,
+      "representative_text": "Project engineer David Ong Ah Fook finalized the construction schedule for PHASE-29 in Cyberjaya."
+    },
+    {
+      "primary_id": "my-chn-046",
+      "duplicate_ids": [
+        "my-chn-076"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.854,
+      "representative_text": "Project engineer David Teoh Boon Keng finalized the construction schedule for PHASE-31 in Petaling Jaya."
+    },
+    {
+      "primary_id": "my-chn-047",
+      "duplicate_ids": [
+        "my-chn-077"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.854,
+      "representative_text": "Project engineer David Chan Wei Keat finalized the construction schedule for PHASE-32 in Johor Bahru."
+    },
+    {
+      "primary_id": "my-chn-048",
+      "duplicate_ids": [
+        "my-chn-078"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.872,
+      "representative_text": "Project engineer David Low Chee Meng finalized the construction schedule for PHASE-33 in Ipoh."
+    },
+    {
+      "primary_id": "my-chn-059",
+      "duplicate_ids": [
+        "my-chn-079"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.866,
+      "representative_text": "Project engineer David Chong Kah Seng finalized the construction schedule for PHASE-34 in Klang."
+    },
+    {
+      "primary_id": "my-chn-051",
+      "duplicate_ids": [
+        "my-chn-081"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.87,
+      "representative_text": "Project engineer David Chia Mei Ling finalized the construction schedule for PHASE-36 in Kuantan."
+    },
+    {
+      "primary_id": "my-chn-052",
+      "duplicate_ids": [
+        "my-chn-082"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.86,
+      "representative_text": "Project engineer David Tan Wei Jun finalized the construction schedule for PHASE-37 in Alor Setar."
+    },
+    {
+      "primary_id": "my-chn-054",
+      "duplicate_ids": [
+        "my-chn-084"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.85,
+      "representative_text": "Project engineer David Lee Ah Fook finalized the construction schedule for PHASE-39 in Cyberjaya."
+    },
+    {
+      "primary_id": "my-ind-002",
+      "duplicate_ids": [
+        "my-ind-032"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.965,
+      "representative_text": "Consultant engineer Kavitha a/p Subramaniam submitted the structural integrity audit report in Bangi under filing FIL-631."
+    },
+    {
+      "primary_id": "my-ind-003",
+      "duplicate_ids": [
+        "my-ind-033"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.963,
+      "representative_text": "Legal practitioner Dinesh s/o Anand concluded corporate compliance arbitration in Mont Kiara in 2024 under case IND-632."
+    },
+    {
+      "primary_id": "my-ind-005",
+      "duplicate_ids": [
+        "my-ind-035"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.967,
+      "representative_text": "Consultant engineer Harpreet Singh a/l Gurmit Singh submitted the structural integrity audit report in Alor Setar under filing FIL-634."
+    },
+    {
+      "primary_id": "my-ind-006",
+      "duplicate_ids": [
+        "my-ind-036"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.963,
+      "representative_text": "Legal practitioner Suresh a/l Murugan concluded corporate compliance arbitration in Klang in 2024 under case IND-635."
+    },
+    {
+      "primary_id": "my-ind-008",
+      "duplicate_ids": [
+        "my-ind-038"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.966,
+      "representative_text": "Consultant engineer Deepa a/p Vengadasalam submitted the structural integrity audit report in Butterworth under filing FIL-637."
+    },
+    {
+      "primary_id": "my-ind-009",
+      "duplicate_ids": [
+        "my-ind-039"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.963,
+      "representative_text": "Legal practitioner Mohan a/l Ramasamy concluded corporate compliance arbitration in Taiping in 2024 under case IND-638."
+    },
+    {
+      "primary_id": "my-ind-011",
+      "duplicate_ids": [
+        "my-ind-041"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.964,
+      "representative_text": "Consultant engineer Ravi a/l Chandran submitted the structural integrity audit report in Ipoh under filing FIL-640."
+    },
+    {
+      "primary_id": "my-ind-012",
+      "duplicate_ids": [
+        "my-ind-042"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.964,
+      "representative_text": "Legal practitioner Kavitha a/p Subramaniam concluded corporate compliance arbitration in Bangi in 2024 under case IND-641."
+    },
+    {
+      "primary_id": "my-ind-014",
+      "duplicate_ids": [
+        "my-ind-044"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.964,
+      "representative_text": "Consultant engineer Priya d/o Mohan submitted the structural integrity audit report in Seremban under filing FIL-643."
+    },
+    {
+      "primary_id": "my-ind-015",
+      "duplicate_ids": [
+        "my-ind-045"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.966,
+      "representative_text": "Legal practitioner Harpreet Singh a/l Gurmit Singh concluded corporate compliance arbitration in Alor Setar in 2024 under case IND-644."
+    },
+    {
+      "primary_id": "my-ind-046",
+      "duplicate_ids": [
+        "my-ind-056"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "Site manager Priya d/o Gurmit Singh inspected the transit railway terminal infrastructure at Lot-20 in Mont Kiara."
+    },
+    {
+      "primary_id": "my-ind-047",
+      "duplicate_ids": [
+        "my-ind-057"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "Site manager Harpreet Singh a/l Murugan inspected the transit railway terminal infrastructure at Lot-21 in Seremban."
+    },
+    {
+      "primary_id": "my-ind-048",
+      "duplicate_ids": [
+        "my-ind-058"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.942,
+      "representative_text": "Site manager Suresh a/l Rajagopal inspected the transit railway terminal infrastructure at Lot-22 in Alor Setar."
+    },
+    {
+      "primary_id": "my-ind-049",
+      "duplicate_ids": [
+        "my-ind-059"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.944,
+      "representative_text": "Site manager Ananthi a/p Vengadasalam inspected the transit railway terminal infrastructure at Lot-23 in Klang."
+    },
+    {
+      "primary_id": "my-ind-050",
+      "duplicate_ids": [
+        "my-ind-060"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.943,
+      "representative_text": "Site manager Deepa a/p Ramasamy inspected the transit railway terminal infrastructure at Lot-24 in George Town."
+    },
+    {
+      "primary_id": "my-ind-051",
+      "duplicate_ids": [
+        "my-ind-061"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.942,
+      "representative_text": "Site manager Mohan a/l Maniam inspected the transit railway terminal infrastructure at Lot-25 in Butterworth."
+    },
+    {
+      "primary_id": "my-ind-052",
+      "duplicate_ids": [
+        "my-ind-062"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.943,
+      "representative_text": "Site manager Saravanan a/l Chandran inspected the transit railway terminal infrastructure at Lot-26 in Taiping."
+    },
+    {
+      "primary_id": "my-ind-053",
+      "duplicate_ids": [
+        "my-ind-063"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.944,
+      "representative_text": "Site manager Ravi a/l Subramaniam inspected the transit railway terminal infrastructure at Lot-27 in Sungai Petani."
+    },
+    {
+      "primary_id": "my-ind-054",
+      "duplicate_ids": [
+        "my-ind-064"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.939,
+      "representative_text": "Site manager Kavitha a/p Anand inspected the transit railway terminal infrastructure at Lot-28 in Ipoh."
+    },
+    {
+      "primary_id": "my-ind-055",
+      "duplicate_ids": [
+        "my-ind-065"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.94,
+      "representative_text": "Site manager Dinesh s/o Mohan inspected the transit railway terminal infrastructure at Lot-29 in Bangi."
+    },
+    {
+      "primary_id": "my-ind-046",
+      "duplicate_ids": [
+        "my-ind-066"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "Site manager Priya d/o Gurmit Singh inspected the transit railway terminal infrastructure at Lot-30 in Mont Kiara."
+    },
+    {
+      "primary_id": "my-ind-047",
+      "duplicate_ids": [
+        "my-ind-067"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "Site manager Harpreet Singh a/l Murugan inspected the transit railway terminal infrastructure at Lot-31 in Seremban."
+    },
+    {
+      "primary_id": "my-ind-048",
+      "duplicate_ids": [
+        "my-ind-068"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.942,
+      "representative_text": "Site manager Suresh a/l Rajagopal inspected the transit railway terminal infrastructure at Lot-32 in Alor Setar."
+    },
+    {
+      "primary_id": "my-ind-049",
+      "duplicate_ids": [
+        "my-ind-069"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.944,
+      "representative_text": "Site manager Ananthi a/p Vengadasalam inspected the transit railway terminal infrastructure at Lot-33 in Klang."
+    },
+    {
+      "primary_id": "my-ind-050",
+      "duplicate_ids": [
+        "my-ind-070"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.943,
+      "representative_text": "Site manager Deepa a/p Ramasamy inspected the transit railway terminal infrastructure at Lot-34 in George Town."
+    },
+    {
+      "primary_id": "my-ind-051",
+      "duplicate_ids": [
+        "my-ind-071"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.942,
+      "representative_text": "Site manager Mohan a/l Maniam inspected the transit railway terminal infrastructure at Lot-35 in Butterworth."
+    },
+    {
+      "primary_id": "my-ind-052",
+      "duplicate_ids": [
+        "my-ind-072"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.943,
+      "representative_text": "Site manager Saravanan a/l Chandran inspected the transit railway terminal infrastructure at Lot-36 in Taiping."
+    },
+    {
+      "primary_id": "my-ind-053",
+      "duplicate_ids": [
+        "my-ind-073"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.944,
+      "representative_text": "Site manager Ravi a/l Subramaniam inspected the transit railway terminal infrastructure at Lot-37 in Sungai Petani."
+    },
+    {
+      "primary_id": "my-ind-054",
+      "duplicate_ids": [
+        "my-ind-074"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.939,
+      "representative_text": "Site manager Kavitha a/p Anand inspected the transit railway terminal infrastructure at Lot-38 in Ipoh."
+    },
+    {
+      "primary_id": "my-ind-055",
+      "duplicate_ids": [
+        "my-ind-075"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.94,
+      "representative_text": "Site manager Dinesh s/o Mohan inspected the transit railway terminal infrastructure at Lot-39 in Bangi."
+    },
+    {
+      "primary_id": "my-ind-046",
+      "duplicate_ids": [
+        "my-ind-076"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.945,
+      "representative_text": "Site manager Priya d/o Gurmit Singh inspected the transit railway terminal infrastructure at Lot-40 in Mont Kiara."
+    },
+    {
+      "primary_id": "my-ind-047",
+      "duplicate_ids": [
+        "my-ind-077"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.947,
+      "representative_text": "Site manager Harpreet Singh a/l Murugan inspected the transit railway terminal infrastructure at Lot-41 in Seremban."
+    },
+    {
+      "primary_id": "my-ind-048",
+      "duplicate_ids": [
+        "my-ind-078"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.942,
+      "representative_text": "Site manager Suresh a/l Rajagopal inspected the transit railway terminal infrastructure at Lot-42 in Alor Setar."
+    },
+    {
+      "primary_id": "my-ind-049",
+      "duplicate_ids": [
+        "my-ind-079"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.944,
+      "representative_text": "Site manager Ananthi a/p Vengadasalam inspected the transit railway terminal infrastructure at Lot-43 in Klang."
+    },
+    {
+      "primary_id": "my-ind-050",
+      "duplicate_ids": [
+        "my-ind-080"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.943,
+      "representative_text": "Site manager Deepa a/p Ramasamy inspected the transit railway terminal infrastructure at Lot-44 in George Town."
+    },
+    {
+      "primary_id": "my-ind-051",
+      "duplicate_ids": [
+        "my-ind-081"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.942,
+      "representative_text": "Site manager Mohan a/l Maniam inspected the transit railway terminal infrastructure at Lot-45 in Butterworth."
+    },
+    {
+      "primary_id": "my-ind-052",
+      "duplicate_ids": [
+        "my-ind-082"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.943,
+      "representative_text": "Site manager Saravanan a/l Chandran inspected the transit railway terminal infrastructure at Lot-46 in Taiping."
+    },
+    {
+      "primary_id": "my-ind-053",
+      "duplicate_ids": [
+        "my-ind-083"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.944,
+      "representative_text": "Site manager Ravi a/l Subramaniam inspected the transit railway terminal infrastructure at Lot-47 in Sungai Petani."
+    },
+    {
+      "primary_id": "my-ind-054",
+      "duplicate_ids": [
+        "my-ind-084"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.939,
+      "representative_text": "Site manager Kavitha a/p Anand inspected the transit railway terminal infrastructure at Lot-48 in Ipoh."
+    },
+    {
+      "primary_id": "my-ind-055",
+      "duplicate_ids": [
+        "my-ind-085"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.94,
+      "representative_text": "Site manager Dinesh s/o Mohan inspected the transit railway terminal infrastructure at Lot-49 in Bangi."
+    },
+    {
+      "primary_id": "my-intl-001",
+      "duplicate_ids": [
+        "my-intl-016"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.992,
+      "representative_text": "Satya Nadella discussed artificial intelligence enterprise roadmaps at Microsoft headquarters in Redmond in 2024 during keynote summit 16."
+    },
+    {
+      "primary_id": "my-intl-002",
+      "duplicate_ids": [
+        "my-intl-017"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.979,
+      "representative_text": "Sarah Connor announced cloud infrastructure expansion alongside engineers at Cyberdyne Systems headquarters in Los Angeles in 2024 during keynote summit 17."
+    },
+    {
+      "primary_id": "my-intl-003",
+      "duplicate_ids": [
+        "my-intl-018"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.976,
+      "representative_text": "Sundar Pichai delivered the annual keynote address to shareholders at Google headquarters in Mountain View in 2024 during keynote summit 18."
+    },
+    {
+      "primary_id": "my-intl-004",
+      "duplicate_ids": [
+        "my-intl-019"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.976,
+      "representative_text": "Tim Cook concluded multi-year technology development agreements with Apple headquarters in Cupertino in 2024 during keynote summit 19."
+    },
+    {
+      "primary_id": "my-intl-005",
+      "duplicate_ids": [
+        "my-intl-020"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.982,
+      "representative_text": "Elena Rostova addressed international technology researchers at CERN headquarters in Geneva in 2024 during keynote summit 20."
+    },
+    {
+      "primary_id": "my-intl-006",
+      "duplicate_ids": [
+        "my-intl-021"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.976,
+      "representative_text": "Mark Zuckerberg discussed artificial intelligence enterprise roadmaps at Meta headquarters in Menlo Park in 2024 during keynote summit 21."
+    },
+    {
+      "primary_id": "my-intl-007",
+      "duplicate_ids": [
+        "my-intl-022"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "Sam Altman announced cloud infrastructure expansion alongside engineers at OpenAI headquarters in San Francisco in 2024 during keynote summit 22."
+    },
+    {
+      "primary_id": "my-intl-008",
+      "duplicate_ids": [
+        "my-intl-023"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.975,
+      "representative_text": "Jensen Huang delivered the annual keynote address to shareholders at Nvidia headquarters in Santa Clara in 2024 during keynote summit 23."
+    },
+    {
+      "primary_id": "my-intl-009",
+      "duplicate_ids": [
+        "my-intl-024"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "Andy Jassy concluded multi-year technology development agreements with Amazon headquarters in Seattle in 2024 during keynote summit 24."
+    },
+    {
+      "primary_id": "my-intl-010",
+      "duplicate_ids": [
+        "my-intl-025"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.969,
+      "representative_text": "Demis Hassabis addressed international technology researchers at Google DeepMind headquarters in London in 2024 during keynote summit 25."
+    },
+    {
+      "primary_id": "my-intl-011",
+      "duplicate_ids": [
+        "my-intl-026"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.97,
+      "representative_text": "Michael Dell discussed artificial intelligence enterprise roadmaps at Dell Technologies headquarters in Round Rock in 2024 during keynote summit 26."
+    },
+    {
+      "primary_id": "my-intl-012",
+      "duplicate_ids": [
+        "my-intl-027"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.972,
+      "representative_text": "Bill McDermott announced cloud infrastructure expansion alongside engineers at ServiceNow headquarters in Santa Clara in 2024 during keynote summit 27."
+    },
+    {
+      "primary_id": "my-intl-013",
+      "duplicate_ids": [
+        "my-intl-028"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.969,
+      "representative_text": "Marc Benioff delivered the annual keynote address to shareholders at Salesforce headquarters in San Francisco in 2024 during keynote summit 28."
+    },
+    {
+      "primary_id": "my-intl-014",
+      "duplicate_ids": [
+        "my-intl-029"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.971,
+      "representative_text": "Shantanu Narayen concluded multi-year technology development agreements with Adobe headquarters in San Jose in 2024 during keynote summit 29."
+    },
+    {
+      "primary_id": "my-intl-015",
+      "duplicate_ids": [
+        "my-intl-030"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.966,
+      "representative_text": "Arvind Krishna addressed international technology researchers at IBM headquarters in Armonk in 2024 during keynote summit 30."
+    },
+    {
+      "primary_id": "my-intl-001",
+      "duplicate_ids": [
+        "my-intl-031"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "Satya Nadella discussed artificial intelligence enterprise roadmaps at Microsoft headquarters in Redmond in 2024 during keynote summit 31."
+    },
+    {
+      "primary_id": "my-intl-002",
+      "duplicate_ids": [
+        "my-intl-032"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.979,
+      "representative_text": "Sarah Connor announced cloud infrastructure expansion alongside engineers at Cyberdyne Systems headquarters in Los Angeles in 2024 during keynote summit 32."
+    },
+    {
+      "primary_id": "my-intl-003",
+      "duplicate_ids": [
+        "my-intl-033"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.992,
+      "representative_text": "Sundar Pichai delivered the annual keynote address to shareholders at Google headquarters in Mountain View in 2024 during keynote summit 33."
+    },
+    {
+      "primary_id": "my-intl-004",
+      "duplicate_ids": [
+        "my-intl-034"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.976,
+      "representative_text": "Tim Cook concluded multi-year technology development agreements with Apple headquarters in Cupertino in 2024 during keynote summit 34."
+    },
+    {
+      "primary_id": "my-intl-005",
+      "duplicate_ids": [
+        "my-intl-035"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.974,
+      "representative_text": "Elena Rostova addressed international technology researchers at CERN headquarters in Geneva in 2024 during keynote summit 35."
+    },
+    {
+      "primary_id": "my-intl-006",
+      "duplicate_ids": [
+        "my-intl-036"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.976,
+      "representative_text": "Mark Zuckerberg discussed artificial intelligence enterprise roadmaps at Meta headquarters in Menlo Park in 2024 during keynote summit 36."
+    },
+    {
+      "primary_id": "my-intl-007",
+      "duplicate_ids": [
+        "my-intl-037"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "Sam Altman announced cloud infrastructure expansion alongside engineers at OpenAI headquarters in San Francisco in 2024 during keynote summit 37."
+    },
+    {
+      "primary_id": "my-intl-008",
+      "duplicate_ids": [
+        "my-intl-038"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.975,
+      "representative_text": "Jensen Huang delivered the annual keynote address to shareholders at Nvidia headquarters in Santa Clara in 2024 during keynote summit 38."
+    },
+    {
+      "primary_id": "my-intl-009",
+      "duplicate_ids": [
+        "my-intl-039"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.977,
+      "representative_text": "Andy Jassy concluded multi-year technology development agreements with Amazon headquarters in Seattle in 2024 during keynote summit 39."
+    },
+    {
+      "primary_id": "my-intl-010",
+      "duplicate_ids": [
+        "my-intl-040"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.969,
+      "representative_text": "Demis Hassabis addressed international technology researchers at Google DeepMind headquarters in London in 2024 during keynote summit 40."
+    },
+    {
+      "primary_id": "my-intl-011",
+      "duplicate_ids": [
+        "my-intl-041"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.97,
+      "representative_text": "Michael Dell discussed artificial intelligence enterprise roadmaps at Dell Technologies headquarters in Round Rock in 2024 during keynote summit 41."
+    },
+    {
+      "primary_id": "my-intl-012",
+      "duplicate_ids": [
+        "my-intl-042"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.972,
+      "representative_text": "Bill McDermott announced cloud infrastructure expansion alongside engineers at ServiceNow headquarters in Santa Clara in 2024 during keynote summit 42."
+    },
+    {
+      "primary_id": "my-intl-013",
+      "duplicate_ids": [
+        "my-intl-043"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.969,
+      "representative_text": "Marc Benioff delivered the annual keynote address to shareholders at Salesforce headquarters in San Francisco in 2024 during keynote summit 43."
+    },
+    {
+      "primary_id": "my-intl-014",
+      "duplicate_ids": [
+        "my-intl-044"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.971,
+      "representative_text": "Shantanu Narayen concluded multi-year technology development agreements with Adobe headquarters in San Jose in 2024 during keynote summit 44."
+    },
+    {
+      "primary_id": "my-intl-015",
+      "duplicate_ids": [
+        "my-intl-045"
+      ],
+      "match_type": "NEAR_DUPLICATE",
+      "similarity": 0.966,
+      "representative_text": "Arvind Krishna addressed international technology researchers at IBM headquarters in Armonk in 2024 during keynote summit 45."
+    }
+  ]
+}
