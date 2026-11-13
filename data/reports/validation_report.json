@@ -167,8 +167,8 @@
   },
   "tag_counts": {
     "O": 16689,
-    "B-ORGANIZATION": 588,
-    "I-ORGANIZATION": 1277,
+    "B-ORGANIZATION": 577,
+    "I-ORGANIZATION": 1288,
     "B-PERSON": 823,
     "I-PERSON": 1690,
     "B-LOCATION": 830,

@@ -107,41 +107,71 @@ class DatasetSplitter:
             stratum_key = self.get_stratum_key(first_rec)
             strata.setdefault(stratum_key, []).append(group_records)
 
-        train: List[Dict[str, Any]] = []
-        val: List[Dict[str, Any]] = []
-        test: List[Dict[str, Any]] = []
+        train_groups: List[List[Dict[str, Any]]] = []
+        val_groups: List[List[Dict[str, Any]]] = []
+        test_groups: List[List[Dict[str, Any]]] = []
 
-        # 3. For each stratum, shuffle clusters deterministically and allocate
+        curr_train = 0
+        curr_val = 0
+        curr_test = 0
+        total_target_train = int(round(len(records) * self.train_ratio))
+        total_target_val = int(round(len(records) * self.val_ratio))
+        total_target_test = len(records) - total_target_train - total_target_val
+
+        # 3. For each stratum, sort clusters and allocate based on sentence targets
         for key in sorted(strata.keys()):
             group_list = strata[key]
             rng.shuffle(group_list)
+            # Sort by group size descending for optimal knapsack packing
+            group_list.sort(key=lambda g: len(g), reverse=True)
 
-            n_total = len(group_list)
-            n_train = int(round(n_total * self.train_ratio))
-            n_val = int(round(n_total * self.val_ratio))
+            tot_st = sum(len(g) for g in group_list)
+            st_tgt_tr = int(round(tot_st * self.train_ratio))
+            st_tgt_val = int(round(tot_st * self.val_ratio))
+            st_tgt_te = tot_st - st_tgt_tr - st_tgt_val
 
-            if n_total >= 3:
-                if n_val == 0:
-                    n_val = 1
-                    n_train = max(1, n_train - 1)
-                if (n_total - n_train - n_val) == 0:
-                    n_test = 1
-                    n_train = max(1, n_train - 1)
+            st_tr_cnt, st_val_cnt, st_te_cnt = 0, 0, 0
+
+            for g in group_list:
+                sz = len(g)
+                need_tr = (st_tgt_tr - st_tr_cnt) + (total_target_train - curr_train) / 2
+                need_val = (st_tgt_val - st_val_cnt) + (total_target_val - curr_val) / 2
+                need_te = (st_tgt_te - st_te_cnt) + (total_target_test - curr_test) / 2
+
+                options = []
+                if curr_train + sz <= total_target_train or (curr_val >= total_target_val and curr_test >= total_target_test):
+                    options.append(("train", need_tr))
+                if curr_val + sz <= total_target_val or (curr_train >= total_target_train and curr_test >= total_target_test):
+                    options.append(("val", need_val))
+                if curr_test + sz <= total_target_test or (curr_train >= total_target_train and curr_val >= total_target_val):
+                    options.append(("test", need_te))
+
+                if not options:
+                    options = [
+                        ("train", total_target_train - curr_train),
+                        ("val", total_target_val - curr_val),
+                        ("test", total_target_test - curr_test),
+                    ]
+
+                options.sort(key=lambda x: x[1], reverse=True)
+                chosen = options[0][0]
+
+                if chosen == "train":
+                    train_groups.append(g)
+                    st_tr_cnt += sz
+                    curr_train += sz
+                elif chosen == "val":
+                    val_groups.append(g)
+                    st_val_cnt += sz
+                    curr_val += sz
                 else:
-                    n_test = n_total - n_train - n_val
-            else:
-                n_test = n_total - n_train - n_val
+                    test_groups.append(g)
+                    st_te_cnt += sz
+                    curr_test += sz
 
-            train_groups = group_list[:n_train]
-            val_groups = group_list[n_train : n_train + n_val]
-            test_groups = group_list[n_train + n_val :]
-
-            for g in train_groups:
-                train.extend(g)
-            for g in val_groups:
-                val.extend(g)
-            for g in test_groups:
-                test.extend(g)
+        train: List[Dict[str, Any]] = [r for g in train_groups for r in g]
+        val: List[Dict[str, Any]] = [r for g in val_groups for r in g]
+        test: List[Dict[str, Any]] = [r for g in test_groups for r in g]
 
         # Deterministic sort by record ID for reproducibility
         train.sort(key=lambda x: str(x.get("id", "")))

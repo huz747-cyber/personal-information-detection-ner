@@ -28,6 +28,7 @@ class SourceRecord:
     data_type: str
     preprocessing_history: str
     verification_status: str
+    eligibility_classification: str = "UNVERIFIED"
 
 
 @dataclass
@@ -120,6 +121,7 @@ class ProvenanceAuditor:
                     data_type=row["data_type"].strip(),
                     preprocessing_history=row["preprocessing_history"].strip(),
                     verification_status=row["verification_status"].strip(),
+                    eligibility_classification=row.get("eligibility_classification", "UNVERIFIED").strip(),
                 )
 
     def audit_dataset(self, records: List[Dict[str, Any]]) -> ProvenanceAuditReport:

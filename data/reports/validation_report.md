@@ -19,10 +19,10 @@ Entity Class Breakdown:
 --------------------------------------------------------------------
 BIO Token Tag Breakdown:
   - B-LOCATION          :    830
-  - B-ORGANIZATION      :    588
+  - B-ORGANIZATION      :    577
   - B-PERSON            :    823
   - I-LOCATION          :    488
-  - I-ORGANIZATION      :   1277
+  - I-ORGANIZATION      :   1288
   - I-PERSON            :   1690
   - O                   :  16689
 --------------------------------------------------------------------

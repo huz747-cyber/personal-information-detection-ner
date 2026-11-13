@@ -219,3 +219,72 @@ def test_validator_hard_negative_checks():
     }
     issues_bad = validator.validate_single_record(bad_hn_ent)
     assert any(i.severity == "ERROR" and i.check == "HARD_NEGATIVE" for i in issues_bad)
+
+
+def test_text_to_bio_entity_invariant_and_punctuation():
+    """Phase 2.6.1 Audit A: Verifies that entity spans with internal punctuation or single characters
+    produce exactly one B- tag, ensuring Total Entities == B-Tag Count.
+    """
+    from src.dataset_tools.doccano_adapter import text_to_bio
+
+    text = "Contract signed with D&O Green Technologies Berhad in Melaka."
+    entities = [
+        {"start": 21, "end": 50, "label": "ORGANIZATION", "text": "D&O Green Technologies Berhad"},
+        {"start": 54, "end": 60, "label": "LOCATION", "text": "Melaka"},
+    ]
+    tokens, bio = text_to_bio(text, entities)
+
+    # Invariant: exactly one B-ORGANIZATION and one B-LOCATION
+    assert bio.count("B-ORGANIZATION") == 1
+    assert bio.count("B-LOCATION") == 1
+    assert bio.count("B-PERSON") == 0
+
+    # Ensure '&' inside D&O is tagged I-ORGANIZATION, not B-ORGANIZATION
+    amp_idx = tokens.index("&")
+    assert bio[amp_idx] == "I-ORGANIZATION"
+
+
+def test_doccano_schema_and_roundtrip_fidelity():
+    """Phase 2.6.1 Audit H: Verifies strict Doccano JSONL format and roundtrip offset consistency."""
+    import json
+    import tempfile
+    from src.dataset_tools.doccano_adapter import export_to_doccano, import_from_doccano
+
+    records = [
+        {
+            "id": "doc-01",
+            "text": "Datuk Seri Anwar Ibrahim ke Putrajaya.",
+            "entities": [
+                {"start": 0, "end": 24, "label": "PERSON", "text": "Datuk Seri Anwar Ibrahim"},
+                {"start": 28, "end": 37, "label": "LOCATION", "text": "Putrajaya"},
+            ],
+            "metadata": {"stratum": "formal_malay", "source_id": "SRC-005"},
+        }
+    ]
+
+    with tempfile.NamedTemporaryFile("w+", suffix=".jsonl", delete=False, encoding="utf-8") as tf:
+        temp_path = tf.name
+
+    try:
+        export_to_doccano(records, temp_path)
+        with open(temp_path, "r", encoding="utf-8") as f:
+            line = f.readline()
+            data = json.loads(line)
+            assert "text" in data
+            assert "label" in data
+            assert isinstance(data["label"], list)
+            assert data["label"] == [[0, 24, "PERSON"], [28, 37, "LOCATION"]]
+
+        reimported = import_from_doccano(temp_path)
+        assert len(reimported) == 1
+        assert reimported[0]["text"] == records[0]["text"]
+        assert len(reimported[0]["entities"]) == 2
+        for orig_e, reimp_e in zip(records[0]["entities"], reimported[0]["entities"]):
+            assert orig_e["start"] == reimp_e["start"]
+            assert orig_e["end"] == reimp_e["end"]
+            assert orig_e["label"] == reimp_e["label"]
+            assert orig_e["text"] == reimp_e["text"]
+    finally:
+        import os
+        if os.path.exists(temp_path):
+            os.remove(temp_path)

@@ -65,21 +65,22 @@ def text_to_bio(
 
     tokens: List[str] = []
     bio_tags: List[str] = []
+    first_token_seen = set()
 
     for token, t_start, t_end in tokens_with_offsets:
         tokens.append(token)
         assigned_tag = "O"
 
-        for ent in sorted_entities:
+        for ent_idx, ent in enumerate(sorted_entities):
             e_start = ent["start"]
             e_end = ent["end"]
             label = ent["label"]
 
             # Token intersects with entity
             if max(t_start, e_start) < min(t_end, e_end):
-                # If this token is the first token of the entity span, use B-
-                if t_start >= e_start and (t_start == e_start or t_start - e_start < 2):
+                if ent_idx not in first_token_seen:
                     assigned_tag = f"B-{label}"
+                    first_token_seen.add(ent_idx)
                 else:
                     assigned_tag = f"I-{label}"
                 break
