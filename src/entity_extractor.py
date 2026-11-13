@@ -12,6 +12,11 @@ from typing import Any, Dict, List, Optional
 import torch
 from transformers import AutoModelForTokenClassification, AutoTokenizer, pipeline
 
+try:
+    from patronymic_stitcher import stitch_patronymic_entities
+except ImportError:
+    from src.patronymic_stitcher import stitch_patronymic_entities
+
 
 # Label normalization map: maps raw model entity labels to standardized, readable names.
 DEFAULT_LABEL_MAP: Dict[str, str] = {
@@ -41,6 +46,7 @@ class PersonalInformationDetector:
         model_name: str = "dslim/distilbert-NER",
         device: Optional[int] = None,
         confidence_threshold: float = 0.50,
+        enable_patronymic_stitching: bool = True,
     ) -> None:
         """Initializes the tokenizer, model, and inference pipeline.
 
@@ -50,9 +56,12 @@ class PersonalInformationDetector:
                 auto-detects CUDA availability.
             confidence_threshold: Minimum prediction probability (0.0 to 1.0)
                 to accept an entity.
+            enable_patronymic_stitching: Whether to post-process and stitch
+                Malaysian patronymic names (bin, binti, bt., a/l, a/p, s/o, d/o).
         """
         self.model_name = model_name
         self.confidence_threshold = confidence_threshold
+        self.enable_patronymic_stitching = enable_patronymic_stitching
 
         # Auto-detect CUDA if device not explicitly specified
         if device is None:
@@ -141,9 +150,14 @@ class PersonalInformationDetector:
             if prev["label"] == ent["label"] and (ent["start"] <= prev["end"] or between_text in {"", " ", "-"}):
                 prev["end"] = ent["end"]
                 prev["text"] = text[prev["start"] : ent["end"]].strip()
-                prev["score"] = round(max(prev["score"], ent["score"]), 4)
+                # Conservative non-inflation: joint entity confidence never exceeds constituent scores
+                prev["score"] = round(min(prev["score"], ent["score"]), 4)
             else:
                 merged_entities.append(dict(ent))
+
+        # Consolidate Malaysian patronymic spans (e.g. 'Kavitha a/p Subramaniam')
+        if self.enable_patronymic_stitching:
+            merged_entities = stitch_patronymic_entities(merged_entities, text)
 
         return merged_entities
 

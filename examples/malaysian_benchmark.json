@@ -1,0 +1,436 @@
+[
+  {
+    "id": "my-01",
+    "category": "Malay Patronymic (bin)",
+    "text": "Ahmad Faiz bin Zulkifli submitted the quarterly financial statement in Putrajaya.",
+    "entities": [
+      {
+        "text": "Ahmad Faiz bin Zulkifli",
+        "label": "PERSON",
+        "start": 0,
+        "end": 23
+      },
+      {
+        "text": "Putrajaya",
+        "label": "LOCATION",
+        "start": 71,
+        "end": 80
+      }
+    ]
+  },
+  {
+    "id": "my-02",
+    "category": "Malay Patronymic (binti)",
+    "text": "Siti Hajar binti Osman was appointed chief architect at Cyberjaya Tech Park.",
+    "entities": [
+      {
+        "text": "Siti Hajar binti Osman",
+        "label": "PERSON",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "text": "Cyberjaya Tech Park",
+        "label": "LOCATION",
+        "start": 56,
+        "end": 75
+      }
+    ]
+  },
+  {
+    "id": "my-03",
+    "category": "Malay Patronymic (bt.)",
+    "text": "Nurul Huda bt. Razali finalized the research collaboration in Petaling Jaya.",
+    "entities": [
+      {
+        "text": "Nurul Huda bt. Razali",
+        "label": "PERSON",
+        "start": 0,
+        "end": 21
+      },
+      {
+        "text": "Petaling Jaya",
+        "label": "LOCATION",
+        "start": 62,
+        "end": 75
+      }
+    ]
+  },
+  {
+    "id": "my-04",
+    "category": "Indian Malaysian Patronymic (a/l)",
+    "text": "Ravi a/l Chandran signed the lease agreement in George Town.",
+    "entities": [
+      {
+        "text": "Ravi a/l Chandran",
+        "label": "PERSON",
+        "start": 0,
+        "end": 17
+      },
+      {
+        "text": "George Town",
+        "label": "LOCATION",
+        "start": 48,
+        "end": 59
+      }
+    ]
+  },
+  {
+    "id": "my-05",
+    "category": "Indian Malaysian Patronymic (a/p)",
+    "text": "Kavitha a/p Subramaniam delivered the lecture at Universiti Malaya in Kuala Lumpur.",
+    "entities": [
+      {
+        "text": "Kavitha a/p Subramaniam",
+        "label": "PERSON",
+        "start": 0,
+        "end": 23
+      },
+      {
+        "text": "Universiti Malaya",
+        "label": "ORGANIZATION",
+        "start": 49,
+        "end": 66
+      },
+      {
+        "text": "Kuala Lumpur",
+        "label": "LOCATION",
+        "start": 70,
+        "end": 82
+      }
+    ]
+  },
+  {
+    "id": "my-06",
+    "category": "Indian Malaysian Patronymic (s/o)",
+    "text": "Dinesh s/o Anand met the engineering delegation in Ipoh.",
+    "entities": [
+      {
+        "text": "Dinesh s/o Anand",
+        "label": "PERSON",
+        "start": 0,
+        "end": 16
+      },
+      {
+        "text": "Ipoh",
+        "label": "LOCATION",
+        "start": 51,
+        "end": 55
+      }
+    ]
+  },
+  {
+    "id": "my-07",
+    "category": "Indian Malaysian Patronymic (d/o)",
+    "text": "Priya d/o Mohan registered her consulting firm in Johor Bahru.",
+    "entities": [
+      {
+        "text": "Priya d/o Mohan",
+        "label": "PERSON",
+        "start": 0,
+        "end": 15
+      },
+      {
+        "text": "Johor Bahru",
+        "label": "LOCATION",
+        "start": 50,
+        "end": 61
+      }
+    ]
+  },
+  {
+    "id": "my-08",
+    "category": "Chinese Malaysian Name",
+    "text": "Tan Wei Jun presented the data visualization findings in Subang Jaya.",
+    "entities": [
+      {
+        "text": "Tan Wei Jun",
+        "label": "PERSON",
+        "start": 0,
+        "end": 11
+      },
+      {
+        "text": "Subang Jaya",
+        "label": "LOCATION",
+        "start": 57,
+        "end": 68
+      }
+    ]
+  },
+  {
+    "id": "my-09",
+    "category": "Chinese Malaysian Name",
+    "text": "Lee Siew Ling coordinated the symposium with Stanford University.",
+    "entities": [
+      {
+        "text": "Lee Siew Ling",
+        "label": "PERSON",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "text": "Stanford University",
+        "label": "ORGANIZATION",
+        "start": 45,
+        "end": 64
+      }
+    ]
+  },
+  {
+    "id": "my-10",
+    "category": "Multi-Entity Malaysian Collaboration",
+    "text": "Ahmad Faiz bin Zulkifli and Kavitha a/p Subramaniam led the workshop in Putrajaya.",
+    "entities": [
+      {
+        "text": "Ahmad Faiz bin Zulkifli",
+        "label": "PERSON",
+        "start": 0,
+        "end": 23
+      },
+      {
+        "text": "Kavitha a/p Subramaniam",
+        "label": "PERSON",
+        "start": 28,
+        "end": 51
+      },
+      {
+        "text": "Putrajaya",
+        "label": "LOCATION",
+        "start": 72,
+        "end": 81
+      }
+    ]
+  },
+  {
+    "id": "my-11",
+    "category": "Multi-Entity Malaysian Collaboration",
+    "text": "Nurul Huda bt. Razali partnered with Ravi a/l Chandran on the renewable energy project in Cyberjaya.",
+    "entities": [
+      {
+        "text": "Nurul Huda bt. Razali",
+        "label": "PERSON",
+        "start": 0,
+        "end": 21
+      },
+      {
+        "text": "Ravi a/l Chandran",
+        "label": "PERSON",
+        "start": 37,
+        "end": 54
+      },
+      {
+        "text": "Cyberjaya",
+        "label": "LOCATION",
+        "start": 90,
+        "end": 99
+      }
+    ]
+  },
+  {
+    "id": "my-12",
+    "category": "Multi-Entity Malaysian Collaboration",
+    "text": "Dinesh s/o Anand visited Priya d/o Mohan at Hospital Kuala Lumpur.",
+    "entities": [
+      {
+        "text": "Dinesh s/o Anand",
+        "label": "PERSON",
+        "start": 0,
+        "end": 16
+      },
+      {
+        "text": "Priya d/o Mohan",
+        "label": "PERSON",
+        "start": 25,
+        "end": 40
+      },
+      {
+        "text": "Hospital Kuala Lumpur",
+        "label": "LOCATION",
+        "start": 44,
+        "end": 65
+      }
+    ]
+  },
+  {
+    "id": "my-13",
+    "category": "Malay Patronymic Uppercase",
+    "text": "MUHAMMAD HAFIZ BIN ROSLI received the award in Kuching.",
+    "entities": [
+      {
+        "text": "MUHAMMAD HAFIZ BIN ROSLI",
+        "label": "PERSON",
+        "start": 0,
+        "end": 24
+      },
+      {
+        "text": "Kuching",
+        "label": "LOCATION",
+        "start": 47,
+        "end": 54
+      }
+    ]
+  },
+  {
+    "id": "my-14",
+    "category": "Indian Patronymic Uppercase",
+    "text": "SURESH A/L MURUGAN completed the electrical inspection in Shah Alam.",
+    "entities": [
+      {
+        "text": "SURESH A/L MURUGAN",
+        "label": "PERSON",
+        "start": 0,
+        "end": 18
+      },
+      {
+        "text": "Shah Alam",
+        "label": "LOCATION",
+        "start": 58,
+        "end": 67
+      }
+    ]
+  },
+  {
+    "id": "my-15",
+    "category": "Multi-hop Patronymic",
+    "text": "Ali bin Abu bin Othman was referenced in the historical archives in Melaka.",
+    "entities": [
+      {
+        "text": "Ali bin Abu bin Othman",
+        "label": "PERSON",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "text": "Melaka",
+        "label": "LOCATION",
+        "start": 68,
+        "end": 74
+      }
+    ]
+  },
+  {
+    "id": "my-16",
+    "category": "Negative Conjunction Test",
+    "text": "Ali dan Abu menghadiri seminar kecerdasan buatan di Petaling Jaya.",
+    "entities": [
+      {
+        "text": "Ali",
+        "label": "PERSON",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "text": "Abu",
+        "label": "PERSON",
+        "start": 8,
+        "end": 11
+      },
+      {
+        "text": "Petaling Jaya",
+        "label": "LOCATION",
+        "start": 52,
+        "end": 65
+      }
+    ]
+  },
+  {
+    "id": "my-17",
+    "category": "Negative English Conjunction Test",
+    "text": "Sarah and Emily attended the technology briefing in London.",
+    "entities": [
+      {
+        "text": "Sarah",
+        "label": "PERSON",
+        "start": 0,
+        "end": 5
+      },
+      {
+        "text": "Emily",
+        "label": "PERSON",
+        "start": 10,
+        "end": 15
+      },
+      {
+        "text": "London",
+        "label": "LOCATION",
+        "start": 52,
+        "end": 58
+      }
+    ]
+  },
+  {
+    "id": "my-18",
+    "category": "Western Baseline Regression",
+    "text": "Dr. Sarah Connor met with Cyberdyne Systems in Los Angeles.",
+    "entities": [
+      {
+        "text": "Sarah Connor",
+        "label": "PERSON",
+        "start": 4,
+        "end": 16
+      },
+      {
+        "text": "Cyberdyne Systems",
+        "label": "ORGANIZATION",
+        "start": 26,
+        "end": 43
+      },
+      {
+        "text": "Los Angeles",
+        "label": "LOCATION",
+        "start": 47,
+        "end": 58
+      }
+    ]
+  },
+  {
+    "id": "my-19",
+    "category": "Western Baseline Regression",
+    "text": "Elena Rostova accepted a software engineering role at Google in Zurich.",
+    "entities": [
+      {
+        "text": "Elena Rostova",
+        "label": "PERSON",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "text": "Google",
+        "label": "ORGANIZATION",
+        "start": 54,
+        "end": 60
+      },
+      {
+        "text": "Zurich",
+        "label": "LOCATION",
+        "start": 64,
+        "end": 70
+      }
+    ]
+  },
+  {
+    "id": "my-20",
+    "category": "Western Baseline Regression",
+    "text": "Satya Nadella discussed cloud computing at Microsoft in Redmond.",
+    "entities": [
+      {
+        "text": "Satya Nadella",
+        "label": "PERSON",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "text": "Microsoft",
+        "label": "ORGANIZATION",
+        "start": 43,
+        "end": 52
+      },
+      {
+        "text": "Redmond",
+        "label": "LOCATION",
+        "start": 56,
+        "end": 63
+      }
+    ]
+  }
+]

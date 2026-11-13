@@ -26,12 +26,15 @@ except ImportError:
     from src.entity_extractor import PersonalInformationDetector
 
 
-# Default representative test sentences covering PERSON, ORGANIZATION, and LOCATION
+# Representative test sentences covering Western and Malaysian contexts (synthetic identities)
 SAMPLE_SENTENCES: List[str] = [
     "Dr. Aris Thorne visited the World Health Organization headquarters in Geneva.",
     "Elena Rostova accepted a software engineering role at Google in Zurich.",
-    "The conference in Singapore was hosted by Microsoft and opened by Satya Nadella.",
+    "Kavitha a/p Subramaniam attended the technical symposium at Universiti Malaya in Kuala Lumpur.",
+    "Ahmad Faiz bin Zulkifli submitted the compliance report in Putrajaya.",
+    "Nurul Huda bt. Razali partnered with Ravi a/l Chandran on the Cyberjaya smart city initiative.",
     "Alice and Bob met at Central Park in New York to discuss their startup, Acme AI Corp.",
+    "Dinesh s/o Anand met Priya d/o Mohan in George Town, Penang.",
     "Yesterday, Johnathan Myers flew from Tokyo to London for the United Nations summit.",
 ]
 
@@ -116,6 +119,11 @@ def main() -> None:
         default="dslim/distilbert-NER",
         help="Hugging Face model repository ID (default: 'dslim/distilbert-NER').",
     )
+    parser.add_argument(
+        "--no-stitching",
+        action="store_true",
+        help="Disable Malaysian patronymic span stitching (runs baseline model output).",
+    )
 
     args = parser.parse_args()
 
@@ -123,6 +131,7 @@ def main() -> None:
     detector = PersonalInformationDetector(
         model_name=args.model,
         confidence_threshold=args.threshold,
+        enable_patronymic_stitching=not args.no_stitching,
     )
 
     # 1. Interactive session
