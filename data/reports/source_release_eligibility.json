@@ -1,0 +1,101 @@
+{
+  "profiles": {
+    "SRC-001": {
+      "source_id": "SRC-001",
+      "source_name": "Mesolitica Malaya NER Dataset",
+      "licence": "MIT (Repository Code) / News Fair Dealing (Text)",
+      "research_use": true,
+      "commercial_training": false,
+      "raw_text_redistribution": false,
+      "derived_annotation_redistribution": true,
+      "model_weight_distribution": false,
+      "rationale": "Underlying Malay news text belongs to Malaysian publishers; Fair Dealing covers non-profit research, but commercial training and raw text redistribution carry copyright risk."
+    },
+    "SRC-002": {
+      "source_id": "SRC-002",
+      "source_name": "WikiANN PAN-X Malay Subset (ms)",
+      "licence": "CC-BY-SA 4.0",
+      "research_use": true,
+      "commercial_training": true,
+      "raw_text_redistribution": true,
+      "derived_annotation_redistribution": true,
+      "model_weight_distribution": true,
+      "rationale": "Permissive under CC-BY-SA 4.0 with attribution and ShareAlike provisions."
+    },
+    "SRC-003": {
+      "source_id": "SRC-003",
+      "source_name": "SEACrowd Malay NER Benchmark",
+      "licence": "Apache 2.0",
+      "research_use": true,
+      "commercial_training": true,
+      "raw_text_redistribution": true,
+      "derived_annotation_redistribution": true,
+      "model_weight_distribution": true,
+      "rationale": "Permissive open-source benchmark under Apache 2.0."
+    },
+    "SRC-004": {
+      "source_id": "SRC-004",
+      "source_name": "CoNLL-2003 English NER",
+      "licence": "Reuters Open Research License",
+      "research_use": true,
+      "commercial_training": false,
+      "raw_text_redistribution": false,
+      "derived_annotation_redistribution": false,
+      "model_weight_distribution": false,
+      "rationale": "Reuters corpus is strictly limited to non-commercial academic research; commercial training and raw text redistribution are strictly prohibited."
+    },
+    "SRC-005": {
+      "source_id": "SRC-005",
+      "source_name": "Malaysian Parliamentary Hansard Excerpts",
+      "licence": "Open Government Data / Public Record",
+      "research_use": true,
+      "commercial_training": true,
+      "raw_text_redistribution": true,
+      "derived_annotation_redistribution": true,
+      "model_weight_distribution": true,
+      "rationale": "Official transcripts of parliamentary proceedings are non-infringing public records under Section 13(2)(h) of the Malaysian Copyright Act 1987."
+    },
+    "SRC-006": {
+      "source_id": "SRC-006",
+      "source_name": "Bursa Malaysia Corporate Disclosures",
+      "licence": "Public Regulatory Disclosure",
+      "research_use": true,
+      "commercial_training": true,
+      "raw_text_redistribution": true,
+      "derived_annotation_redistribution": true,
+      "model_weight_distribution": true,
+      "rationale": "Factual public announcements (director appointments, registered addresses, dividends) lack copyrightable artistic expression under copyright law."
+    },
+    "SRC-007": {
+      "source_id": "SRC-007",
+      "source_name": "Independent Project Authorship",
+      "licence": "MIT License",
+      "research_use": true,
+      "commercial_training": true,
+      "raw_text_redistribution": true,
+      "derived_annotation_redistribution": true,
+      "model_weight_distribution": true,
+      "rationale": "Originally authored fictional and administrative sentences by project contributors; released unconditionally under MIT License."
+    },
+    "SRC-008": {
+      "source_id": "SRC-008",
+      "source_name": "Combinatorial Synthetic Engine",
+      "licence": "MIT License / CC0 Public Domain",
+      "research_use": true,
+      "commercial_training": true,
+      "raw_text_redistribution": true,
+      "derived_annotation_redistribution": true,
+      "model_weight_distribution": true,
+      "rationale": "Algorithmically generated via grammar templates and public domain slot entities; dedicated under MIT License."
+    }
+  },
+  "summary": {
+    "total_canonical_records": 1000,
+    "research_eligible_count": 1000,
+    "commercial_training_eligible_count": 903,
+    "raw_redistribution_eligible_count": 903,
+    "model_weight_distribution_eligible_count": 903,
+    "excluded_from_commercial_count": 97,
+    "excluded_from_redistribution_count": 97
+  }
+}

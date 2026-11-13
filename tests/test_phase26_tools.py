@@ -288,3 +288,42 @@ def test_doccano_schema_and_roundtrip_fidelity():
         import os
         if os.path.exists(temp_path):
             os.remove(temp_path)
+
+
+def test_dataset_release_checker_safeguards():
+    """Phase 2.6.2 Audit A: Verifies that DatasetReleaseChecker properly discriminates
+    between research, commercial training, and redistribution tiers.
+    """
+    import tempfile
+    from src.dataset_tools.release_checker import DatasetReleaseChecker
+
+    checker = DatasetReleaseChecker()
+    mock_records = [
+        {"id": "rec-01", "text": "Sample 1", "metadata": {"source_id": "SRC-007"}},  # Independent
+        {"id": "rec-02", "text": "Sample 2", "metadata": {"source_id": "SRC-008"}},  # Synthetic
+        {"id": "rec-03", "text": "Sample 3", "metadata": {"source_id": "SRC-001"}},  # Mesolitica News
+        {"id": "rec-04", "text": "Sample 4", "metadata": {"source_id": "SRC-004"}},  # CoNLL Reuters
+    ]
+
+    # Individual record dimension checks
+    elig_indep = checker.check_record(mock_records[0])
+    assert elig_indep["commercial_training"] is True
+    assert elig_indep["raw_text_redistribution"] is True
+
+    elig_meso = checker.check_record(mock_records[2])
+    assert elig_meso["research_use"] is True
+    assert elig_meso["commercial_training"] is False
+    assert elig_meso["raw_text_redistribution"] is False
+
+    elig_conll = checker.check_record(mock_records[3])
+    assert elig_conll["research_use"] is True
+    assert elig_conll["commercial_training"] is False
+    assert elig_conll["raw_text_redistribution"] is False
+
+    with tempfile.TemporaryDirectory() as tmp_dir:
+        meta = checker.generate_release_manifests(mock_records, output_dir=tmp_dir)
+        assert meta["total_canonical_records"] == 4
+        assert meta["research_eligible_count"] == 4
+        assert meta["commercial_training_eligible_count"] == 2
+        assert meta["raw_redistribution_eligible_count"] == 2
+        assert meta["excluded_from_commercial_count"] == 2
