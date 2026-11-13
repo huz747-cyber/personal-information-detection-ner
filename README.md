@@ -33,21 +33,30 @@ personal-information-detection-ner/
 ├── README.md                # Project documentation and quickstart guide
 ├── requirements.txt         # Core dependencies (torch, transformers, datasets, seqeval)
 ├── src/
-│   ├── __init__.py          # Package initialization
-│   ├── entity_extractor.py  # Core NER detection, label mapping, and redaction logic
+│   ├── __init__.py          # Package initialization & exports
+│   ├── entity_extractor.py  # Core NER detection, hybrid pipeline coordinator & redaction
 │   ├── patronymic_stitcher.py # Malaysian patronymic consolidator (bin, binti, bt., a/l, a/p, s/o, d/o)
-│   ├── evaluate_benchmark.py# Benchmark evaluation tool computing Precision, Recall, Strict & Relaxed F1
+│   ├── evaluate_benchmark.py# 3-Tier benchmark evaluation tool computing Precision, Recall, Strict & Relaxed F1
 │   ├── predict.py           # Pretrained DistilBERT inference CLI & test suite
-│   └── train.py             # Future CoNLL-2003 fine-tuning script with Trainer & seqeval
+│   ├── train.py             # Future CoNLL-2003 fine-tuning script with Trainer & seqeval
+│   └── recognizers/         # Phase 2: Modular Malaysian Recognizers & Gazetteers
+│       ├── __init__.py
+│       ├── mykad_recognizer.py      # Malaysian NRIC / MyKad pattern & JPN routing validator
+│       ├── phone_recognizer.py      # Malaysian mobile and landline (+60 / 0) pattern recognizer
+│       ├── org_gazetteer.py         # Statutory agencies, public bodies, and corporate gazetteer
+│       ├── title_recognizer.py      # Malaysian honorific detector & false-positive purger
+│       ├── location_recognizer.py   # Malaysian postcodes & geographic location gazetteer
+│       └── conflict_resolver.py     # Multi-tier entity deduplication & span conflict resolver
 ├── examples/
 │   ├── __init__.py
 │   ├── sample_texts.json    # Curated real-world test cases (corporate, medical, tech, etc.)
-│   ├── malaysian_benchmark.json # Ground-truth annotated Malaysian synthetic benchmark dataset
+│   ├── malaysian_benchmark.json # Ground-truth annotated 22-case Malaysian synthetic benchmark dataset
 │   └── run_demo.py          # Runnable demo executing detection and PII redaction
 └── tests/
     ├── __init__.py
-    ├── test_extractor.py    # Unit tests for baseline schema validation, detection, and masking
-    └── test_malaysian_entities.py # Unit & regression tests for Malaysian patronymics & score non-inflation
+    ├── test_extractor.py          # Unit tests for baseline schema validation, detection, and masking
+    ├── test_malaysian_entities.py # Unit tests for Malaysian patronymics & score non-inflation
+    └── test_hybrid_recognizers.py # Dedicated unit tests for Phase 2 MyKad, Phone, Postcode, and Gazetteers
 ```
 
 ---
@@ -188,28 +197,49 @@ pytest tests/ -v
 
 ---
 
-## 🇲🇾 Malaysian-Aware NER & Benchmark Evaluation (Phase 1)
+## 🇲🇾 Malaysian-Aware NER & Hybrid Recognizer Layer (Phase 1 & Phase 2)
 
-Standard Western NER models often fracture Malaysian patronymic names into disconnected entities. This repository incorporates a **Malaysian Patronymic Span Stitcher** (`src/patronymic_stitcher.py`) supporting:
-- **Malay**: `bin`, `binti`, `bt.`, `bt`
-- **Indian Malaysian**: `a/l` (*anak lelaki*), `a/p` (*anak perempuan*), `s/o` (*son of*), `d/o` (*daughter of*)
+This repository incorporates a modular, multi-tier hybrid architecture combining Transformer deep learning with deterministic recognizers and domain gazetteers:
 
-### Benchmark Comparison (Baseline vs. Phase 1)
-Run the ground-truth benchmark comparison tool across 20 synthetic Malaysian & regression test cases:
+### 1. Architectural Tiers:
+- **Tier 1 (Deterministic Recognizers & Gazetteers)**:
+  - `MYKAD`: Validates 12-digit Malaysian NRICs against birth date logic and official JPN place-of-birth routing codes.
+  - `PHONE`: Mobile (`+6010`-`+6019`, `010`-`019`) and landline (`03`-`09`, `082`-`089`) formats with false-positive rejection for dates, currency, and IP addresses.
+  - `POSTCODE`: 5-digit POS Malaysia routing validation requiring nearby address context keywords to reject currency numbers.
+  - `ORGANIZATION`: Curated gazetteer of statutory bodies (`LHDN`, `KWSP`, `PDRM`, `SPRM`, `JPJ`, `SSM`, `KKM`), public universities (`Universiti Malaya`), major banks (`Maybank`, `CIMB`), GLCs (`TNB`, `Petronas`), and registered company suffixes (`Sdn. Bhd.`, `Bhd.`, `PLT`).
+  - `LOCATION`: Gazetteers for all Malaysian states, federal territories, major cities, tech corridors (`Cyberjaya`), and street prefixes (`Jalan ...`).
+- **Tier 2 (Contextual Transformer Model)**:
+  - `dslim/distilbert-NER` provides general open-vocabulary entity classification.
+- **Tier 3 (Post-Processing & Conflict Resolution)**:
+  - `src/patronymic_stitcher.py`: Consolidates Malaysian patronymic names (`bin`, `binti`, `bt.`, `a/l`, `a/p`, `s/o`, `d/o`).
+  - `src/recognizers/title_recognizer.py`: Purges false-positive model predictions where Malaysian honorifics (`Dato' Seri`, `Tan Sri`) were tagged as organizations.
+  - `src/recognizers/conflict_resolver.py`: Overlap arbitration and greedy deduplication prioritizing structured PII and curated gazetteers.
+
+### 2. Benchmark Comparison (Baseline ➔ Phase 1 ➔ Phase 2)
+Run the ground-truth benchmark comparison tool across the annotated synthetic benchmark:
 
 ```bash
 python src/evaluate_benchmark.py
 ```
 
-**Empirical Results:**
-- **Strict Overall F1**: 55.6% (Baseline) ➔ **80.8% (Phase 1, Δ +25.1%)**
-- **Strict PERSON F1**: 37.3% (Baseline) ➔ **87.5% (Phase 1, Δ +50.2%)**
-- **Score Safety**: Merged entity confidence strictly uses `min(prev_score, curr_score)`, guaranteeing zero artificial score inflation.
+**Empirical 3-Tier Results (on 22 Validated Synthetic Cases):**
+| Metric Class | Baseline (Raw DistilBERT) | Phase 1 (Patronymic Stitching) | Phase 2 (Full Hybrid Layer) | Total Gain ($\Delta$) |
+| :--- | :---: | :---: | :---: | :---: |
+| **Overall Strict F1** | 48.1% | 66.1% | **90.5%** | **+42.4%** |
+| **Overall Relaxed F1**| 72.2% | 77.4% | **93.7%** | **+21.5%** |
+| `PERSON` F1 | 40.0% | 87.0% | **90.9%** | **+50.9%** |
+| `ORGANIZATION` F1 | 38.7% | 38.7% | **78.6%** | **+39.9%** |
+| `LOCATION` F1 | 75.0% | 75.0% | **95.0%** | **+20.0%** |
+| `MYKAD` F1 | 0.0% | 0.0% | **100.0%** | **+100.0%** |
+| `PHONE` F1 | 0.0% | 0.0% | **100.0%** | **+100.0%** |
+| `POSTCODE` F1 | 0.0% | 0.0% | **100.0%** | **+100.0%** |
 
 ---
 
 ## 🛡️ Privacy, Security & Ethics
 
+- **Zero Identity Verification Claim**: Pattern detection validates algorithmic and syntactic formatting rules only; it does NOT verify actual identity status with the National Registration Department (JPN) or any official database.
+- **Synthetic Test Data Only**: All benchmarks, examples, and test cases use strictly synthetic, fictional names and identifiers to respect privacy.
 - **Zero-Storage Rule**: The detection script runs entirely locally or in-memory; no processed text or personal data is uploaded to remote servers or logged.
 - **Git Hygiene**: Model weights (`*.safetensors`, `*.bin`), virtual environments (`.venv/`), and environment files (`.env`) are strictly excluded via `.gitignore`.
 

@@ -196,30 +196,41 @@ def main() -> None:
     print(f"[*] Loaded {len(benchmark_data)} test cases from '{benchmark_path}'.")
 
     if args.compare:
-        print("\n[*] Evaluating BASELINE (stitching disabled)...")
+        print("\n[*] 1. Evaluating BASELINE (stitching disabled, hybrid disabled)...")
         baseline_detector = PersonalInformationDetector(
             confidence_threshold=args.threshold,
             enable_patronymic_stitching=False,
+            enable_hybrid=False,
         )
         base_strict, base_relaxed = evaluate(baseline_detector, benchmark_data)
-        print_evaluation_table("Baseline Model (Without Patronymic Stitching)", base_strict, base_relaxed)
+        print_evaluation_table("Baseline Model (Raw DistilBERT Only)", base_strict, base_relaxed)
 
-        print("\n[*] Evaluating PHASE 1 (patronymic stitching enabled)...")
+        print("\n[*] 2. Evaluating PHASE 1 (patronymic stitching enabled, hybrid disabled)...")
         phase1_detector = PersonalInformationDetector(
             confidence_threshold=args.threshold,
             enable_patronymic_stitching=True,
+            enable_hybrid=False,
         )
         p1_strict, p1_relaxed = evaluate(phase1_detector, benchmark_data)
-        print_evaluation_table("Phase 1 Model (With Patronymic Stitching)", p1_strict, p1_relaxed)
+        print_evaluation_table("Phase 1 Model (Patronymic Stitching Only)", p1_strict, p1_relaxed)
 
-        # Delta comparison
-        strict_delta = (p1_strict["f1"] - base_strict["f1"]) * 100
-        person_delta = (p1_strict["per_class"]["PERSON"]["f1"] - base_strict["per_class"]["PERSON"]["f1"]) * 100
+        print("\n[*] 3. Evaluating PHASE 2 (full hybrid recognizer layer enabled)...")
+        phase2_detector = PersonalInformationDetector(
+            confidence_threshold=args.threshold,
+            enable_patronymic_stitching=True,
+            enable_hybrid=True,
+        )
+        p2_strict, p2_relaxed = evaluate(phase2_detector, benchmark_data)
+        print_evaluation_table("Phase 2 Model (Full Hybrid Recognizer Layer)", p2_strict, p2_relaxed)
+
+        # Delta comparisons
+        p1_strict_delta = (p1_strict["f1"] - base_strict["f1"]) * 100
+        p2_strict_delta = (p2_strict["f1"] - base_strict["f1"]) * 100
         print("\n" + "#" * 70)
-        print("EMPIRICAL COMPARISON SUMMARY")
+        print("EMPIRICAL COMPARISON SUMMARY (BASELINE ➔ PHASE 1 ➔ PHASE 2)")
         print("#" * 70)
-        print(f"Overall Strict F1:  Baseline = {base_strict['f1']*100:.1f}%  -->  Phase 1 = {p1_strict['f1']*100:.1f}%  (Δ {strict_delta:+.1f}%)")
-        print(f"PERSON Class F1:    Baseline = {base_strict['per_class']['PERSON']['f1']*100:.1f}%  -->  Phase 1 = {p1_strict['per_class']['PERSON']['f1']*100:.1f}%  (Δ {person_delta:+.1f}%)")
+        print(f"Overall Strict F1:  Baseline = {base_strict['f1']*100:.1f}% ➔ Phase 1 = {p1_strict['f1']*100:.1f}% ➔ Phase 2 = {p2_strict['f1']*100:.1f}% (Total Δ {p2_strict_delta:+.1f}%)")
+        print(f"Relaxed F1:         Baseline = {base_relaxed['f1']*100:.1f}% ➔ Phase 1 = {p1_relaxed['f1']*100:.1f}% ➔ Phase 2 = {p2_relaxed['f1']*100:.1f}%")
         print("#" * 70 + "\n")
     else:
         detector = PersonalInformationDetector(

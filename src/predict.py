@@ -31,8 +31,10 @@ SAMPLE_SENTENCES: List[str] = [
     "Dr. Aris Thorne visited the World Health Organization headquarters in Geneva.",
     "Elena Rostova accepted a software engineering role at Google in Zurich.",
     "Kavitha a/p Subramaniam attended the technical symposium at Universiti Malaya in Kuala Lumpur.",
-    "Ahmad Faiz bin Zulkifli submitted the compliance report in Putrajaya.",
+    "Ahmad Faiz bin Zulkifli (No. K/P: 950315-10-5231) submitted the compliance report to LHDN in Putrajaya.",
     "Nurul Huda bt. Razali partnered with Ravi a/l Chandran on the Cyberjaya smart city initiative.",
+    "Siti Hajar binti Osman can be contacted at +6012-345 6789 or at Jalan Sultan Ismail, 50250 Kuala Lumpur.",
+    "Dato' Seri Dr. Wan Azizah binti Wan Ismail visited Hospital Kuala Lumpur.",
     "Alice and Bob met at Central Park in New York to discuss their startup, Acme AI Corp.",
     "Dinesh s/o Anand met Priya d/o Mohan in George Town, Penang.",
     "Yesterday, Johnathan Myers flew from Tokyo to London for the United Nations summit.",
@@ -124,6 +126,16 @@ def main() -> None:
         action="store_true",
         help="Disable Malaysian patronymic span stitching (runs baseline model output).",
     )
+    parser.add_argument(
+        "--no-hybrid",
+        action="store_true",
+        help="Disable Tier 1 deterministic recognizers and gazetteers (runs neural model only).",
+    )
+    parser.add_argument(
+        "--no-structured-pii",
+        action="store_true",
+        help="Exclude structured PII categories (MYKAD, PHONE, POSTCODE) from detection.",
+    )
 
     args = parser.parse_args()
 
@@ -132,6 +144,8 @@ def main() -> None:
         model_name=args.model,
         confidence_threshold=args.threshold,
         enable_patronymic_stitching=not args.no_stitching,
+        enable_hybrid=not args.no_hybrid,
+        include_structured_pii=not args.no_structured_pii,
     )
 
     # 1. Interactive session

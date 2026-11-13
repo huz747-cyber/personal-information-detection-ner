@@ -30,10 +30,10 @@
         "end": 22
       },
       {
-        "text": "Cyberjaya Tech Park",
+        "text": "Cyberjaya",
         "label": "LOCATION",
         "start": 56,
-        "end": 75
+        "end": 65
       }
     ]
   },
@@ -77,7 +77,7 @@
   },
   {
     "id": "my-05",
-    "category": "Indian Malaysian Patronymic (a/p)",
+    "category": "Indian Malaysian Patronymic (a/p) & Public University",
     "text": "Kavitha a/p Subramaniam delivered the lecture at Universiti Malaya in Kuala Lumpur.",
     "entities": [
       {
@@ -159,7 +159,7 @@
   },
   {
     "id": "my-09",
-    "category": "Chinese Malaysian Name",
+    "category": "Chinese Malaysian Name & Foreign University",
     "text": "Lee Siew Ling coordinated the symposium with Stanford University.",
     "entities": [
       {
@@ -178,7 +178,7 @@
   },
   {
     "id": "my-10",
-    "category": "Multi-Entity Malaysian Collaboration",
+    "category": "Multi-Entity Collaboration & Location",
     "text": "Ahmad Faiz bin Zulkifli and Kavitha a/p Subramaniam led the workshop in Putrajaya.",
     "entities": [
       {
@@ -203,7 +203,7 @@
   },
   {
     "id": "my-11",
-    "category": "Multi-Entity Malaysian Collaboration",
+    "category": "Multi-Entity Collaboration",
     "text": "Nurul Huda bt. Razali partnered with Ravi a/l Chandran on the renewable energy project in Cyberjaya.",
     "entities": [
       {
@@ -228,90 +228,176 @@
   },
   {
     "id": "my-12",
-    "category": "Multi-Entity Malaysian Collaboration",
-    "text": "Dinesh s/o Anand visited Priya d/o Mohan at Hospital Kuala Lumpur.",
+    "category": "Statutory Bodies (KWSP, LHDN)",
+    "text": "Pegawai LHDN dan KWSP mengadakan taklimat percukaian di Putrajaya.",
     "entities": [
       {
-        "text": "Dinesh s/o Anand",
-        "label": "PERSON",
-        "start": 0,
-        "end": 16
+        "text": "LHDN",
+        "label": "ORGANIZATION",
+        "start": 8,
+        "end": 12
       },
       {
-        "text": "Priya d/o Mohan",
-        "label": "PERSON",
-        "start": 25,
-        "end": 40
+        "text": "KWSP",
+        "label": "ORGANIZATION",
+        "start": 17,
+        "end": 21
       },
       {
-        "text": "Hospital Kuala Lumpur",
+        "text": "Putrajaya",
         "label": "LOCATION",
-        "start": 44,
+        "start": 56,
         "end": 65
       }
     ]
   },
   {
     "id": "my-13",
-    "category": "Malay Patronymic Uppercase",
-    "text": "MUHAMMAD HAFIZ BIN ROSLI received the award in Kuching.",
+    "category": "Major Conglomerates & Commercial Banks",
+    "text": "Cawangan Menara Maybank dan CIMB Group menyokong pembiayaan hijau Tenaga Nasional Berhad.",
     "entities": [
       {
-        "text": "MUHAMMAD HAFIZ BIN ROSLI",
-        "label": "PERSON",
-        "start": 0,
-        "end": 24
+        "text": "Menara Maybank",
+        "label": "ORGANIZATION",
+        "start": 9,
+        "end": 23
       },
       {
-        "text": "Kuching",
-        "label": "LOCATION",
-        "start": 47,
-        "end": 54
+        "text": "CIMB Group",
+        "label": "ORGANIZATION",
+        "start": 28,
+        "end": 38
+      },
+      {
+        "text": "Tenaga Nasional Berhad",
+        "label": "ORGANIZATION",
+        "start": 66,
+        "end": 88
       }
     ]
   },
   {
     "id": "my-14",
-    "category": "Indian Patronymic Uppercase",
-    "text": "SURESH A/L MURUGAN completed the electrical inspection in Shah Alam.",
+    "category": "Title Protection (No False ORG)",
+    "text": "Dato' Seri Dr. Wan Azizah binti Wan Ismail melawat Hospital Kuala Lumpur.",
     "entities": [
       {
-        "text": "SURESH A/L MURUGAN",
+        "text": "Wan Azizah binti Wan Ismail",
         "label": "PERSON",
-        "start": 0,
-        "end": 18
+        "start": 15,
+        "end": 42
       },
       {
-        "text": "Shah Alam",
-        "label": "LOCATION",
-        "start": 58,
-        "end": 67
+        "text": "Hospital Kuala Lumpur",
+        "label": "ORGANIZATION",
+        "start": 51,
+        "end": 72
       }
     ]
   },
   {
     "id": "my-15",
-    "category": "Multi-hop Patronymic",
-    "text": "Ali bin Abu bin Othman was referenced in the historical archives in Melaka.",
+    "category": "Structured PII: MyKad and Phone",
+    "text": "Ahmad Faiz bin Zulkifli (No. K/P: 950315-10-5231) boleh dihubungi melalui +6012-345 6789.",
     "entities": [
       {
-        "text": "Ali bin Abu bin Othman",
+        "text": "Ahmad Faiz bin Zulkifli",
         "label": "PERSON",
         "start": 0,
-        "end": 22
+        "end": 23
       },
       {
-        "text": "Melaka",
-        "label": "LOCATION",
-        "start": 68,
-        "end": 74
+        "text": "950315-10-5231",
+        "label": "MYKAD",
+        "start": 34,
+        "end": 48
+      },
+      {
+        "text": "+6012-345 6789",
+        "label": "PHONE",
+        "start": 74,
+        "end": 88
       }
     ]
   },
   {
     "id": "my-16",
-    "category": "Negative Conjunction Test",
-    "text": "Ali dan Abu menghadiri seminar kecerdasan buatan di Petaling Jaya.",
+    "category": "Structured PII: Address, Postcode and Landline",
+    "text": "Ibu pejabat terletak di Jalan Sultan Ismail, 50250 Kuala Lumpur dengan talian 03-8888 1234.",
+    "entities": [
+      {
+        "text": "Jalan Sultan Ismail",
+        "label": "LOCATION",
+        "start": 24,
+        "end": 43
+      },
+      {
+        "text": "50250",
+        "label": "POSTCODE",
+        "start": 45,
+        "end": 50
+      },
+      {
+        "text": "Kuala Lumpur",
+        "label": "LOCATION",
+        "start": 51,
+        "end": 63
+      },
+      {
+        "text": "03-8888 1234",
+        "label": "PHONE",
+        "start": 78,
+        "end": 90
+      }
+    ]
+  },
+  {
+    "id": "my-17",
+    "category": "Full Multi-Tier Integration",
+    "text": "Kavitha a/p Subramaniam (NRIC: 920412-14-6122) bertugas di Universiti Malaya, telefon 011-12345678 di Petaling Jaya, poskod 47301.",
+    "entities": [
+      {
+        "text": "Kavitha a/p Subramaniam",
+        "label": "PERSON",
+        "start": 0,
+        "end": 23
+      },
+      {
+        "text": "920412-14-6122",
+        "label": "MYKAD",
+        "start": 31,
+        "end": 45
+      },
+      {
+        "text": "Universiti Malaya",
+        "label": "ORGANIZATION",
+        "start": 59,
+        "end": 76
+      },
+      {
+        "text": "011-12345678",
+        "label": "PHONE",
+        "start": 86,
+        "end": 98
+      },
+      {
+        "text": "Petaling Jaya",
+        "label": "LOCATION",
+        "start": 102,
+        "end": 115
+      },
+      {
+        "text": "47301",
+        "label": "POSTCODE",
+        "start": 124,
+        "end": 129
+      }
+    ]
+  },
+  {
+    "id": "my-18",
+    "category": "Negative Conjunction (Malay)",
+    "text": "Ali dan Abu berjumpa di Kuala Lumpur.",
     "entities": [
       {
         "text": "Ali",
@@ -326,40 +412,28 @@
         "end": 11
       },
       {
-        "text": "Petaling Jaya",
+        "text": "Kuala Lumpur",
         "label": "LOCATION",
-        "start": 52,
-        "end": 65
+        "start": 24,
+        "end": 36
       }
     ]
   },
   {
-    "id": "my-17",
-    "category": "Negative English Conjunction Test",
-    "text": "Sarah and Emily attended the technology briefing in London.",
+    "id": "my-19",
+    "category": "Negative Currency Protection",
+    "text": "Syarikat membayar ganti rugi sebanyak RM 50000 kepada mangsa di Shah Alam.",
     "entities": [
       {
-        "text": "Sarah",
-        "label": "PERSON",
-        "start": 0,
-        "end": 5
-      },
-      {
-        "text": "Emily",
-        "label": "PERSON",
-        "start": 10,
-        "end": 15
-      },
-      {
-        "text": "London",
+        "text": "Shah Alam",
         "label": "LOCATION",
-        "start": 52,
-        "end": 58
+        "start": 64,
+        "end": 73
       }
     ]
   },
   {
-    "id": "my-18",
+    "id": "my-20",
     "category": "Western Baseline Regression",
     "text": "Dr. Sarah Connor met with Cyberdyne Systems in Los Angeles.",
     "entities": [
@@ -384,7 +458,7 @@
     ]
   },
   {
-    "id": "my-19",
+    "id": "my-21",
     "category": "Western Baseline Regression",
     "text": "Elena Rostova accepted a software engineering role at Google in Zurich.",
     "entities": [
@@ -409,7 +483,7 @@
     ]
   },
   {
-    "id": "my-20",
+    "id": "my-22",
     "category": "Western Baseline Regression",
     "text": "Satya Nadella discussed cloud computing at Microsoft in Redmond.",
     "entities": [

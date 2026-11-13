@@ -17,6 +17,25 @@ try:
 except ImportError:
     from src.patronymic_stitcher import stitch_patronymic_entities
 
+try:
+    from recognizers import (
+        find_mykad_entities,
+        find_phone_entities,
+        find_malaysian_org_entities,
+        find_malaysian_postcodes,
+        find_malaysian_locations,
+        resolve_entity_conflicts,
+    )
+except ImportError:
+    from src.recognizers import (
+        find_mykad_entities,
+        find_phone_entities,
+        find_malaysian_org_entities,
+        find_malaysian_postcodes,
+        find_malaysian_locations,
+        resolve_entity_conflicts,
+    )
+
 
 # Label normalization map: maps raw model entity labels to standardized, readable names.
 DEFAULT_LABEL_MAP: Dict[str, str] = {
@@ -26,10 +45,13 @@ DEFAULT_LABEL_MAP: Dict[str, str] = {
     "PERSON": "PERSON",
     "ORGANIZATION": "ORGANIZATION",
     "LOCATION": "LOCATION",
+    "MYKAD": "MYKAD",
+    "PHONE": "PHONE",
+    "POSTCODE": "POSTCODE",
 }
 
 # The target entity types for personal information detection
-TARGET_ENTITIES = {"PERSON", "ORGANIZATION", "LOCATION"}
+TARGET_ENTITIES = {"PERSON", "ORGANIZATION", "LOCATION", "MYKAD", "PHONE", "POSTCODE"}
 
 
 class PersonalInformationDetector:
@@ -47,6 +69,8 @@ class PersonalInformationDetector:
         device: Optional[int] = None,
         confidence_threshold: float = 0.50,
         enable_patronymic_stitching: bool = True,
+        enable_hybrid: bool = True,
+        include_structured_pii: bool = True,
     ) -> None:
         """Initializes the tokenizer, model, and inference pipeline.
 
@@ -58,10 +82,16 @@ class PersonalInformationDetector:
                 to accept an entity.
             enable_patronymic_stitching: Whether to post-process and stitch
                 Malaysian patronymic names (bin, binti, bt., a/l, a/p, s/o, d/o).
+            enable_hybrid: Whether to run Tier 1 deterministic recognizers,
+                gazetteers, and conflict resolution alongside the model.
+            include_structured_pii: Whether to detect structured identifiers
+                (MYKAD, PHONE, POSTCODE) in addition to PERSON, ORGANIZATION, LOCATION.
         """
         self.model_name = model_name
         self.confidence_threshold = confidence_threshold
         self.enable_patronymic_stitching = enable_patronymic_stitching
+        self.enable_hybrid = enable_hybrid
+        self.include_structured_pii = include_structured_pii
 
         # Auto-detect CUDA if device not explicitly specified
         if device is None:
@@ -159,7 +189,27 @@ class PersonalInformationDetector:
         if self.enable_patronymic_stitching:
             merged_entities = stitch_patronymic_entities(merged_entities, text)
 
-        return merged_entities
+        # If hybrid mode is disabled, return raw model + stitched entities
+        if not self.enable_hybrid:
+            return merged_entities
+
+        # Tier 1 Recognizers & Gazetteers
+        rule_entities: List[Dict[str, Any]] = []
+
+        # Structured PII Recognizers (MYKAD, PHONE, POSTCODE)
+        if self.include_structured_pii:
+            rule_entities.extend(find_mykad_entities(text))
+            rule_entities.extend(find_phone_entities(text))
+            rule_entities.extend(find_malaysian_postcodes(text))
+
+        # Malaysian Organization and Location Gazetteers
+        rule_entities.extend(find_malaysian_org_entities(text))
+        rule_entities.extend(find_malaysian_locations(text))
+
+        # Conflict resolution, title false-positive purging, and deduplication
+        final_entities = resolve_entity_conflicts(merged_entities, rule_entities, text)
+
+        return final_entities
 
     def redact(self, text: str, placeholder_format: str = "[{label}]") -> str:
         """Replaces detected sensitive entities in text with redaction placeholders.
