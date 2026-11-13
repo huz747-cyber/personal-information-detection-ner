@@ -1,5 +1,6 @@
 {
-  "description": "All records eligible for non-commercial academic research and benchmarking.",
+  "description": "All records eligible for non-commercial academic research and benchmarking under Fair Dealing / Research Licenses.",
+  "dimension": "research_training",
   "count": 1000,
   "record_ids": [
     "my-malay-001",

@@ -1,55 +1,8 @@
 {
-  "description": "Records cleared for commercial model training without third-party copyright infringement.",
-  "count": 903,
+  "description": "Records cleared for commercial model training without third-party copyright infringement risk (SRC-006, SRC-007, SRC-008).",
+  "dimension": "commercial_training",
+  "count": 855,
   "record_ids": [
-    "my-malay-001",
-    "my-malay-003",
-    "my-malay-005",
-    "my-malay-007",
-    "my-malay-009",
-    "my-malay-011",
-    "my-malay-013",
-    "my-malay-015",
-    "my-malay-017",
-    "my-malay-019",
-    "my-malay-021",
-    "my-malay-023",
-    "my-malay-025",
-    "my-malay-027",
-    "my-malay-029",
-    "my-malay-031",
-    "my-malay-033",
-    "my-malay-035",
-    "my-malay-037",
-    "my-malay-039",
-    "my-malay-041",
-    "my-malay-043",
-    "my-malay-045",
-    "my-malay-047",
-    "my-malay-049",
-    "my-malay-051",
-    "my-malay-053",
-    "my-malay-055",
-    "my-malay-057",
-    "my-malay-059",
-    "my-malay-061",
-    "my-malay-063",
-    "my-malay-065",
-    "my-malay-067",
-    "my-malay-069",
-    "my-malay-071",
-    "my-malay-073",
-    "my-malay-075",
-    "my-malay-077",
-    "my-malay-079",
-    "my-malay-081",
-    "my-malay-083",
-    "my-malay-085",
-    "my-malay-087",
-    "my-malay-089",
-    "my-malay-091",
-    "my-malay-093",
-    "my-malay-095",
     "my-malay-096",
     "my-malay-097",
     "my-malay-098",
@@ -906,395 +859,877 @@
     "my-ind-094",
     "my-ind-095"
   ],
-  "excluded_count": 97,
+  "excluded_count": 145,
   "excluded_details": [
     {
+      "id": "my-malay-001",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
+    },
+    {
       "id": "my-malay-002",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-003",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-004",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-005",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-006",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-007",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-008",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-009",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-010",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-011",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-012",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-013",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-014",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-015",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-016",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-017",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-018",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-019",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-020",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-021",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-022",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-023",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-024",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-025",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-026",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-027",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-028",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-029",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-030",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-031",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-032",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-033",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-034",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-035",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-036",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-037",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-038",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-039",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-040",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-041",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-042",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-043",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-044",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-045",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-046",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-047",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-048",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-049",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-050",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-051",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-052",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-053",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-054",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-055",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-056",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-057",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-058",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-059",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-060",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-061",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-062",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-063",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-064",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-065",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-066",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-067",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-068",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-069",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-070",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-071",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-072",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-073",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-074",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-075",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-076",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-077",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-078",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-079",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-080",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-081",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-082",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-083",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-084",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-085",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-086",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-087",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-088",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-089",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-090",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-091",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-092",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-093",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-malay-094",
-      "source": "SRC-001"
+      "source": "SRC-001",
+      "reason": "Underlying news text lacks express commercial exploitation license.",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "my-malay-095",
+      "source": "SRC-005",
+      "reason": "Parliament of Malaysia has not issued an express commercial reuse license; fail-closed policy applies.",
+      "status": "UNVERIFIED"
     },
     {
       "id": "my-intl-001",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-002",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-003",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-004",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-005",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-006",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-007",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-008",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-009",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-010",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-011",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-012",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-013",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-014",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-015",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-016",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-017",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-018",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-019",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-020",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-021",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-022",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-023",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-024",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-025",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-026",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-027",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-028",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-029",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-030",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-031",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-032",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-033",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-034",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-035",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-036",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-037",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-038",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-039",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-040",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-041",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-042",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-043",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-044",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-045",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-046",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-047",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-048",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-049",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     },
     {
       "id": "my-intl-050",
-      "source": "SRC-004"
+      "source": "SRC-004",
+      "reason": "Reuters Open Research License explicitly prohibits commercial use and raw text redistribution.",
+      "status": "VERIFIED_RESTRICTED"
     }
   ]
 }

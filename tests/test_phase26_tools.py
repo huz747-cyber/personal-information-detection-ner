@@ -291,11 +291,16 @@ def test_doccano_schema_and_roundtrip_fidelity():
 
 
 def test_dataset_release_checker_safeguards():
-    """Phase 2.6.2 Audit A: Verifies that DatasetReleaseChecker properly discriminates
-    between research, commercial training, and redistribution tiers.
+    """Phase 2.6.2 & 2.6.3 Audit A: Verifies that DatasetReleaseChecker properly discriminates
+    between research, commercial training, and redistribution tiers using categorical statuses.
     """
     import tempfile
-    from src.dataset_tools.release_checker import DatasetReleaseChecker
+    from src.dataset_tools.release_checker import (
+        DatasetReleaseChecker,
+        VERIFIED_ALLOWED,
+        VERIFIED_RESTRICTED,
+        UNVERIFIED,
+    )
 
     checker = DatasetReleaseChecker()
     mock_records = [
@@ -307,23 +312,207 @@ def test_dataset_release_checker_safeguards():
 
     # Individual record dimension checks
     elig_indep = checker.check_record(mock_records[0])
-    assert elig_indep["commercial_training"] is True
-    assert elig_indep["raw_text_redistribution"] is True
+    assert elig_indep["commercial_training"] == VERIFIED_ALLOWED
+    assert elig_indep["raw_text_redistribution"] == VERIFIED_ALLOWED
+    assert checker.is_eligible(mock_records[0], "commercial_training") is True
 
     elig_meso = checker.check_record(mock_records[2])
-    assert elig_meso["research_use"] is True
-    assert elig_meso["commercial_training"] is False
-    assert elig_meso["raw_text_redistribution"] is False
+    assert elig_meso["research_training"] == VERIFIED_ALLOWED
+    assert elig_meso["commercial_training"] == UNVERIFIED
+    assert elig_meso["raw_text_redistribution"] == VERIFIED_RESTRICTED
+    assert checker.is_eligible(mock_records[2], "commercial_training") is False
 
     elig_conll = checker.check_record(mock_records[3])
-    assert elig_conll["research_use"] is True
-    assert elig_conll["commercial_training"] is False
-    assert elig_conll["raw_text_redistribution"] is False
+    assert elig_conll["research_training"] == VERIFIED_ALLOWED
+    assert elig_conll["commercial_training"] == VERIFIED_RESTRICTED
+    assert elig_conll["raw_text_redistribution"] == VERIFIED_RESTRICTED
+    assert checker.is_eligible(mock_records[3], "commercial_training") is False
 
     with tempfile.TemporaryDirectory() as tmp_dir:
         meta = checker.generate_release_manifests(mock_records, output_dir=tmp_dir)
         assert meta["total_canonical_records"] == 4
-        assert meta["research_eligible_count"] == 4
+        assert meta["research_training_eligible_count"] == 4
         assert meta["commercial_training_eligible_count"] == 2
         assert meta["raw_redistribution_eligible_count"] == 2
         assert meta["excluded_from_commercial_count"] == 2
+
+
+def test_phase263_hansard_fail_closed_reconciliation():
+    """Phase 2.6.3 Audit A: Verifies Hansard (SRC-005) fails closed as UNVERIFIED
+    for commercial training and raw redistribution, but is VERIFIED_ALLOWED for research.
+    """
+    import tempfile
+    from src.dataset_tools.release_checker import (
+        DatasetReleaseChecker,
+        VERIFIED_ALLOWED,
+        UNVERIFIED,
+    )
+
+    checker = DatasetReleaseChecker()
+    hansard_record = {
+        "id": "han-01",
+        "text": "Tuan Yang di-Pertua, Kementerian Pendidikan...",
+        "label": [[23, 44, "ORGANIZATION"]],
+        "meta": {"source_id": "SRC-005"},
+    }
+
+    elig = checker.check_record(hansard_record)
+    assert elig["research_training"] == VERIFIED_ALLOWED
+    assert elig["commercial_training"] == UNVERIFIED
+    assert elig["raw_text_redistribution"] == UNVERIFIED
+    assert elig["derived_annotation_redistribution"] == VERIFIED_ALLOWED
+
+    # Must be excluded from commercial training manifest
+    assert checker.is_eligible(hansard_record, "commercial_training") is False
+    assert checker.is_eligible(hansard_record, "raw_text_redistribution") is False
+
+    with tempfile.TemporaryDirectory() as tmp_dir:
+        meta = checker.generate_release_manifests([hansard_record], output_dir=tmp_dir)
+        assert meta["research_training_eligible_count"] == 1
+        assert meta["commercial_training_eligible_count"] == 0
+        assert meta["raw_redistribution_eligible_count"] == 0
+        assert meta["excluded_from_commercial_count"] == 1
+
+
+def test_phase263_unverified_source_exclusion():
+    """Phase 2.6.3 Audit F: Unknown sources must fail closed across all dimensions."""
+    from src.dataset_tools.release_checker import DatasetReleaseChecker, UNVERIFIED
+
+    checker = DatasetReleaseChecker()
+    unknown_rec = {"id": "unk-01", "text": "Random text", "meta": {"source_id": "SRC-999"}}
+
+    elig = checker.check_record(unknown_rec)
+    for dim, status in elig.items():
+        assert status == UNVERIFIED
+    assert checker.is_eligible(unknown_rec, "research_training") is False
+    assert checker.is_eligible(unknown_rec, "commercial_training") is False
+
+
+def test_phase263_restricted_source_exclusion():
+    """Phase 2.6.3 Audit F: CoNLL-2003 (SRC-004) is strictly VERIFIED_RESTRICTED."""
+    from src.dataset_tools.release_checker import (
+        DatasetReleaseChecker,
+        VERIFIED_ALLOWED,
+        VERIFIED_RESTRICTED,
+    )
+
+    checker = DatasetReleaseChecker()
+    conll_rec = {"id": "c-01", "text": "SOCCER - JAPAN GET LUCKY.", "meta": {"source_id": "SRC-004"}}
+
+    elig = checker.check_record(conll_rec)
+    assert elig["research_training"] == VERIFIED_ALLOWED
+    assert elig["commercial_training"] == VERIFIED_RESTRICTED
+    assert elig["raw_text_redistribution"] == VERIFIED_RESTRICTED
+    assert elig["derived_annotation_redistribution"] == VERIFIED_RESTRICTED
+    assert elig["research_model_weights"] == VERIFIED_RESTRICTED
+    assert elig["commercial_model_weights"] == VERIFIED_RESTRICTED
+
+
+def test_phase263_independent_annotation_metadata_release():
+    """Phase 2.6.3 Audit B Profile 3: Standalone metadata manifest must contain offsets/labels
+    without including raw sentence text.
+    """
+    import json
+    import tempfile
+    from pathlib import Path
+    from src.dataset_tools.release_checker import DatasetReleaseChecker
+
+    checker = DatasetReleaseChecker()
+    records = [
+        {"id": "r-01", "text": "Secret raw text 1", "label": [[0, 5, "ORGANIZATION"]], "meta": {"source_id": "SRC-007"}},
+        {"id": "r-02", "text": "Secret raw text 2", "label": [[0, 4, "PERSON"]], "meta": {"source_id": "SRC-001"}},
+        {"id": "r-03", "text": "CoNLL text", "label": [[0, 5, "LOCATION"]], "meta": {"source_id": "SRC-004"}},
+    ]
+
+    with tempfile.TemporaryDirectory() as tmp_dir:
+        checker.generate_release_manifests(records, output_dir=tmp_dir)
+        meta_file = Path(tmp_dir) / "release_metadata_manifest.json"
+        assert meta_file.exists()
+
+        with open(meta_file, encoding="utf-8") as f:
+            data = json.load(f)
+
+        assert data["count"] == 2  # SRC-007 and SRC-001 included; SRC-004 excluded
+        for item in data["records"]:
+            # Zero raw text leakage in metadata manifest
+            assert "text" not in item
+            assert "id" in item
+            assert "source_id" in item
+            assert "entities" in item
+            assert "character_count" in item
+
+
+def test_phase263_model_weight_permission_separation():
+    """Phase 2.6.3 Audit C: Commercial model weight release must be separated from research weights."""
+    from src.dataset_tools.release_checker import (
+        DatasetReleaseChecker,
+        VERIFIED_ALLOWED,
+        VERIFIED_RESTRICTED,
+        UNVERIFIED,
+    )
+
+    checker = DatasetReleaseChecker()
+
+    # DistilBERT CoNLL base / SRC-004 cannot yield commercial weights
+    assert checker.profiles["SRC-004"].research_model_weights == VERIFIED_RESTRICTED
+    assert checker.profiles["SRC-004"].commercial_model_weights == VERIFIED_RESTRICTED
+
+    # Mesolitica and Hansard allow research weights but unverified for commercial weights
+    assert checker.profiles["SRC-001"].research_model_weights == VERIFIED_ALLOWED
+    assert checker.profiles["SRC-001"].commercial_model_weights == UNVERIFIED
+    assert checker.profiles["SRC-005"].research_model_weights == VERIFIED_ALLOWED
+    assert checker.profiles["SRC-005"].commercial_model_weights == UNVERIFIED
+
+    # Independent and synthetic allow both
+    assert checker.profiles["SRC-007"].commercial_model_weights == VERIFIED_ALLOWED
+    assert checker.profiles["SRC-008"].commercial_model_weights == VERIFIED_ALLOWED
+
+
+def test_phase263_manifest_count_consistency():
+    """Phase 2.6.3 Audit F: Invariant checks across all generated manifests on canonical dataset."""
+    import json
+    from pathlib import Path
+
+    manifests_dir = Path("data/manifests")
+
+    with open(manifests_dir / "release_research_manifest.json", encoding="utf-8") as f:
+        res = json.load(f)
+    with open(manifests_dir / "release_commercial_training_manifest.json", encoding="utf-8") as f:
+        comm = json.load(f)
+    with open(manifests_dir / "release_raw_redistribution_manifest.json", encoding="utf-8") as f:
+        raw = json.load(f)
+    with open(manifests_dir / "release_metadata_manifest.json", encoding="utf-8") as f:
+        meta = json.load(f)
+
+    # Invariants
+    assert res["count"] == 1000
+    assert comm["count"] == 855
+    assert comm["excluded_count"] == 145
+    assert comm["count"] + comm["excluded_count"] == 1000
+
+    assert raw["count"] == 855
+    assert raw["excluded_count"] == 145
+    assert raw["count"] + raw["excluded_count"] == 1000
+
+    assert meta["count"] == 950
+    assert meta["excluded_count"] == 50
+    assert meta["count"] + meta["excluded_count"] == 1000
+
+
+def test_phase263_deterministic_generation():
+    """Phase 2.6.3 Audit F: Manifest generation must be completely deterministic."""
+    import json
+    import tempfile
+    from src.dataset_tools.release_checker import DatasetReleaseChecker
+
+    checker = DatasetReleaseChecker()
+    records = []
+    with open("data/annotated/malaysian_ner_1000.jsonl", encoding="utf-8") as f:
+        for line in f:
+            records.append(json.loads(line))
+
+    with tempfile.TemporaryDirectory() as d1, tempfile.TemporaryDirectory() as d2:
+        m1 = checker.generate_release_manifests(records, output_dir=d1)
+        m2 = checker.generate_release_manifests(records, output_dir=d2)
+        assert m1 == m2
+
