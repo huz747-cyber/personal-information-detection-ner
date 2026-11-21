@@ -121,9 +121,10 @@ MALAYSIAN_LOCATION_NAMES: List[str] = [
 
 # Regex pattern for Malaysian street / residential address lines
 # e.g., 'Jalan Tun Razak', 'Jalan Sultan Ismail', 'Taman Tun Dr Ismail', 'Presint 2'
+# Hardened in Phase 6: Constrained to 1 to 4 capitalized/alphanumeric tokens,
+# eliminating greedy absorption of following dates, prepositions, or clauses.
 ADDRESS_LINE_REGEX = re.compile(
-    r"\b(?:Jalan|Jln\.?|Lorong|Lrg\.?|Taman|Tmn\.?|Bandar|Bdr\.?|Kampung|Kg\.?|Bukit|Sungai|Sg\.?|Presint|Seksyen)\s+[A-Z][A-Za-z0-9\s'-]+\b",
-    re.IGNORECASE,
+    r"\b(?i:Jalan|Jln\.?|Lorong|Lrg\.?|Taman|Tmn\.?|Bandar|Bdr\.?|Kampung|Kg\.?|Bukit|Sungai|Sg\.?|Presint|Seksyen)\s+[A-Z0-9][A-Za-z0-9'/-]*(?:\s+[A-Z0-9][A-Za-z0-9'/-]*){0,3}\b",
 )
 
 

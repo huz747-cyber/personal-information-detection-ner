@@ -1,0 +1,100 @@
+{
+  "model_compression": {
+    "fp32_disk_size_mb": 516.79,
+    "int8_disk_size_mb": 395.33,
+    "compression_ratio": 1.31,
+    "size_reduction_percent": 23.5
+  },
+  "latency_and_throughput": {
+    "fp32": {
+      "num_sentences_benchmarked": 100,
+      "total_elapsed_seconds": 2.9258,
+      "avg_latency_ms": 29.26,
+      "throughput_sentences_per_sec": 34.18
+    },
+    "int8": {
+      "num_sentences_benchmarked": 100,
+      "total_elapsed_seconds": 1.7303,
+      "avg_latency_ms": 17.3,
+      "throughput_sentences_per_sec": 57.79
+    },
+    "speedup_ratio": 1.69
+  },
+  "accuracy_comparison": {
+    "canonical_test": {
+      "fp32_strict_f1": 1.0,
+      "int8_strict_f1": 0.9902,
+      "fp32_relaxed_f1": 1.0,
+      "int8_relaxed_f1": 0.9902
+    },
+    "experimental_structural_test": {
+      "fp32_strict_f1": 1.0,
+      "int8_strict_f1": 0.9735,
+      "fp32_relaxed_f1": 1.0,
+      "int8_relaxed_f1": 0.9947
+    },
+    "malaysian_open_vocabulary_stress_test": {
+      "fp32_strict_f1": 0.9127,
+      "int8_strict_f1": 0.8,
+      "fp32_relaxed_f1": 0.9852,
+      "int8_relaxed_f1": 0.9639,
+      "fp32_per_class": {
+        "PERSON": {
+          "precision": 0.9706,
+          "recall": 0.99,
+          "f1": 0.9802,
+          "tp": 99,
+          "fp": 3,
+          "fn": 1
+        },
+        "ORGANIZATION": {
+          "precision": 0.9118,
+          "recall": 0.93,
+          "f1": 0.9208,
+          "tp": 93,
+          "fp": 9,
+          "fn": 7
+        },
+        "LOCATION": {
+          "precision": 0.8252,
+          "recall": 0.85,
+          "f1": 0.8374,
+          "tp": 85,
+          "fp": 18,
+          "fn": 15
+        }
+      },
+      "int8_per_class": {
+        "PERSON": {
+          "precision": 0.9118,
+          "recall": 0.93,
+          "f1": 0.9208,
+          "tp": 93,
+          "fp": 9,
+          "fn": 7
+        },
+        "ORGANIZATION": {
+          "precision": 0.7551,
+          "recall": 0.74,
+          "f1": 0.7475,
+          "tp": 74,
+          "fp": 24,
+          "fn": 26
+        },
+        "LOCATION": {
+          "precision": 0.7,
+          "recall": 0.77,
+          "f1": 0.7333,
+          "tp": 77,
+          "fp": 33,
+          "fn": 23
+        }
+      }
+    }
+  },
+  "rollback_procedure": {
+    "policy": "Safe Rollback Guaranteed",
+    "rollback_command": "PersonalInformationDetector(model_name='models/malaysian_ner_distilbert_multilingual')",
+    "verified": true
+  }
+}

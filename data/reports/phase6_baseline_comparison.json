@@ -1,0 +1,107 @@
+{
+  "canonical_test_split": {
+    "Phase 4 Baseline (Untuned dslim)": {
+      "Config 1 (Model Alone)": {
+        "strict_f1": 0.5411,
+        "relaxed_f1": 0.7671
+      },
+      "Config 2 (+ Stitcher)": {
+        "strict_f1": 0.6325,
+        "relaxed_f1": 0.8053
+      },
+      "Config 3 (Full Hybrid)": {
+        "strict_f1": 0.6388,
+        "relaxed_f1": 0.9104
+      }
+    },
+    "Phase 5 Fine-Tuned (Multilingual)": {
+      "Config 1 (Model Alone)": {
+        "strict_f1": 1.0,
+        "relaxed_f1": 1.0
+      },
+      "Config 2 (+ Stitcher)": {
+        "strict_f1": 1.0,
+        "relaxed_f1": 1.0
+      },
+      "Config 3 (Full Hybrid - Legacy Arbitration)": {
+        "strict_f1": 0.8361,
+        "relaxed_f1": 1.0
+      }
+    },
+    "Phase 6 Optimized Hybrid Architecture": {
+      "Config 3 (Optimized Hybrid - FP32)": {
+        "strict_f1": 1.0,
+        "relaxed_f1": 1.0
+      },
+      "Config 3 (Optimized Hybrid - INT8 Quantized)": {
+        "strict_f1": 0.9902,
+        "relaxed_f1": 0.9902
+      }
+    }
+  },
+  "experimental_structural_test_split": {
+    "Phase 4 Baseline (Untuned dslim)": {
+      "Config 1 (Model Alone)": {
+        "strict_f1": 0.4127,
+        "relaxed_f1": 0.6399
+      },
+      "Config 2 (+ Stitcher)": {
+        "strict_f1": 0.4344,
+        "relaxed_f1": 0.6735
+      },
+      "Config 3 (Full Hybrid)": {
+        "strict_f1": 0.5075,
+        "relaxed_f1": 0.794
+      }
+    },
+    "Phase 5 Fine-Tuned (Multilingual)": {
+      "Config 1 (Model Alone)": {
+        "strict_f1": 0.968,
+        "relaxed_f1": 1.0
+      },
+      "Config 2 (+ Stitcher)": {
+        "strict_f1": 0.968,
+        "relaxed_f1": 1.0
+      },
+      "Config 3 (Full Hybrid - Legacy Arbitration)": {
+        "strict_f1": 0.8571,
+        "relaxed_f1": 0.9786
+      }
+    },
+    "Phase 6 Optimized Hybrid Architecture": {
+      "Config 3 (Optimized Hybrid - FP32)": {
+        "strict_f1": 1.0,
+        "relaxed_f1": 1.0
+      },
+      "Config 3 (Optimized Hybrid - INT8 Quantized)": {
+        "strict_f1": 0.9735,
+        "relaxed_f1": 0.9947
+      }
+    }
+  },
+  "malaysian_open_vocabulary_stress_benchmark": {
+    "Phase 6 Frozen Evaluation (100% Out-of-Vocabulary Entities)": {
+      "Config 3 (Optimized Hybrid - FP32)": {
+        "strict_f1": 0.9127,
+        "relaxed_f1": 0.9852,
+        "person_strict_f1": 0.9802,
+        "organization_strict_f1": 0.9208,
+        "location_strict_f1": 0.8374
+      },
+      "Config 3 (Optimized Hybrid - INT8 Quantized)": {
+        "strict_f1": 0.8,
+        "relaxed_f1": 0.9639,
+        "person_strict_f1": 0.9208,
+        "organization_strict_f1": 0.7475,
+        "location_strict_f1": 0.7333
+      }
+    }
+  },
+  "inference_performance": {
+    "fp32_latency_ms": 29.26,
+    "int8_latency_ms": 17.3,
+    "speedup_ratio": 1.69,
+    "fp32_disk_mb": 516.79,
+    "int8_disk_mb": 395.33
+  }
+}

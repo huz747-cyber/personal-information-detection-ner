@@ -71,6 +71,7 @@ class PersonalInformationDetector:
         enable_patronymic_stitching: bool = True,
         enable_hybrid: bool = True,
         include_structured_pii: bool = True,
+        confidence_thresholds: Optional[Dict[str, float]] = None,
     ) -> None:
         """Initializes the tokenizer, model, and inference pipeline.
 
@@ -86,12 +87,15 @@ class PersonalInformationDetector:
                 gazetteers, and conflict resolution alongside the model.
             include_structured_pii: Whether to detect structured identifiers
                 (MYKAD, PHONE, POSTCODE) in addition to PERSON, ORGANIZATION, LOCATION.
+            confidence_thresholds: Optional per-category calibrated thresholds for
+                dynamic arbitration (Phase 6).
         """
         self.model_name = model_name
         self.confidence_threshold = confidence_threshold
         self.enable_patronymic_stitching = enable_patronymic_stitching
         self.enable_hybrid = enable_hybrid
         self.include_structured_pii = include_structured_pii
+        self.confidence_thresholds = confidence_thresholds
 
         # Auto-detect CUDA if device not explicitly specified
         if device is None:
@@ -207,7 +211,12 @@ class PersonalInformationDetector:
         rule_entities.extend(find_malaysian_locations(text))
 
         # Conflict resolution, title false-positive purging, and deduplication
-        final_entities = resolve_entity_conflicts(merged_entities, rule_entities, text)
+        final_entities = resolve_entity_conflicts(
+            merged_entities,
+            rule_entities,
+            text,
+            thresholds=self.confidence_thresholds,
+        )
 
         return final_entities
 

@@ -113,10 +113,11 @@ MALAYSIAN_ORG_NAMES: List[str] = [
     "Sunway Group",
 ]
 
-# Regex for detecting company entities ending with standard Malaysian corporate suffixes
+# Regex for detecting company entities ending with standard Malaysian corporate suffixes.
+# Hardened in Phase 6: Requires Title-Case / capitalized alphanumeric tokens for 1 to 4 words
+# preceding the corporate suffix, eliminating greedy absorption of lowercase verbs/prepositions.
 MALAYSIAN_CORP_SUFFIX_REGEX = re.compile(
-    r"\b[A-Z][A-Za-z0-9&/.-]+(?:\s+[A-Za-z0-9&/.-]+){0,4}\s+(?:Sdn\.?\s*Bhd\.?|Bhd\.?|PLT|Sendirian\s+Berhad|Berhad)\.?",
-    re.IGNORECASE,
+    r"\b([A-Z0-9][A-Za-z0-9&/.-]*(?:\s+(?:[A-Z0-9][A-Za-z0-9&/.-]*|&|dan|and)){0,3})\s+(?i:Sdn\.?\s*Bhd\.?|Bhd\.?|PLT|Sendirian\s+Berhad|Berhad)\b\.?",
 )
 
 
