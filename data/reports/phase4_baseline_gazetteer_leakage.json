@@ -1,0 +1,38 @@
+{
+  "total_gold_entities": 305,
+  "known_in_gazetteer_count": 145,
+  "unseen_entities_count": 160,
+  "unseen_percentage": 52.46,
+  "config_comparison": {
+    "Config 1 (Raw)": {
+      "unseen_strict_f1": 0.3322,
+      "unseen_strict_prec": 0.2306,
+      "unseen_strict_rec": 0.5938,
+      "unseen_relaxed_f1": 0.5559,
+      "known_strict_f1": 0.3555,
+      "unseen_org_f1": 0.2429,
+      "unseen_loc_f1": 0.2617,
+      "unseen_person_f1": 0.3938
+    },
+    "Config 2 (Stitcher)": {
+      "unseen_strict_f1": 0.4349,
+      "unseen_strict_prec": 0.3095,
+      "unseen_strict_rec": 0.7312,
+      "unseen_relaxed_f1": 0.5911,
+      "known_strict_f1": 0.3786,
+      "unseen_org_f1": 0.2429,
+      "unseen_loc_f1": 0.2617,
+      "unseen_person_f1": 0.5911
+    },
+    "Config 3 (Hybrid)": {
+      "unseen_strict_f1": 0.3886,
+      "unseen_strict_prec": 0.2795,
+      "unseen_strict_rec": 0.6375,
+      "unseen_relaxed_f1": 0.6095,
+      "known_strict_f1": 0.4392,
+      "unseen_org_f1": 0.0635,
+      "unseen_loc_f1": 0.192,
+      "unseen_person_f1": 0.6277
+    }
+  }
+}

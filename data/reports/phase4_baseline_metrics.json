@@ -1,0 +1,692 @@
+{
+  "dataset_path": "data\\splits\\test.jsonl",
+  "total_records": 145,
+  "configurations": {
+    "Config 1: Raw DistilBERT": {
+      "strict": {
+        "precision": 0.4709,
+        "recall": 0.6361,
+        "f1": 0.5411,
+        "tp": 194,
+        "fp": 218,
+        "fn": 111,
+        "total_gold": 305,
+        "total_pred": 412,
+        "false_positive_rate": 0.5291,
+        "false_negative_rate": 0.3639,
+        "per_class": {
+          "LOCATION": {
+            "precision": 0.8132,
+            "recall": 0.7048,
+            "f1": 0.7551,
+            "tp": 74,
+            "fp": 17,
+            "fn": 31
+          },
+          "ORGANIZATION": {
+            "precision": 0.4628,
+            "recall": 0.7467,
+            "f1": 0.5714,
+            "tp": 56,
+            "fp": 65,
+            "fn": 19
+          },
+          "PERSON": {
+            "precision": 0.32,
+            "recall": 0.512,
+            "f1": 0.3938,
+            "tp": 64,
+            "fp": 136,
+            "fn": 61
+          }
+        }
+      },
+      "relaxed": {
+        "precision": 0.6675,
+        "recall": 0.9016,
+        "f1": 0.7671,
+        "tp": 275,
+        "fp": 137,
+        "fn": 30,
+        "total_gold": 305,
+        "total_pred": 412,
+        "false_positive_rate": 0.3325,
+        "false_negative_rate": 0.0984,
+        "per_class": {
+          "LOCATION": {
+            "precision": 0.9011,
+            "recall": 0.781,
+            "f1": 0.8367,
+            "tp": 82,
+            "fp": 9,
+            "fn": 23
+          },
+          "ORGANIZATION": {
+            "precision": 0.562,
+            "recall": 0.9067,
+            "f1": 0.6939,
+            "tp": 68,
+            "fp": 53,
+            "fn": 7
+          },
+          "PERSON": {
+            "precision": 0.625,
+            "recall": 1.0,
+            "f1": 0.7692,
+            "tp": 125,
+            "fp": 75,
+            "fn": 0
+          }
+        }
+      },
+      "confusion_matrix": {
+        "PERSON": {
+          "PERSON": 121,
+          "ORGANIZATION": 4,
+          "LOCATION": 0,
+          "O": 0
+        },
+        "ORGANIZATION": {
+          "PERSON": 3,
+          "ORGANIZATION": 66,
+          "LOCATION": 3,
+          "O": 3
+        },
+        "LOCATION": {
+          "PERSON": 12,
+          "ORGANIZATION": 10,
+          "LOCATION": 82,
+          "O": 1
+        },
+        "O": {
+          "PERSON": 64,
+          "ORGANIZATION": 41,
+          "LOCATION": 6,
+          "O": 0
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 10,
+        "clean_sentences_count": 7,
+        "rejection_accuracy": 0.7,
+        "total_hallucinations": 4,
+        "hallucinated_details": [
+          {
+            "sentence_id": "my-mang-130",
+            "text": "Aiyo, the grab delivery fee so expensive during heavy rain time lor.",
+            "entity": "Aiyo",
+            "label": "PERSON",
+            "score": 0.8005
+          },
+          {
+            "sentence_id": "my-mixcs-133",
+            "text": "Petang nanti I ada internal audit session with the management team kat tingkat 3.",
+            "entity": "Petang",
+            "label": "ORGANIZATION",
+            "score": 0.9506
+          },
+          {
+            "sentence_id": "my-mixcs-133",
+            "text": "Petang nanti I ada internal audit session with the management team kat tingkat 3.",
+            "entity": "kat",
+            "label": "ORGANIZATION",
+            "score": 0.7919
+          },
+          {
+            "sentence_id": "my-mixcs-134",
+            "text": "Semua candidate kena bring hard copy resume and original certificates masa interview.",
+            "entity": "Semua",
+            "label": "PERSON",
+            "score": 0.8469
+          }
+        ]
+      }
+    },
+    "Config 2: DistilBERT + Stitcher (Phase 1)": {
+      "strict": {
+        "precision": 0.5714,
+        "recall": 0.7082,
+        "f1": 0.6325,
+        "tp": 216,
+        "fp": 162,
+        "fn": 89,
+        "total_gold": 305,
+        "total_pred": 378,
+        "false_positive_rate": 0.4286,
+        "false_negative_rate": 0.2918,
+        "per_class": {
+          "LOCATION": {
+            "precision": 0.8132,
+            "recall": 0.7048,
+            "f1": 0.7551,
+            "tp": 74,
+            "fp": 17,
+            "fn": 31
+          },
+          "ORGANIZATION": {
+            "precision": 0.4628,
+            "recall": 0.7467,
+            "f1": 0.5714,
+            "tp": 56,
+            "fp": 65,
+            "fn": 19
+          },
+          "PERSON": {
+            "precision": 0.5181,
+            "recall": 0.688,
+            "f1": 0.5911,
+            "tp": 86,
+            "fp": 80,
+            "fn": 39
+          }
+        }
+      },
+      "relaxed": {
+        "precision": 0.7275,
+        "recall": 0.9016,
+        "f1": 0.8053,
+        "tp": 275,
+        "fp": 103,
+        "fn": 30,
+        "total_gold": 305,
+        "total_pred": 378,
+        "false_positive_rate": 0.2725,
+        "false_negative_rate": 0.0984,
+        "per_class": {
+          "LOCATION": {
+            "precision": 0.9011,
+            "recall": 0.781,
+            "f1": 0.8367,
+            "tp": 82,
+            "fp": 9,
+            "fn": 23
+          },
+          "ORGANIZATION": {
+            "precision": 0.562,
+            "recall": 0.9067,
+            "f1": 0.6939,
+            "tp": 68,
+            "fp": 53,
+            "fn": 7
+          },
+          "PERSON": {
+            "precision": 0.753,
+            "recall": 1.0,
+            "f1": 0.8591,
+            "tp": 125,
+            "fp": 41,
+            "fn": 0
+          }
+        }
+      },
+      "confusion_matrix": {
+        "PERSON": {
+          "PERSON": 121,
+          "ORGANIZATION": 4,
+          "LOCATION": 0,
+          "O": 0
+        },
+        "ORGANIZATION": {
+          "PERSON": 3,
+          "ORGANIZATION": 66,
+          "LOCATION": 3,
+          "O": 3
+        },
+        "LOCATION": {
+          "PERSON": 12,
+          "ORGANIZATION": 10,
+          "LOCATION": 82,
+          "O": 1
+        },
+        "O": {
+          "PERSON": 30,
+          "ORGANIZATION": 41,
+          "LOCATION": 6,
+          "O": 0
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 10,
+        "clean_sentences_count": 7,
+        "rejection_accuracy": 0.7,
+        "total_hallucinations": 4,
+        "hallucinated_details": [
+          {
+            "sentence_id": "my-mang-130",
+            "text": "Aiyo, the grab delivery fee so expensive during heavy rain time lor.",
+            "entity": "Aiyo",
+            "label": "PERSON",
+            "score": 0.8005
+          },
+          {
+            "sentence_id": "my-mixcs-133",
+            "text": "Petang nanti I ada internal audit session with the management team kat tingkat 3.",
+            "entity": "Petang",
+            "label": "ORGANIZATION",
+            "score": 0.9506
+          },
+          {
+            "sentence_id": "my-mixcs-133",
+            "text": "Petang nanti I ada internal audit session with the management team kat tingkat 3.",
+            "entity": "kat",
+            "label": "ORGANIZATION",
+            "score": 0.7919
+          },
+          {
+            "sentence_id": "my-mixcs-134",
+            "text": "Semua candidate kena bring hard copy resume and original certificates masa interview.",
+            "entity": "Semua",
+            "label": "PERSON",
+            "score": 0.8469
+          }
+        ]
+      }
+    },
+    "Config 3: Full Hybrid (Phase 2)": {
+      "strict": {
+        "precision": 0.5863,
+        "recall": 0.7016,
+        "f1": 0.6388,
+        "tp": 214,
+        "fp": 151,
+        "fn": 91,
+        "total_gold": 305,
+        "total_pred": 365,
+        "false_positive_rate": 0.4137,
+        "false_negative_rate": 0.2984,
+        "per_class": {
+          "LOCATION": {
+            "precision": 0.8899,
+            "recall": 0.9238,
+            "f1": 0.9065,
+            "tp": 97,
+            "fp": 12,
+            "fn": 8
+          },
+          "ORGANIZATION": {
+            "precision": 0.2897,
+            "recall": 0.4133,
+            "f1": 0.3407,
+            "tp": 31,
+            "fp": 76,
+            "fn": 44
+          },
+          "PERSON": {
+            "precision": 0.5772,
+            "recall": 0.688,
+            "f1": 0.6277,
+            "tp": 86,
+            "fp": 63,
+            "fn": 39
+          }
+        }
+      },
+      "relaxed": {
+        "precision": 0.8356,
+        "recall": 1.0,
+        "f1": 0.9104,
+        "tp": 305,
+        "fp": 60,
+        "fn": 0,
+        "total_gold": 305,
+        "total_pred": 365,
+        "false_positive_rate": 0.1644,
+        "false_negative_rate": 0.0,
+        "per_class": {
+          "LOCATION": {
+            "precision": 0.9633,
+            "recall": 1.0,
+            "f1": 0.9813,
+            "tp": 105,
+            "fp": 4,
+            "fn": 0
+          },
+          "ORGANIZATION": {
+            "precision": 0.7009,
+            "recall": 1.0,
+            "f1": 0.8242,
+            "tp": 75,
+            "fp": 32,
+            "fn": 0
+          },
+          "PERSON": {
+            "precision": 0.8389,
+            "recall": 1.0,
+            "f1": 0.9124,
+            "tp": 125,
+            "fp": 24,
+            "fn": 0
+          }
+        }
+      },
+      "confusion_matrix": {
+        "PERSON": {
+          "PERSON": 121,
+          "ORGANIZATION": 4,
+          "LOCATION": 0,
+          "O": 0
+        },
+        "ORGANIZATION": {
+          "PERSON": 0,
+          "ORGANIZATION": 75,
+          "LOCATION": 0,
+          "O": 0
+        },
+        "LOCATION": {
+          "PERSON": 0,
+          "ORGANIZATION": 0,
+          "LOCATION": 105,
+          "O": 0
+        },
+        "O": {
+          "PERSON": 28,
+          "ORGANIZATION": 28,
+          "LOCATION": 4,
+          "O": 0
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 10,
+        "clean_sentences_count": 7,
+        "rejection_accuracy": 0.7,
+        "total_hallucinations": 4,
+        "hallucinated_details": [
+          {
+            "sentence_id": "my-mang-130",
+            "text": "Aiyo, the grab delivery fee so expensive during heavy rain time lor.",
+            "entity": "Aiyo",
+            "label": "PERSON",
+            "score": 0.8005
+          },
+          {
+            "sentence_id": "my-mixcs-133",
+            "text": "Petang nanti I ada internal audit session with the management team kat tingkat 3.",
+            "entity": "Petang",
+            "label": "ORGANIZATION",
+            "score": 0.9506
+          },
+          {
+            "sentence_id": "my-mixcs-133",
+            "text": "Petang nanti I ada internal audit session with the management team kat tingkat 3.",
+            "entity": "kat",
+            "label": "ORGANIZATION",
+            "score": 0.7919
+          },
+          {
+            "sentence_id": "my-mixcs-134",
+            "text": "Semua candidate kena bring hard copy resume and original certificates masa interview.",
+            "entity": "Semua",
+            "label": "PERSON",
+            "score": 0.8469
+          }
+        ]
+      }
+    }
+  },
+  "per_category": {
+    "malaysian_english": {
+      "sentence_count": 45,
+      "strict_precision": 0.5612,
+      "strict_recall": 0.624,
+      "strict_f1": 0.5909,
+      "relaxed_f1": 0.947,
+      "per_class": {
+        "LOCATION": {
+          "precision": 0.9556,
+          "recall": 0.9556,
+          "f1": 0.9556,
+          "tp": 43,
+          "fp": 2,
+          "fn": 2
+        },
+        "ORGANIZATION": {
+          "precision": 0.1852,
+          "recall": 0.2222,
+          "f1": 0.202,
+          "tp": 10,
+          "fp": 44,
+          "fn": 35
+        },
+        "PERSON": {
+          "precision": 0.625,
+          "recall": 0.7143,
+          "f1": 0.6667,
+          "tp": 25,
+          "fp": 15,
+          "fn": 10
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 0,
+        "clean_sentences_count": 0,
+        "rejection_accuracy": 1.0,
+        "total_hallucinations": 0,
+        "hallucinated_details": []
+      }
+    },
+    "manglish": {
+      "sentence_count": 45,
+      "strict_precision": 0.701,
+      "strict_recall": 0.85,
+      "strict_f1": 0.7684,
+      "relaxed_f1": 0.904,
+      "per_class": {
+        "LOCATION": {
+          "precision": 0.7241,
+          "recall": 0.84,
+          "f1": 0.7778,
+          "tp": 21,
+          "fp": 8,
+          "fn": 4
+        },
+        "ORGANIZATION": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1": 0.8,
+          "tp": 12,
+          "fp": 3,
+          "fn": 3
+        },
+        "PERSON": {
+          "precision": 0.6604,
+          "recall": 0.875,
+          "f1": 0.7527,
+          "tp": 35,
+          "fp": 18,
+          "fn": 5
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 5,
+        "clean_sentences_count": 4,
+        "rejection_accuracy": 0.8,
+        "total_hallucinations": 1,
+        "hallucinated_details": [
+          {
+            "sentence_id": "my-mang-130",
+            "text": "Aiyo, the grab delivery fee so expensive during heavy rain time lor.",
+            "entity": "Aiyo",
+            "label": "PERSON",
+            "score": 0.8005
+          }
+        ]
+      }
+    },
+    "mixed_code_switch": {
+      "sentence_count": 55,
+      "strict_precision": 0.5271,
+      "strict_recall": 0.68,
+      "strict_f1": 0.5939,
+      "relaxed_f1": 0.8734,
+      "per_class": {
+        "LOCATION": {
+          "precision": 0.9429,
+          "recall": 0.9429,
+          "f1": 0.9429,
+          "tp": 33,
+          "fp": 2,
+          "fn": 2
+        },
+        "ORGANIZATION": {
+          "precision": 0.2368,
+          "recall": 0.6,
+          "f1": 0.3396,
+          "tp": 9,
+          "fp": 29,
+          "fn": 6
+        },
+        "PERSON": {
+          "precision": 0.4643,
+          "recall": 0.52,
+          "f1": 0.4906,
+          "tp": 26,
+          "fp": 30,
+          "fn": 24
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 5,
+        "clean_sentences_count": 3,
+        "rejection_accuracy": 0.6,
+        "total_hallucinations": 3,
+        "hallucinated_details": [
+          {
+            "sentence_id": "my-mixcs-133",
+            "text": "Petang nanti I ada internal audit session with the management team kat tingkat 3.",
+            "entity": "Petang",
+            "label": "ORGANIZATION",
+            "score": 0.9506
+          },
+          {
+            "sentence_id": "my-mixcs-133",
+            "text": "Petang nanti I ada internal audit session with the management team kat tingkat 3.",
+            "entity": "kat",
+            "label": "ORGANIZATION",
+            "score": 0.7919
+          },
+          {
+            "sentence_id": "my-mixcs-134",
+            "text": "Semua candidate kena bring hard copy resume and original certificates masa interview.",
+            "entity": "Semua",
+            "label": "PERSON",
+            "score": 0.8469
+          }
+        ]
+      }
+    }
+  },
+  "gazetteer_leakage": {
+    "total_gold_entities": 305,
+    "known_in_gazetteer_count": 145,
+    "unseen_entities_count": 160,
+    "unseen_percentage": 52.46,
+    "config_comparison": {
+      "Config 1 (Raw)": {
+        "unseen_strict_f1": 0.3322,
+        "unseen_strict_prec": 0.2306,
+        "unseen_strict_rec": 0.5938,
+        "unseen_relaxed_f1": 0.5559,
+        "known_strict_f1": 0.3555,
+        "unseen_org_f1": 0.2429,
+        "unseen_loc_f1": 0.2617,
+        "unseen_person_f1": 0.3938
+      },
+      "Config 2 (Stitcher)": {
+        "unseen_strict_f1": 0.4349,
+        "unseen_strict_prec": 0.3095,
+        "unseen_strict_rec": 0.7312,
+        "unseen_relaxed_f1": 0.5911,
+        "known_strict_f1": 0.3786,
+        "unseen_org_f1": 0.2429,
+        "unseen_loc_f1": 0.2617,
+        "unseen_person_f1": 0.5911
+      },
+      "Config 3 (Hybrid)": {
+        "unseen_strict_f1": 0.3886,
+        "unseen_strict_prec": 0.2795,
+        "unseen_strict_rec": 0.6375,
+        "unseen_relaxed_f1": 0.6095,
+        "known_strict_f1": 0.4392,
+        "unseen_org_f1": 0.0635,
+        "unseen_loc_f1": 0.192,
+        "unseen_person_f1": 0.6277
+      }
+    }
+  },
+  "structured_pii": {
+    "records_evaluated": 10,
+    "mykad": {
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1": 0.75,
+      "tp": 3,
+      "fp": 1,
+      "fn": 1,
+      "total_gold": 4,
+      "total_pred": 4,
+      "false_positive_rate": 0.25,
+      "false_negative_rate": 0.25,
+      "per_class": {
+        "MYKAD": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75,
+          "tp": 3,
+          "fp": 1,
+          "fn": 1
+        }
+      }
+    },
+    "phone": {
+      "precision": 0.7143,
+      "recall": 0.7143,
+      "f1": 0.7143,
+      "tp": 5,
+      "fp": 2,
+      "fn": 2,
+      "total_gold": 7,
+      "total_pred": 7,
+      "false_positive_rate": 0.2857,
+      "false_negative_rate": 0.2857,
+      "per_class": {
+        "PHONE": {
+          "precision": 0.7143,
+          "recall": 0.7143,
+          "f1": 0.7143,
+          "tp": 5,
+          "fp": 2,
+          "fn": 2
+        }
+      }
+    },
+    "postcode": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "total_gold": 4,
+      "total_pred": 4,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "per_class": {
+        "POSTCODE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  },
+  "error_summary": {
+    "false_positives": 60,
+    "false_negatives": 0,
+    "boundary_mismatches": 91,
+    "patronymic_errors": 0,
+    "hard_negative_hallucinations": 4
+  }
+}

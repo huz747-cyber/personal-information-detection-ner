@@ -1,0 +1,996 @@
+{
+  "dataset_path": "data\\splits\\experimental_structure_isolated\\test.jsonl",
+  "total_records": 150,
+  "configurations": {
+    "Config 1: Raw DistilBERT": {
+      "strict": {
+        "precision": 0.3379,
+        "recall": 0.5302,
+        "f1": 0.4127,
+        "tp": 149,
+        "fp": 292,
+        "fn": 132,
+        "total_gold": 281,
+        "total_pred": 441,
+        "false_positive_rate": 0.6621,
+        "false_negative_rate": 0.4698,
+        "per_class": {
+          "LOCATION": {
+            "precision": 0.7647,
+            "recall": 0.5652,
+            "f1": 0.65,
+            "tp": 65,
+            "fp": 20,
+            "fn": 50
+          },
+          "ORGANIZATION": {
+            "precision": 0.1975,
+            "recall": 0.5079,
+            "f1": 0.2844,
+            "tp": 32,
+            "fp": 130,
+            "fn": 31
+          },
+          "PERSON": {
+            "precision": 0.268,
+            "recall": 0.5049,
+            "f1": 0.3502,
+            "tp": 52,
+            "fp": 142,
+            "fn": 51
+          }
+        }
+      },
+      "relaxed": {
+        "precision": 0.5238,
+        "recall": 0.8221,
+        "f1": 0.6399,
+        "tp": 231,
+        "fp": 210,
+        "fn": 50,
+        "total_gold": 281,
+        "total_pred": 441,
+        "false_positive_rate": 0.4762,
+        "false_negative_rate": 0.1779,
+        "per_class": {
+          "LOCATION": {
+            "precision": 0.8353,
+            "recall": 0.6174,
+            "f1": 0.71,
+            "tp": 71,
+            "fp": 14,
+            "fn": 44
+          },
+          "ORGANIZATION": {
+            "precision": 0.3519,
+            "recall": 0.9048,
+            "f1": 0.5067,
+            "tp": 57,
+            "fp": 105,
+            "fn": 6
+          },
+          "PERSON": {
+            "precision": 0.5309,
+            "recall": 1.0,
+            "f1": 0.6936,
+            "tp": 103,
+            "fp": 91,
+            "fn": 0
+          }
+        }
+      },
+      "confusion_matrix": {
+        "PERSON": {
+          "PERSON": 100,
+          "ORGANIZATION": 3,
+          "LOCATION": 0,
+          "O": 0
+        },
+        "ORGANIZATION": {
+          "PERSON": 9,
+          "ORGANIZATION": 48,
+          "LOCATION": 6,
+          "O": 0
+        },
+        "LOCATION": {
+          "PERSON": 6,
+          "ORGANIZATION": 26,
+          "LOCATION": 71,
+          "O": 12
+        },
+        "O": {
+          "PERSON": 79,
+          "ORGANIZATION": 85,
+          "LOCATION": 8,
+          "O": 0
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 35,
+        "clean_sentences_count": 26,
+        "rejection_accuracy": 0.7429,
+        "total_hallucinations": 11,
+        "hallucinated_details": [
+          {
+            "sentence_id": "my-malay-218",
+            "text": "Pihak pengurusan menetapkan mesyuarat agung tahunan akan bermula tepat pada pukul 9.30 pagi.",
+            "entity": "Pihak",
+            "label": "PERSON",
+            "score": 0.8637
+          },
+          {
+            "sentence_id": "my-malay-221",
+            "text": "Kadar faedah pinjaman perumahan asas ditetapkan pada 4.25 peratus setahun mengikut garis panduan semasa.",
+            "entity": "Kadar",
+            "label": "PERSON",
+            "score": 0.9705
+          },
+          {
+            "sentence_id": "my-malay-224",
+            "text": "Kerajaan negeri memperuntukkan dana pembangunan infrastruktur desa bagi tahun kewangan akan datang.",
+            "entity": "Ke",
+            "label": "ORGANIZATION",
+            "score": 0.5225
+          },
+          {
+            "sentence_id": "my-malay-224",
+            "text": "Kerajaan negeri memperuntukkan dana pembangunan infrastruktur desa bagi tahun kewangan akan datang.",
+            "entity": "rajaan",
+            "label": "PERSON",
+            "score": 0.5651
+          },
+          {
+            "sentence_id": "my-malay-227",
+            "text": "Pengarah syarikat wajib menghadiri taklimat tadbir urus korporat yang diadakan setiap dua tahun sekali.",
+            "entity": "Pengarah",
+            "label": "PERSON",
+            "score": 0.6437
+          },
+          {
+            "sentence_id": "my-malay-230",
+            "text": "Semua kenderaan barangan berat dilarang melalui laluan jalan persekutuan tersebut pada waktu puncak.",
+            "entity": "Semua",
+            "label": "PERSON",
+            "score": 0.8849
+          },
+          {
+            "sentence_id": "my-malay-233",
+            "text": "Pihak bomba menasihatkan orang ramai supaya sentiasa berwaspada terhadap bahaya kebakaran semasa musim kemarau.",
+            "entity": "Pi",
+            "label": "PERSON",
+            "score": 0.6424
+          },
+          {
+            "sentence_id": "my-malay-239",
+            "text": "Permohonan bantuan kebajikan boleh dibuat melalui kaunter perkhidmatan pelanggan pada setiap hari bekerja.",
+            "entity": "Permohonan",
+            "label": "PERSON",
+            "score": 0.9155
+          },
+          {
+            "sentence_id": "my-mixcs-126",
+            "text": "Tolong submit invoice claim tu sebelum date cutoff pada hari Jumaat pukul 5.00 PM.",
+            "entity": "Tolong",
+            "label": "PERSON",
+            "score": 0.9508
+          },
+          {
+            "sentence_id": "my-mixcs-126",
+            "text": "Tolong submit invoice claim tu sebelum date cutoff pada hari Jumaat pukul 5.00 PM.",
+            "entity": "Jumaat",
+            "label": "PERSON",
+            "score": 0.5054
+          },
+          {
+            "sentence_id": "my-mixcs-129",
+            "text": "Sila pastikan backup server dah complete run before office hour start tomorrow morning.",
+            "entity": "Sila",
+            "label": "PERSON",
+            "score": 0.7026
+          }
+        ]
+      }
+    },
+    "Config 2: DistilBERT + Stitcher (Phase 1)": {
+      "strict": {
+        "precision": 0.3679,
+        "recall": 0.5302,
+        "f1": 0.4344,
+        "tp": 149,
+        "fp": 256,
+        "fn": 132,
+        "total_gold": 281,
+        "total_pred": 405,
+        "false_positive_rate": 0.6321,
+        "false_negative_rate": 0.4698,
+        "per_class": {
+          "LOCATION": {
+            "precision": 0.7647,
+            "recall": 0.5652,
+            "f1": 0.65,
+            "tp": 65,
+            "fp": 20,
+            "fn": 50
+          },
+          "ORGANIZATION": {
+            "precision": 0.1975,
+            "recall": 0.5079,
+            "f1": 0.2844,
+            "tp": 32,
+            "fp": 130,
+            "fn": 31
+          },
+          "PERSON": {
+            "precision": 0.3291,
+            "recall": 0.5049,
+            "f1": 0.3985,
+            "tp": 52,
+            "fp": 106,
+            "fn": 51
+          }
+        }
+      },
+      "relaxed": {
+        "precision": 0.5704,
+        "recall": 0.8221,
+        "f1": 0.6735,
+        "tp": 231,
+        "fp": 174,
+        "fn": 50,
+        "total_gold": 281,
+        "total_pred": 405,
+        "false_positive_rate": 0.4296,
+        "false_negative_rate": 0.1779,
+        "per_class": {
+          "LOCATION": {
+            "precision": 0.8353,
+            "recall": 0.6174,
+            "f1": 0.71,
+            "tp": 71,
+            "fp": 14,
+            "fn": 44
+          },
+          "ORGANIZATION": {
+            "precision": 0.3519,
+            "recall": 0.9048,
+            "f1": 0.5067,
+            "tp": 57,
+            "fp": 105,
+            "fn": 6
+          },
+          "PERSON": {
+            "precision": 0.6519,
+            "recall": 1.0,
+            "f1": 0.7893,
+            "tp": 103,
+            "fp": 55,
+            "fn": 0
+          }
+        }
+      },
+      "confusion_matrix": {
+        "PERSON": {
+          "PERSON": 103,
+          "ORGANIZATION": 0,
+          "LOCATION": 0,
+          "O": 0
+        },
+        "ORGANIZATION": {
+          "PERSON": 9,
+          "ORGANIZATION": 48,
+          "LOCATION": 6,
+          "O": 0
+        },
+        "LOCATION": {
+          "PERSON": 6,
+          "ORGANIZATION": 26,
+          "LOCATION": 71,
+          "O": 12
+        },
+        "O": {
+          "PERSON": 40,
+          "ORGANIZATION": 88,
+          "LOCATION": 8,
+          "O": 0
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 35,
+        "clean_sentences_count": 26,
+        "rejection_accuracy": 0.7429,
+        "total_hallucinations": 11,
+        "hallucinated_details": [
+          {
+            "sentence_id": "my-malay-218",
+            "text": "Pihak pengurusan menetapkan mesyuarat agung tahunan akan bermula tepat pada pukul 9.30 pagi.",
+            "entity": "Pihak",
+            "label": "PERSON",
+            "score": 0.8637
+          },
+          {
+            "sentence_id": "my-malay-221",
+            "text": "Kadar faedah pinjaman perumahan asas ditetapkan pada 4.25 peratus setahun mengikut garis panduan semasa.",
+            "entity": "Kadar",
+            "label": "PERSON",
+            "score": 0.9705
+          },
+          {
+            "sentence_id": "my-malay-224",
+            "text": "Kerajaan negeri memperuntukkan dana pembangunan infrastruktur desa bagi tahun kewangan akan datang.",
+            "entity": "Ke",
+            "label": "ORGANIZATION",
+            "score": 0.5225
+          },
+          {
+            "sentence_id": "my-malay-224",
+            "text": "Kerajaan negeri memperuntukkan dana pembangunan infrastruktur desa bagi tahun kewangan akan datang.",
+            "entity": "rajaan",
+            "label": "PERSON",
+            "score": 0.5651
+          },
+          {
+            "sentence_id": "my-malay-227",
+            "text": "Pengarah syarikat wajib menghadiri taklimat tadbir urus korporat yang diadakan setiap dua tahun sekali.",
+            "entity": "Pengarah",
+            "label": "PERSON",
+            "score": 0.6437
+          },
+          {
+            "sentence_id": "my-malay-230",
+            "text": "Semua kenderaan barangan berat dilarang melalui laluan jalan persekutuan tersebut pada waktu puncak.",
+            "entity": "Semua",
+            "label": "PERSON",
+            "score": 0.8849
+          },
+          {
+            "sentence_id": "my-malay-233",
+            "text": "Pihak bomba menasihatkan orang ramai supaya sentiasa berwaspada terhadap bahaya kebakaran semasa musim kemarau.",
+            "entity": "Pi",
+            "label": "PERSON",
+            "score": 0.6424
+          },
+          {
+            "sentence_id": "my-malay-239",
+            "text": "Permohonan bantuan kebajikan boleh dibuat melalui kaunter perkhidmatan pelanggan pada setiap hari bekerja.",
+            "entity": "Permohonan",
+            "label": "PERSON",
+            "score": 0.9155
+          },
+          {
+            "sentence_id": "my-mixcs-126",
+            "text": "Tolong submit invoice claim tu sebelum date cutoff pada hari Jumaat pukul 5.00 PM.",
+            "entity": "Tolong",
+            "label": "PERSON",
+            "score": 0.9508
+          },
+          {
+            "sentence_id": "my-mixcs-126",
+            "text": "Tolong submit invoice claim tu sebelum date cutoff pada hari Jumaat pukul 5.00 PM.",
+            "entity": "Jumaat",
+            "label": "PERSON",
+            "score": 0.5054
+          },
+          {
+            "sentence_id": "my-mixcs-129",
+            "text": "Sila pastikan backup server dah complete run before office hour start tomorrow morning.",
+            "entity": "Sila",
+            "label": "PERSON",
+            "score": 0.7026
+          }
+        ]
+      }
+    },
+    "Config 3: Full Hybrid (Phase 2)": {
+      "strict": {
+        "precision": 0.437,
+        "recall": 0.605,
+        "f1": 0.5075,
+        "tp": 170,
+        "fp": 219,
+        "fn": 111,
+        "total_gold": 281,
+        "total_pred": 389,
+        "false_positive_rate": 0.563,
+        "false_negative_rate": 0.395,
+        "per_class": {
+          "LOCATION": {
+            "precision": 0.7833,
+            "recall": 0.8174,
+            "f1": 0.8,
+            "tp": 94,
+            "fp": 26,
+            "fn": 21
+          },
+          "ORGANIZATION": {
+            "precision": 0.2017,
+            "recall": 0.381,
+            "f1": 0.2637,
+            "tp": 24,
+            "fp": 95,
+            "fn": 39
+          },
+          "PERSON": {
+            "precision": 0.3467,
+            "recall": 0.5049,
+            "f1": 0.4111,
+            "tp": 52,
+            "fp": 98,
+            "fn": 51
+          }
+        }
+      },
+      "relaxed": {
+        "precision": 0.6838,
+        "recall": 0.9466,
+        "f1": 0.794,
+        "tp": 266,
+        "fp": 123,
+        "fn": 15,
+        "total_gold": 281,
+        "total_pred": 389,
+        "false_positive_rate": 0.3162,
+        "false_negative_rate": 0.0534,
+        "per_class": {
+          "LOCATION": {
+            "precision": 0.8917,
+            "recall": 0.9304,
+            "f1": 0.9106,
+            "tp": 107,
+            "fp": 13,
+            "fn": 8
+          },
+          "ORGANIZATION": {
+            "precision": 0.4706,
+            "recall": 0.8889,
+            "f1": 0.6154,
+            "tp": 56,
+            "fp": 63,
+            "fn": 7
+          },
+          "PERSON": {
+            "precision": 0.6867,
+            "recall": 1.0,
+            "f1": 0.8142,
+            "tp": 103,
+            "fp": 47,
+            "fn": 0
+          }
+        }
+      },
+      "confusion_matrix": {
+        "PERSON": {
+          "PERSON": 103,
+          "ORGANIZATION": 0,
+          "LOCATION": 0,
+          "O": 0
+        },
+        "ORGANIZATION": {
+          "PERSON": 9,
+          "ORGANIZATION": 47,
+          "LOCATION": 7,
+          "O": 0
+        },
+        "LOCATION": {
+          "PERSON": 0,
+          "ORGANIZATION": 6,
+          "LOCATION": 104,
+          "O": 5
+        },
+        "O": {
+          "PERSON": 38,
+          "ORGANIZATION": 66,
+          "LOCATION": 9,
+          "O": 0
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 35,
+        "clean_sentences_count": 26,
+        "rejection_accuracy": 0.7429,
+        "total_hallucinations": 12,
+        "hallucinated_details": [
+          {
+            "sentence_id": "my-malay-218",
+            "text": "Pihak pengurusan menetapkan mesyuarat agung tahunan akan bermula tepat pada pukul 9.30 pagi.",
+            "entity": "Pihak",
+            "label": "PERSON",
+            "score": 0.8637
+          },
+          {
+            "sentence_id": "my-malay-221",
+            "text": "Kadar faedah pinjaman perumahan asas ditetapkan pada 4.25 peratus setahun mengikut garis panduan semasa.",
+            "entity": "Kadar",
+            "label": "PERSON",
+            "score": 0.9705
+          },
+          {
+            "sentence_id": "my-malay-224",
+            "text": "Kerajaan negeri memperuntukkan dana pembangunan infrastruktur desa bagi tahun kewangan akan datang.",
+            "entity": "Ke",
+            "label": "ORGANIZATION",
+            "score": 0.5225
+          },
+          {
+            "sentence_id": "my-malay-224",
+            "text": "Kerajaan negeri memperuntukkan dana pembangunan infrastruktur desa bagi tahun kewangan akan datang.",
+            "entity": "rajaan",
+            "label": "PERSON",
+            "score": 0.5651
+          },
+          {
+            "sentence_id": "my-malay-227",
+            "text": "Pengarah syarikat wajib menghadiri taklimat tadbir urus korporat yang diadakan setiap dua tahun sekali.",
+            "entity": "Pengarah",
+            "label": "PERSON",
+            "score": 0.6437
+          },
+          {
+            "sentence_id": "my-malay-230",
+            "text": "Semua kenderaan barangan berat dilarang melalui laluan jalan persekutuan tersebut pada waktu puncak.",
+            "entity": "Semua",
+            "label": "PERSON",
+            "score": 0.8849
+          },
+          {
+            "sentence_id": "my-malay-230",
+            "text": "Semua kenderaan barangan berat dilarang melalui laluan jalan persekutuan tersebut pada waktu puncak.",
+            "entity": "jalan persekutuan tersebut pada waktu puncak",
+            "label": "LOCATION",
+            "score": 0.95
+          },
+          {
+            "sentence_id": "my-malay-233",
+            "text": "Pihak bomba menasihatkan orang ramai supaya sentiasa berwaspada terhadap bahaya kebakaran semasa musim kemarau.",
+            "entity": "Pi",
+            "label": "PERSON",
+            "score": 0.6424
+          },
+          {
+            "sentence_id": "my-malay-239",
+            "text": "Permohonan bantuan kebajikan boleh dibuat melalui kaunter perkhidmatan pelanggan pada setiap hari bekerja.",
+            "entity": "Permohonan",
+            "label": "PERSON",
+            "score": 0.9155
+          },
+          {
+            "sentence_id": "my-mixcs-126",
+            "text": "Tolong submit invoice claim tu sebelum date cutoff pada hari Jumaat pukul 5.00 PM.",
+            "entity": "Tolong",
+            "label": "PERSON",
+            "score": 0.9508
+          },
+          {
+            "sentence_id": "my-mixcs-126",
+            "text": "Tolong submit invoice claim tu sebelum date cutoff pada hari Jumaat pukul 5.00 PM.",
+            "entity": "Jumaat",
+            "label": "PERSON",
+            "score": 0.5054
+          },
+          {
+            "sentence_id": "my-mixcs-129",
+            "text": "Sila pastikan backup server dah complete run before office hour start tomorrow morning.",
+            "entity": "Sila",
+            "label": "PERSON",
+            "score": 0.7026
+          }
+        ]
+      }
+    }
+  },
+  "per_category": {
+    "chinese_naming": {
+      "sentence_count": 13,
+      "strict_precision": 1.0,
+      "strict_recall": 1.0,
+      "strict_f1": 1.0,
+      "relaxed_f1": 1.0,
+      "per_class": {
+        "LOCATION": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 9,
+          "fp": 0,
+          "fn": 0
+        },
+        "PERSON": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 9,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 4,
+        "clean_sentences_count": 4,
+        "rejection_accuracy": 1.0,
+        "total_hallucinations": 0,
+        "hallucinated_details": []
+      }
+    },
+    "formal_malay": {
+      "sentence_count": 43,
+      "strict_precision": 0.1889,
+      "strict_recall": 0.3238,
+      "strict_f1": 0.2386,
+      "relaxed_f1": 0.6316,
+      "per_class": {
+        "LOCATION": {
+          "precision": 0.6875,
+          "recall": 0.6286,
+          "f1": 0.6567,
+          "tp": 22,
+          "fp": 10,
+          "fn": 13
+        },
+        "ORGANIZATION": {
+          "precision": 0.1446,
+          "recall": 0.3429,
+          "f1": 0.2034,
+          "tp": 12,
+          "fp": 71,
+          "fn": 23
+        },
+        "PERSON": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 65,
+          "fn": 35
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 8,
+        "clean_sentences_count": 1,
+        "rejection_accuracy": 0.125,
+        "total_hallucinations": 9,
+        "hallucinated_details": [
+          {
+            "sentence_id": "my-malay-218",
+            "text": "Pihak pengurusan menetapkan mesyuarat agung tahunan akan bermula tepat pada pukul 9.30 pagi.",
+            "entity": "Pihak",
+            "label": "PERSON",
+            "score": 0.8637
+          },
+          {
+            "sentence_id": "my-malay-221",
+            "text": "Kadar faedah pinjaman perumahan asas ditetapkan pada 4.25 peratus setahun mengikut garis panduan semasa.",
+            "entity": "Kadar",
+            "label": "PERSON",
+            "score": 0.9705
+          },
+          {
+            "sentence_id": "my-malay-224",
+            "text": "Kerajaan negeri memperuntukkan dana pembangunan infrastruktur desa bagi tahun kewangan akan datang.",
+            "entity": "Ke",
+            "label": "ORGANIZATION",
+            "score": 0.5225
+          },
+          {
+            "sentence_id": "my-malay-224",
+            "text": "Kerajaan negeri memperuntukkan dana pembangunan infrastruktur desa bagi tahun kewangan akan datang.",
+            "entity": "rajaan",
+            "label": "PERSON",
+            "score": 0.5651
+          },
+          {
+            "sentence_id": "my-malay-227",
+            "text": "Pengarah syarikat wajib menghadiri taklimat tadbir urus korporat yang diadakan setiap dua tahun sekali.",
+            "entity": "Pengarah",
+            "label": "PERSON",
+            "score": 0.6437
+          },
+          {
+            "sentence_id": "my-malay-230",
+            "text": "Semua kenderaan barangan berat dilarang melalui laluan jalan persekutuan tersebut pada waktu puncak.",
+            "entity": "Semua",
+            "label": "PERSON",
+            "score": 0.8849
+          },
+          {
+            "sentence_id": "my-malay-230",
+            "text": "Semua kenderaan barangan berat dilarang melalui laluan jalan persekutuan tersebut pada waktu puncak.",
+            "entity": "jalan persekutuan tersebut pada waktu puncak",
+            "label": "LOCATION",
+            "score": 0.95
+          },
+          {
+            "sentence_id": "my-malay-233",
+            "text": "Pihak bomba menasihatkan orang ramai supaya sentiasa berwaspada terhadap bahaya kebakaran semasa musim kemarau.",
+            "entity": "Pi",
+            "label": "PERSON",
+            "score": 0.6424
+          },
+          {
+            "sentence_id": "my-malay-239",
+            "text": "Permohonan bantuan kebajikan boleh dibuat melalui kaunter perkhidmatan pelanggan pada setiap hari bekerja.",
+            "entity": "Permohonan",
+            "label": "PERSON",
+            "score": 0.9155
+          }
+        ]
+      }
+    },
+    "indian_naming": {
+      "sentence_count": 3,
+      "strict_precision": 0.0,
+      "strict_recall": 0.0,
+      "strict_f1": 0.0,
+      "relaxed_f1": 0.0,
+      "per_class": {},
+      "hard_negatives": {
+        "total_hard_negatives": 3,
+        "clean_sentences_count": 3,
+        "rejection_accuracy": 1.0,
+        "total_hallucinations": 0,
+        "hallucinated_details": []
+      }
+    },
+    "international_baseline": {
+      "sentence_count": 2,
+      "strict_precision": 0.0,
+      "strict_recall": 0.0,
+      "strict_f1": 0.0,
+      "relaxed_f1": 0.0,
+      "per_class": {},
+      "hard_negatives": {
+        "total_hard_negatives": 2,
+        "clean_sentences_count": 2,
+        "rejection_accuracy": 1.0,
+        "total_hallucinations": 0,
+        "hallucinated_details": []
+      }
+    },
+    "malaysian_english": {
+      "sentence_count": 36,
+      "strict_precision": 0.7297,
+      "strict_recall": 0.75,
+      "strict_f1": 0.7397,
+      "relaxed_f1": 0.9863,
+      "per_class": {
+        "LOCATION": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 28,
+          "fp": 0,
+          "fn": 0
+        },
+        "ORGANIZATION": {
+          "precision": 0.4,
+          "recall": 0.4286,
+          "f1": 0.4138,
+          "tp": 12,
+          "fp": 18,
+          "fn": 16
+        },
+        "PERSON": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1": 0.875,
+          "tp": 14,
+          "fp": 2,
+          "fn": 2
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 8,
+        "clean_sentences_count": 8,
+        "rejection_accuracy": 1.0,
+        "total_hallucinations": 0,
+        "hallucinated_details": []
+      }
+    },
+    "manglish": {
+      "sentence_count": 36,
+      "strict_precision": 0.619,
+      "strict_recall": 0.8387,
+      "strict_f1": 0.7123,
+      "relaxed_f1": 0.8493,
+      "per_class": {
+        "LOCATION": {
+          "precision": 0.5897,
+          "recall": 0.7419,
+          "f1": 0.6571,
+          "tp": 23,
+          "fp": 16,
+          "fn": 8
+        },
+        "PERSON": {
+          "precision": 0.6444,
+          "recall": 0.9355,
+          "f1": 0.7632,
+          "tp": 29,
+          "fp": 16,
+          "fn": 2
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 5,
+        "clean_sentences_count": 5,
+        "rejection_accuracy": 1.0,
+        "total_hallucinations": 0,
+        "hallucinated_details": []
+      }
+    },
+    "mixed_code_switch": {
+      "sentence_count": 17,
+      "strict_precision": 0.3636,
+      "strict_recall": 0.5,
+      "strict_f1": 0.4211,
+      "relaxed_f1": 0.8421,
+      "per_class": {
+        "LOCATION": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 12,
+          "fp": 0,
+          "fn": 0
+        },
+        "ORGANIZATION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 6,
+          "fn": 0
+        },
+        "PERSON": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 15,
+          "fn": 12
+        }
+      },
+      "hard_negatives": {
+        "total_hard_negatives": 5,
+        "clean_sentences_count": 3,
+        "rejection_accuracy": 0.6,
+        "total_hallucinations": 3,
+        "hallucinated_details": [
+          {
+            "sentence_id": "my-mixcs-126",
+            "text": "Tolong submit invoice claim tu sebelum date cutoff pada hari Jumaat pukul 5.00 PM.",
+            "entity": "Tolong",
+            "label": "PERSON",
+            "score": 0.9508
+          },
+          {
+            "sentence_id": "my-mixcs-126",
+            "text": "Tolong submit invoice claim tu sebelum date cutoff pada hari Jumaat pukul 5.00 PM.",
+            "entity": "Jumaat",
+            "label": "PERSON",
+            "score": 0.5054
+          },
+          {
+            "sentence_id": "my-mixcs-129",
+            "text": "Sila pastikan backup server dah complete run before office hour start tomorrow morning.",
+            "entity": "Sila",
+            "label": "PERSON",
+            "score": 0.7026
+          }
+        ]
+      }
+    }
+  },
+  "gazetteer_leakage": {
+    "total_gold_entities": 281,
+    "known_in_gazetteer_count": 125,
+    "unseen_entities_count": 156,
+    "unseen_percentage": 55.52,
+    "config_comparison": {
+      "Config 1 (Raw)": {
+        "unseen_strict_f1": 0.2379,
+        "unseen_strict_prec": 0.161,
+        "unseen_strict_rec": 0.4551,
+        "unseen_relaxed_f1": 0.4824,
+        "known_strict_f1": 0.2756,
+        "unseen_org_f1": 0.1053,
+        "unseen_loc_f1": 0.1636,
+        "unseen_person_f1": 0.3502
+      },
+      "Config 2 (Stitcher)": {
+        "unseen_strict_f1": 0.2531,
+        "unseen_strict_prec": 0.1753,
+        "unseen_strict_rec": 0.4551,
+        "unseen_relaxed_f1": 0.5134,
+        "known_strict_f1": 0.2943,
+        "unseen_org_f1": 0.1053,
+        "unseen_loc_f1": 0.1636,
+        "unseen_person_f1": 0.3985
+      },
+      "Config 3 (Hybrid)": {
+        "unseen_strict_f1": 0.2385,
+        "unseen_strict_prec": 0.1671,
+        "unseen_strict_rec": 0.4167,
+        "unseen_relaxed_f1": 0.5284,
+        "known_strict_f1": 0.4086,
+        "unseen_org_f1": 0.1088,
+        "unseen_loc_f1": 0.069,
+        "unseen_person_f1": 0.4111
+      }
+    }
+  },
+  "structured_pii": {
+    "records_evaluated": 10,
+    "mykad": {
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1": 0.75,
+      "tp": 3,
+      "fp": 1,
+      "fn": 1,
+      "total_gold": 4,
+      "total_pred": 4,
+      "false_positive_rate": 0.25,
+      "false_negative_rate": 0.25,
+      "per_class": {
+        "MYKAD": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75,
+          "tp": 3,
+          "fp": 1,
+          "fn": 1
+        }
+      }
+    },
+    "phone": {
+      "precision": 0.7143,
+      "recall": 0.7143,
+      "f1": 0.7143,
+      "tp": 5,
+      "fp": 2,
+      "fn": 2,
+      "total_gold": 7,
+      "total_pred": 7,
+      "false_positive_rate": 0.2857,
+      "false_negative_rate": 0.2857,
+      "per_class": {
+        "PHONE": {
+          "precision": 0.7143,
+          "recall": 0.7143,
+          "f1": 0.7143,
+          "tp": 5,
+          "fp": 2,
+          "fn": 2
+        }
+      }
+    },
+    "postcode": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "total_gold": 4,
+      "total_pred": 4,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "per_class": {
+        "POSTCODE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  },
+  "error_summary": {
+    "false_positives": 113,
+    "false_negatives": 5,
+    "boundary_mismatches": 106,
+    "patronymic_errors": 0,
+    "hard_negative_hallucinations": 12
+  }
+}
