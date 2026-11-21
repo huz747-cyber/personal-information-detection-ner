@@ -1,0 +1,223 @@
+{
+  "chinese_naming": {
+    "sentence_count": 13,
+    "gold_entity_count": 18,
+    "strict_precision": 1.0,
+    "strict_recall": 1.0,
+    "strict_f1": 1.0,
+    "relaxed_f1": 1.0,
+    "per_class": {
+      "LOCATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 9,
+        "fp": 0,
+        "fn": 0
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 9,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "hard_negatives": {
+      "total_hard_negatives": 4,
+      "clean_sentences_count": 4,
+      "rejection_accuracy": 1.0,
+      "total_hallucinations": 0,
+      "hallucinated_details": []
+    }
+  },
+  "formal_malay": {
+    "sentence_count": 43,
+    "gold_entity_count": 105,
+    "strict_precision": 0.8155,
+    "strict_recall": 0.8,
+    "strict_f1": 0.8077,
+    "relaxed_f1": 0.9423,
+    "per_class": {
+      "LOCATION": {
+        "precision": 0.75,
+        "recall": 0.8571,
+        "f1": 0.8,
+        "tp": 30,
+        "fp": 10,
+        "fn": 5
+      },
+      "ORGANIZATION": {
+        "precision": 0.6786,
+        "recall": 0.5429,
+        "f1": 0.6032,
+        "tp": 19,
+        "fp": 9,
+        "fn": 16
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 35,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "hard_negatives": {
+      "total_hard_negatives": 8,
+      "clean_sentences_count": 7,
+      "rejection_accuracy": 0.875,
+      "total_hallucinations": 1,
+      "hallucinated_details": [
+        {
+          "sentence_id": "my-malay-230",
+          "text": "Semua kenderaan barangan berat dilarang melalui laluan jalan persekutuan tersebut pada waktu puncak.",
+          "entity": "jalan persekutuan tersebut pada waktu puncak",
+          "label": "LOCATION",
+          "score": 0.95
+        }
+      ]
+    }
+  },
+  "indian_naming": {
+    "sentence_count": 3,
+    "gold_entity_count": 0,
+    "strict_precision": 0.0,
+    "strict_recall": 0.0,
+    "strict_f1": 0.0,
+    "relaxed_f1": 0.0,
+    "per_class": {},
+    "hard_negatives": {
+      "total_hard_negatives": 3,
+      "clean_sentences_count": 3,
+      "rejection_accuracy": 1.0,
+      "total_hallucinations": 0,
+      "hallucinated_details": []
+    }
+  },
+  "international_baseline": {
+    "sentence_count": 2,
+    "gold_entity_count": 0,
+    "strict_precision": 0.0,
+    "strict_recall": 0.0,
+    "strict_f1": 0.0,
+    "relaxed_f1": 0.0,
+    "per_class": {},
+    "hard_negatives": {
+      "total_hard_negatives": 2,
+      "clean_sentences_count": 2,
+      "rejection_accuracy": 1.0,
+      "total_hallucinations": 0,
+      "hallucinated_details": []
+    }
+  },
+  "malaysian_english": {
+    "sentence_count": 36,
+    "gold_entity_count": 72,
+    "strict_precision": 0.7778,
+    "strict_recall": 0.7778,
+    "strict_f1": 0.7778,
+    "relaxed_f1": 1.0,
+    "per_class": {
+      "LOCATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 28,
+        "fp": 0,
+        "fn": 0
+      },
+      "ORGANIZATION": {
+        "precision": 0.4286,
+        "recall": 0.4286,
+        "f1": 0.4286,
+        "tp": 12,
+        "fp": 16,
+        "fn": 16
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 16,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "hard_negatives": {
+      "total_hard_negatives": 8,
+      "clean_sentences_count": 8,
+      "rejection_accuracy": 1.0,
+      "total_hallucinations": 0,
+      "hallucinated_details": []
+    }
+  },
+  "manglish": {
+    "sentence_count": 36,
+    "gold_entity_count": 62,
+    "strict_precision": 0.9355,
+    "strict_recall": 0.9355,
+    "strict_f1": 0.9355,
+    "relaxed_f1": 1.0,
+    "per_class": {
+      "LOCATION": {
+        "precision": 0.871,
+        "recall": 0.871,
+        "f1": 0.871,
+        "tp": 27,
+        "fp": 4,
+        "fn": 4
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 31,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "hard_negatives": {
+      "total_hard_negatives": 5,
+      "clean_sentences_count": 5,
+      "rejection_accuracy": 1.0,
+      "total_hallucinations": 0,
+      "hallucinated_details": []
+    }
+  },
+  "mixed_code_switch": {
+    "sentence_count": 17,
+    "gold_entity_count": 24,
+    "strict_precision": 1.0,
+    "strict_recall": 1.0,
+    "strict_f1": 1.0,
+    "relaxed_f1": 1.0,
+    "per_class": {
+      "LOCATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 12,
+        "fp": 0,
+        "fn": 0
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 12,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "hard_negatives": {
+      "total_hard_negatives": 5,
+      "clean_sentences_count": 5,
+      "rejection_accuracy": 1.0,
+      "total_hallucinations": 0,
+      "hallucinated_details": []
+    }
+  }
+}

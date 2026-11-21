@@ -1,0 +1,164 @@
+{
+  "Config 1-FT: Multilingual Model Alone": {
+    "strict": {
+      "LOCATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 115,
+        "fp": 0,
+        "fn": 0
+      },
+      "ORGANIZATION": {
+        "precision": 0.8571,
+        "recall": 0.8571,
+        "f1": 0.8571,
+        "tp": 54,
+        "fp": 9,
+        "fn": 9
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 103,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "relaxed": {
+      "LOCATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 115,
+        "fp": 0,
+        "fn": 0
+      },
+      "ORGANIZATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 63,
+        "fp": 0,
+        "fn": 0
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 103,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "Config 2-FT: Model + Stitcher": {
+    "strict": {
+      "LOCATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 115,
+        "fp": 0,
+        "fn": 0
+      },
+      "ORGANIZATION": {
+        "precision": 0.8571,
+        "recall": 0.8571,
+        "f1": 0.8571,
+        "tp": 54,
+        "fp": 9,
+        "fn": 9
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 103,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "relaxed": {
+      "LOCATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 115,
+        "fp": 0,
+        "fn": 0
+      },
+      "ORGANIZATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 63,
+        "fp": 0,
+        "fn": 0
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 103,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "Config 3-FT: Full Hybrid (Phase 5)": {
+    "strict": {
+      "LOCATION": {
+        "precision": 0.8833,
+        "recall": 0.9217,
+        "f1": 0.9021,
+        "tp": 106,
+        "fp": 14,
+        "fn": 9
+      },
+      "ORGANIZATION": {
+        "precision": 0.5536,
+        "recall": 0.4921,
+        "f1": 0.521,
+        "tp": 31,
+        "fp": 25,
+        "fn": 32
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 103,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "relaxed": {
+      "LOCATION": {
+        "precision": 0.9583,
+        "recall": 1.0,
+        "f1": 0.9787,
+        "tp": 115,
+        "fp": 5,
+        "fn": 0
+      },
+      "ORGANIZATION": {
+        "precision": 1.0,
+        "recall": 0.8889,
+        "f1": 0.9412,
+        "tp": 56,
+        "fp": 0,
+        "fn": 7
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 103,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  }
+}

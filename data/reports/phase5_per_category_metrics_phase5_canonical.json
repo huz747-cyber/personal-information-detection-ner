@@ -1,0 +1,125 @@
+{
+  "malaysian_english": {
+    "sentence_count": 45,
+    "gold_entity_count": 125,
+    "strict_precision": 0.704,
+    "strict_recall": 0.704,
+    "strict_f1": 0.704,
+    "relaxed_f1": 1.0,
+    "per_class": {
+      "LOCATION": {
+        "precision": 0.9556,
+        "recall": 0.9556,
+        "f1": 0.9556,
+        "tp": 43,
+        "fp": 2,
+        "fn": 2
+      },
+      "ORGANIZATION": {
+        "precision": 0.2222,
+        "recall": 0.2222,
+        "f1": 0.2222,
+        "tp": 10,
+        "fp": 35,
+        "fn": 35
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 35,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "hard_negatives": {
+      "total_hard_negatives": 0,
+      "clean_sentences_count": 0,
+      "rejection_accuracy": 1.0,
+      "total_hallucinations": 0,
+      "hallucinated_details": []
+    }
+  },
+  "manglish": {
+    "sentence_count": 45,
+    "gold_entity_count": 80,
+    "strict_precision": 0.9375,
+    "strict_recall": 0.9375,
+    "strict_f1": 0.9375,
+    "relaxed_f1": 1.0,
+    "per_class": {
+      "LOCATION": {
+        "precision": 0.92,
+        "recall": 0.92,
+        "f1": 0.92,
+        "tp": 23,
+        "fp": 2,
+        "fn": 2
+      },
+      "ORGANIZATION": {
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8,
+        "tp": 12,
+        "fp": 3,
+        "fn": 3
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 40,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "hard_negatives": {
+      "total_hard_negatives": 5,
+      "clean_sentences_count": 5,
+      "rejection_accuracy": 1.0,
+      "total_hallucinations": 0,
+      "hallucinated_details": []
+    }
+  },
+  "mixed_code_switch": {
+    "sentence_count": 55,
+    "gold_entity_count": 100,
+    "strict_precision": 0.92,
+    "strict_recall": 0.92,
+    "strict_f1": 0.92,
+    "relaxed_f1": 1.0,
+    "per_class": {
+      "LOCATION": {
+        "precision": 0.9429,
+        "recall": 0.9429,
+        "f1": 0.9429,
+        "tp": 33,
+        "fp": 2,
+        "fn": 2
+      },
+      "ORGANIZATION": {
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1": 0.6,
+        "tp": 9,
+        "fp": 6,
+        "fn": 6
+      },
+      "PERSON": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 50,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "hard_negatives": {
+      "total_hard_negatives": 5,
+      "clean_sentences_count": 5,
+      "rejection_accuracy": 1.0,
+      "total_hallucinations": 0,
+      "hallucinated_details": []
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model_name": "distilbert-base-multilingual-cased",
+  "base_model_license": "Apache-2.0",
+  "train_dataset": "data\\splits\\commercial\\train.jsonl",
+  "train_record_count": 560,
+  "val_dataset": "data\\splits\\commercial\\val.jsonl",
+  "val_record_count": 150,
+  "epochs": 6,
+  "batch_size": 16,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "max_length": 128,
+  "seed": 42,
+  "best_epoch": 4,
+  "best_val_strict_f1": 1.0,
+  "training_duration_seconds": 301.13,
+  "device": "cpu",
+  "output_dir": "models\\malaysian_ner_distilbert_multilingual"
+}

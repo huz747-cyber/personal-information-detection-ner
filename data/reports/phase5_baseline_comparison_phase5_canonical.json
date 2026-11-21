@@ -1,0 +1,44 @@
+{
+  "Config 1 (Model Alone)": {
+    "phase4_strict_f1": 0.5411,
+    "phase5_strict_f1": 1.0,
+    "delta_strict_f1": 0.4589,
+    "phase4_relaxed_f1": 0.7671,
+    "phase5_relaxed_f1": 1.0,
+    "delta_relaxed_f1": 0.2329
+  },
+  "Config 2 (Stitcher)": {
+    "phase4_strict_f1": 0.6325,
+    "phase5_strict_f1": 1.0,
+    "delta_strict_f1": 0.3675,
+    "phase4_relaxed_f1": 0.8053,
+    "phase5_relaxed_f1": 1.0,
+    "delta_relaxed_f1": 0.1947
+  },
+  "Config 3 (Full Hybrid)": {
+    "phase4_strict_f1": 0.6388,
+    "phase5_strict_f1": 0.8361,
+    "delta_strict_f1": 0.1973,
+    "phase4_relaxed_f1": 0.9104,
+    "phase5_relaxed_f1": 1.0,
+    "delta_relaxed_f1": 0.0896,
+    "per_class_deltas": {
+      "PERSON": {
+        "phase4_strict_f1": 0.6277,
+        "phase5_strict_f1": 1.0,
+        "delta_strict_f1": 0.3723
+      },
+      "ORGANIZATION": {
+        "phase4_strict_f1": 0.3407,
+        "phase5_strict_f1": 0.4133,
+        "delta_strict_f1": 0.0726
+      },
+      "LOCATION": {
+        "phase4_strict_f1": 0.9065,
+        "phase5_strict_f1": 0.9429,
+        "delta_strict_f1": 0.0364
+      }
+    },
+    "hard_negative_rejection_delta": 0.3
+  }
+}

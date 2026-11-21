@@ -1,0 +1,47 @@
+{
+  "canonical_train_count": 705,
+  "commercial_train_count": 560,
+  "excluded_from_commercial_train_count": 145,
+  "canonical_val_count": 150,
+  "commercial_val_count": 150,
+  "canonical_test_count": 145,
+  "commercial_test_count": 145,
+  "total_commercial_dataset_size": 855,
+  "excluded_source_counts": {
+    "SRC-001": 47,
+    "SRC-004": 50,
+    "SRC-005": 48
+  },
+  "excluded_records_sample": [
+    {
+      "id": "my-intl-001",
+      "source_id": "SRC-004",
+      "stratum": "international_baseline",
+      "exclusion_reason": "CoNLL-2003 Reuters Open Research License strictly forbids commercial use."
+    },
+    {
+      "id": "my-intl-002",
+      "source_id": "SRC-004",
+      "stratum": "international_baseline",
+      "exclusion_reason": "CoNLL-2003 Reuters Open Research License strictly forbids commercial use."
+    },
+    {
+      "id": "my-intl-003",
+      "source_id": "SRC-004",
+      "stratum": "international_baseline",
+      "exclusion_reason": "CoNLL-2003 Reuters Open Research License strictly forbids commercial use."
+    },
+    {
+      "id": "my-intl-004",
+      "source_id": "SRC-004",
+      "stratum": "international_baseline",
+      "exclusion_reason": "CoNLL-2003 Reuters Open Research License strictly forbids commercial use."
+    },
+    {
+      "id": "my-intl-005",
+      "source_id": "SRC-004",
+      "stratum": "international_baseline",
+      "exclusion_reason": "CoNLL-2003 Reuters Open Research License strictly forbids commercial use."
+    }
+  ]
+}
