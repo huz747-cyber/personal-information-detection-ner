@@ -329,6 +329,7 @@ tests/test_phase5_training.py .....                                      [100%]
 | **Generalisation Report** | [data/reports/phase5_generalisation_report.json](file:///C:/Users/User/.gemini/antigravity/scratch/personal-information-detection-ner/data/reports/phase5_generalisation_report.json) | Known vs unseen entity performance analysis |
 | **Error Analysis Report** | [data/reports/phase5_error_analysis.md](file:///C:/Users/User/.gemini/antigravity/scratch/personal-information-detection-ner/data/reports/phase5_error_analysis.md) | Qualitative diagnosis of remaining edge cases |
 | **Unit & Regression Tests** | [tests/test_phase5_training.py](file:///C:/Users/User/.gemini/antigravity/scratch/personal-information-detection-ner/tests/test_phase5_training.py) | 5 dedicated Phase 5 tests (112 tests total) |
+| **Phase 5 Git Commit** | `07527f1` | Cleanly committed and tagged on `phase-5-model-finetuning` |
 
 ---
 
