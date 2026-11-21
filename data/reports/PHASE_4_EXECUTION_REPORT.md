@@ -309,7 +309,8 @@ tests/test_phase4_evaluation.py ........                                 [100%]
 | Gazetteer Leakage JSON | `data/reports/phase4_baseline_gazetteer_leakage.json` | Generated |
 | Qualitative Error Analysis | `data/reports/phase4_error_analysis.md` | Generated |
 | Experimental Structural Metrics | `data/reports/phase4_experimental_structural_metrics.json` | Generated |
-| Raw Predictions Dump | `data/reports/phase4_predictions_test.jsonl` | Generated (145 records) |
+| Baseline Predictions Dump | `data/reports/phase4_predictions_test.jsonl` | Generated (145 records) |
 | Full Test Suite | `tests/` | 107/107 Passed |
+| **Phase 4 Baseline Commit** | `7e03192` | Verified & Tagged |
 
 **Phase 4 Baseline Execution is Complete.** All evaluation tools, metrics, error analyses, and test artifacts are verified and ready for human review before proceeding to Phase 5.
